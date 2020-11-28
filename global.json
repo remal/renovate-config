@@ -1,0 +1,56 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": ["Settings for all projects"],
+  "extends": ["config:base"],
+  "onboarding": false,
+  "configWarningReuseIssue": false,
+
+  "stabilityDays": 1,
+  "separateMultipleMajor": false,
+  "separateMajorMinor": false,
+  "separateMinorPatch": false,
+  "prCreation": "immediate",
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 0,
+  "assigneesFromCodeOwners": true,
+  "reviewersFromCodeOwners": true,
+
+  "dependencyDashboard": false,
+  "dependencyDashboardAutoclose": true,
+  "dependencyDashboardTitle": "Renovate updates",
+
+  "labels": ["dependencies", "unknown"],
+  "docker": {
+    "labels": ["dependencies", "docker"]
+  },
+  "git-submodules": {
+    "labels": ["dependencies", "submodules"]
+  },
+  "github-actions": {
+    "labels": ["dependencies", "github-actions"]
+  },
+  "gradle-wrapper": {
+    "labels": ["dependencies", "gradle"]
+  },
+  "java": {
+    "labels": ["dependencies", "java"],
+    "packageRules": [
+      {
+        "packagePatterns": ["^org\\.immutables:.+"],
+        "allowedVersions": "!/.*[-.]ea[-.\\d].*/"
+      },
+      {
+        "packageNames": ["com.google.javascript:closure-compiler"],
+        "allowedVersions": "/^v\\d{4}\\d{2}\\d{2}$/",
+        "versioning": "loose"
+      },
+      {
+        "packageNames": ["net.sourceforge.plantuml:plantuml"],
+        "allowedVersions": "/^\\d+(\\.\\d+){3,}$/"
+      }
+    ]
+  },
+  "travis": {
+    "labels": ["dependencies", "travisci"]
+  }
+}
