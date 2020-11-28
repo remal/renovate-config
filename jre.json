@@ -3,14 +3,16 @@
   "description": ["Settings for Java projects"],
   "extends": ["github>remal/renovate-config:global"],
 
-  "packageRules": [
-    {
-      "packageNames": ["com.google.guava:guava"],
-      "allowedVersions": "/^\\d+(\\.\\d+)+-jre$/"
-    },
-    {
-      "packageNames": ["org.postgresql:postgresql"],
-      "allowedVersions": "!/.+-jre\\d*$/"
-    }
-  ]
+  "java": {
+    "packageRules": [
+      {
+        "packageNames": ["com.google.guava:guava"],
+        "allowedVersions": "/^\\d+(\\.\\d+)+-jre$/"
+      },
+      {
+        "packageNames": ["org.postgresql:postgresql"],
+        "allowedVersions": "!/.+-jre\\d*$/"
+      }
+    ]
+  }
 }
