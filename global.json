@@ -3,8 +3,12 @@
   "description": ["Settings for all projects"],
   "extends": [
     "config:base",
-    "github>whitesource/merge-confidence:beta"
+    "group:recommended",
+    "github>whitesource/merge-confidence:beta",
+    "github>remal/renovate-config:labels",
+    "github>remal/renovate-config:java-deps"
   ],
+
   "onboarding": false,
   "configWarningReuseIssue": false,
 
@@ -20,43 +24,5 @@
 
   "dependencyDashboard": false,
   "dependencyDashboardAutoclose": true,
-  "dependencyDashboardTitle": "Renovate updates",
-
-  "labels": ["dependencies", "unknown"],
-  "docker": {
-    "labels": ["dependencies", "docker"]
-  },
-  "git-submodules": {
-    "labels": ["dependencies", "submodules"]
-  },
-  "github-actions": {
-    "labels": ["dependencies", "github-actions"]
-  },
-  "gradle-wrapper": {
-    "labels": ["dependencies", "gradle"]
-  },
-  "java": {
-    "labels": ["dependencies", "java"],
-    "packageRules": [
-      {
-        "description": "Deny versions with 'ea' suffix",
-        "packagePatterns": ["^org\\.immutables:.+"],
-        "allowedVersions": "!/.*[-.]ea[-.\\d].*/"
-      },
-      {
-        "description": "Allow only vYYYYMMDD versions",
-        "packageNames": ["com.google.javascript:closure-compiler"],
-        "allowedVersions": "/^v\\d{4}\\d{2}\\d{2}$/",
-        "versioning": "loose"
-      },
-      {
-        "description": "Allow only semver versions",
-        "packageNames": ["net.sourceforge.plantuml:plantuml"],
-        "allowedVersions": "/^\\d+(\\.\\d+){3,}$/"
-      }
-    ]
-  },
-  "travis": {
-    "labels": ["dependencies", "travisci"]
-  }
+  "dependencyDashboardTitle": "Renovate updates"
 }

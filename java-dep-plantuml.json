@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": ["Settings for Java dependencies: PlantUML"],
+  "java": {
+    "packageRules": [
+      {
+        "description": "Allow only semver versions",
+        "packageNames": ["net.sourceforge.plantuml:plantuml"],
+        "allowedVersions": "/^\\d+(\\.\\d+){3,}$/"
+      }
+    ]
+  }
+}

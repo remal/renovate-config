@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": ["Settings for Java dependencies: GraalVM"],
+  "java": {
+    "packageRules": [
+      {
+        "description": "Group dependencies",
+        "packagePatterns": ["^org\\.graalvm[.:].+"],
+        "groupName": "graalvm"
+      }
+    ]
+  }
+}

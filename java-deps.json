@@ -1,0 +1,10 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": ["Settings for Java libraries"],
+  "extends": [
+    "github>remal/renovate-config:java-dep-closure-compiler",
+    "github>remal/renovate-config:java-dep-graalvm",
+    "github>remal/renovate-config:java-dep-immutables",
+    "github>remal/renovate-config:java-dep-plantuml"
+  ]
+}

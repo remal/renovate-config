@@ -1,0 +1,25 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": ["Pull Request labels"],
+
+  "labels": ["dependencies", "unknown"],
+
+  "docker": {
+    "labels": ["dependencies", "docker"]
+  },
+  "git-submodules": {
+    "labels": ["dependencies", "submodules"]
+  },
+  "github-actions": {
+    "labels": ["dependencies", "github-actions"]
+  },
+  "gradle-wrapper": {
+    "labels": ["dependencies", "gradle"]
+  },
+  "java": {
+    "labels": ["dependencies", "java"]
+  },
+  "travis": {
+    "labels": ["dependencies", "travisci"]
+  }
+}

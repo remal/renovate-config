@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": ["Settings for Java dependencies: Immutables"],
+  "java": {
+    "packageRules": [
+      {
+        "description": "Group dependencies",
+        "packagePatterns": ["^org\\.immutables:.+"],
+        "groupName": "immutables"
+      },
+      {
+        "description": "Deny versions with 'ea' suffix",
+        "packagePatterns": ["^org\\.immutables:.+"],
+        "allowedVersions": "!/.*[-.]ea[-.\\d].*/"
+      }
+    ]
+  }
+}
