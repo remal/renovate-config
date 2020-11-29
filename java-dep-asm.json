@@ -5,13 +5,7 @@
     "packageRules": [
       {
         "description": "Group dependencies",
-        "packageNames": [
-          "org.ow2.asm:asm",
-          "org.ow2.asm:asm-analysis",
-          "org.ow2.asm:asm-commons",
-          "org.ow2.asm:asm-tree",
-          "org.ow2.asm:asm-util"
-        ],
+        "packagePatterns": ["^org\\.ow2\\.asm:"],
         "groupName": "asm"
       }
     ]

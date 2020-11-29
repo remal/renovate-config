@@ -6,7 +6,7 @@
       {
         "description": "Deny versions with 'ea' suffix",
         "packagePatterns": ["^org\\.immutables:.+"],
-        "allowedVersions": "!/.*[-.]ea[-.\\d].*/"
+        "allowedVersions": "!/[-.]ea[-.\\d]/"
       },
       {
         "description": "Group dependencies",

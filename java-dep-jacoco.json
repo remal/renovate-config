@@ -5,10 +5,7 @@
     "packageRules": [
       {
         "description": "Group dependencies",
-        "packagePatterns": [
-          "^org\\.jacoco:org\\.jacoco\\..+",
-          "^org\\.jacoco:jacoco-maven-plugin$"
-        ],
+        "packagePatterns": ["^org\\.jacoco:"],
         "groupName": "jacoco"
       }
     ]

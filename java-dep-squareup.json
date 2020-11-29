@@ -5,49 +5,49 @@
     "packageRules": [
       {
         "description": "Keep OkHttp3 major version if current version is 3.*",
-        "packagePatterns": ["^com\\.squareup\\.okhttp3:.+"],
+        "packagePatterns": ["^com\\.squareup\\.okhttp3:"],
         "matchCurrentVersion": "/^3\\./",
         "allowedVersions": "/^3\\./"
       },
 
       {
         "description": "Group OkHttp dependencies",
-        "packagePatterns": ["^com\\.squareup\\.okhttp\\d*:.+"],
+        "packagePatterns": ["^com\\.squareup\\.okhttp\\d*:"],
         "groupName": "okhttp"
       },
       {
         "description": "Group Okio dependencies",
-        "packagePatterns": ["^com\\.squareup\\.okio\\d*:.+"],
+        "packagePatterns": ["^com\\.squareup\\.okio\\d*:"],
         "groupName": "okio"
       },
       {
         "description": "Group LeakCanary dependencies",
-        "packagePatterns": ["^com\\.squareup\\.leakcanary\\d*:.+"],
+        "packagePatterns": ["^com\\.squareup\\.leakcanary\\d*:"],
         "groupName": "leakcanary"
       },
       {
         "description": "Group Moshi dependencies",
-        "packagePatterns": ["^com\\.squareup\\.moshi\\d*:.+"],
+        "packagePatterns": ["^com\\.squareup\\.moshi\\d*:"],
         "groupName": "moshi"
       },
       {
         "description": "Group Misk dependencies",
-        "packagePatterns": ["^com\\.squareup\\.misk\\d*:.+"],
+        "packagePatterns": ["^com\\.squareup\\.misk\\d*:"],
         "groupName": "misk"
       },
       {
         "description": "Group Retrofit dependencies",
-        "packagePatterns": ["^com\\.squareup\\.retrofit\\d*:.+"],
+        "packagePatterns": ["^com\\.squareup\\.retrofit\\d*:"],
         "groupName": "retrofit"
       },
       {
         "description": "Group SQLDelight dependencies",
-        "packagePatterns": ["^com\\.squareup\\.sqldelight\\d*:.+"],
+        "packagePatterns": ["^com\\.squareup\\.sqldelight\\d*:"],
         "groupName": "sqldelight"
       },
       {
         "description": "Group Wire dependencies",
-        "packagePatterns": ["^com\\.squareup\\.wire\\d*:.+"],
+        "packagePatterns": ["^com\\.squareup\\.wire\\d*:"],
         "groupName": "wire"
       }
     ]
