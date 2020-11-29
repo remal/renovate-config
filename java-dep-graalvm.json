@@ -6,6 +6,7 @@
       {
         "description": "Group dependencies",
         "packagePatterns": ["^org\\.graalvm[.:].+"],
+        "excludePackagePatterns": ["^org\\.graalvm\\.plugins[.:].+"],
         "groupName": "graalvm"
       }
     ]
