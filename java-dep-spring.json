@@ -1,0 +1,21 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": ["Settings for Java dependencies: Spring Framework"],
+  "java": {
+    "packageRules": [
+      {
+        "description": "Spring release train BOMs: use calver only",
+        "packageNames": [
+          "org.springframework.data:spring-data-bom",
+          "org.springframework.cloud:spring-cloud-dependencies"
+        ],
+        "allowedVersions": "/\\d{4}[.-].*/"
+      },
+      {
+        "description": "Spring Data release train BOM: ignore 0-9.*",
+        "packageNames": ["org.springframework.data:spring-data-releasetrain"],
+        "allowedVersions": "!/\\d\\..*/"
+      }
+    ]
+  }
+}

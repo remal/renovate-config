@@ -5,6 +5,7 @@
     "github>remal/renovate-config:java-dep-closure-compiler",
     "github>remal/renovate-config:java-dep-graalvm",
     "github>remal/renovate-config:java-dep-immutables",
-    "github>remal/renovate-config:java-dep-plantuml"
+    "github>remal/renovate-config:java-dep-plantuml",
+    "github>remal/renovate-config:java-dep-spring"
   ]
 }
