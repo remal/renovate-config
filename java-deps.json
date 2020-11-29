@@ -2,10 +2,15 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": ["Settings for Java libraries"],
   "extends": [
+    "github>remal/renovate-config:java-dep-asm",
     "github>remal/renovate-config:java-dep-closure-compiler",
     "github>remal/renovate-config:java-dep-graalvm",
     "github>remal/renovate-config:java-dep-immutables",
+    "github>remal/renovate-config:java-dep-jacoco",
+    "github>remal/renovate-config:java-dep-jgit",
+    "github>remal/renovate-config:java-dep-kotlin",
     "github>remal/renovate-config:java-dep-plantuml",
-    "github>remal/renovate-config:java-dep-spring"
+    "github>remal/renovate-config:java-dep-spring",
+    "github>remal/renovate-config:java-dep-squareup"
   ]
 }

@@ -4,14 +4,14 @@
   "java": {
     "packageRules": [
       {
-        "description": "Group dependencies",
-        "packagePatterns": ["^org\\.immutables:.+"],
-        "groupName": "immutables"
-      },
-      {
         "description": "Deny versions with 'ea' suffix",
         "packagePatterns": ["^org\\.immutables:.+"],
         "allowedVersions": "!/.*[-.]ea[-.\\d].*/"
+      },
+      {
+        "description": "Group dependencies",
+        "packagePatterns": ["^org\\.immutables:.+"],
+        "groupName": "immutables"
       }
     ]
   }
