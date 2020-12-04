@@ -9,12 +9,12 @@
           "org.springframework.data:spring-data-bom",
           "org.springframework.cloud:spring-cloud-dependencies"
         ],
-        "allowedVersions": "/\\d{4}[.-].*/"
+        "allowedVersions": "/^\\d{4}[.-]/"
       },
       {
         "description": ["springframework", "Spring Data release train BOM: ignore 0-9.*"],
         "packageNames": ["org.springframework.data:spring-data-releasetrain"],
-        "allowedVersions": "!/\\d\\..*/"
+        "allowedVersions": "!/^\\d\\./"
       }
     ]
   }
