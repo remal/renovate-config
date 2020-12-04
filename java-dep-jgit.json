@@ -4,7 +4,7 @@
   "java": {
     "packageRules": [
       {
-        "description": "Group dependencies",
+        "description": ["jgit", "Group dependencies"],
         "packagePatterns": ["^org\\.eclipse\\.jgit:"],
         "groupName": "jgit"
       }

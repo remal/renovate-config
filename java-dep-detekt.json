@@ -4,7 +4,7 @@
   "java": {
     "packageRules": [
       {
-        "description": "Group dependencies",
+        "description": ["detekt", "Group dependencies"],
         "packagePatterns": ["^io\\.gitlab\\.arturbosch\\.detekt:"],
         "groupName": "detekt"
       }

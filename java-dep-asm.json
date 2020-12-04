@@ -4,7 +4,7 @@
   "java": {
     "packageRules": [
       {
-        "description": "Group dependencies",
+        "description": ["asm", "Group dependencies"],
         "packagePatterns": ["^org\\.ow2\\.asm:"],
         "groupName": "asm"
       }

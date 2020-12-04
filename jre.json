@@ -8,12 +8,12 @@
   "java": {
     "packageRules": [
       {
-        "description": "Allow only versions with 'jre' suffix",
+        "description": ["guava", "Allow only versions with 'jre' suffix"],
         "packageNames": ["com.google.guava:guava"],
         "allowedVersions": "/-jre$/"
       },
       {
-        "description": "Deny versions with 'jre*' suffix",
+        "description": ["postgresql", "Deny versions with 'jre*' suffix"],
         "packageNames": ["org.postgresql:postgresql"],
         "allowedVersions": "!/-jre\\d*$/"
       }

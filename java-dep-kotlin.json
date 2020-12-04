@@ -4,7 +4,7 @@
   "java": {
     "packageRules": [
       {
-        "description": "Group dependencies",
+        "description": ["kotlin", "Group dependencies"],
         "packagePatterns": ["^org\\.jetbrains\\.kotlin:"],
         "groupName": "kotlin"
       }

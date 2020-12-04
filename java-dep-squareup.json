@@ -4,49 +4,49 @@
   "java": {
     "packageRules": [
       {
-        "description": "Keep OkHttp3 major version if current version is 3.*",
+        "description": ["squareup okhttp", "Keep OkHttp3 major version if current version is 3.*"],
         "packagePatterns": ["^com\\.squareup\\.okhttp3:"],
         "matchCurrentVersion": "/^3\\./",
         "allowedVersions": "/^3\\./"
       },
 
       {
-        "description": "Group OkHttp dependencies",
+        "description": ["squareup okhttp", "Group OkHttp dependencies"],
         "packagePatterns": ["^com\\.squareup\\.okhttp\\d*:"],
         "groupName": "okhttp"
       },
       {
-        "description": "Group Okio dependencies",
+        "description": ["squareup okio", "Group Okio dependencies"],
         "packagePatterns": ["^com\\.squareup\\.okio\\d*:"],
         "groupName": "okio"
       },
       {
-        "description": "Group LeakCanary dependencies",
+        "description": ["squareup leakcanary", "Group LeakCanary dependencies"],
         "packagePatterns": ["^com\\.squareup\\.leakcanary\\d*:"],
         "groupName": "leakcanary"
       },
       {
-        "description": "Group Moshi dependencies",
+        "description": ["squareup moshi", "Group Moshi dependencies"],
         "packagePatterns": ["^com\\.squareup\\.moshi\\d*:"],
         "groupName": "moshi"
       },
       {
-        "description": "Group Misk dependencies",
+        "description": ["squareup misk", "Group Misk dependencies"],
         "packagePatterns": ["^com\\.squareup\\.misk\\d*:"],
         "groupName": "misk"
       },
       {
-        "description": "Group Retrofit dependencies",
+        "description": ["squareup retrofit", "Group Retrofit dependencies"],
         "packagePatterns": ["^com\\.squareup\\.retrofit\\d*:"],
         "groupName": "retrofit"
       },
       {
-        "description": "Group SQLDelight dependencies",
+        "description": ["squareup sqldelight", "Group SQLDelight dependencies"],
         "packagePatterns": ["^com\\.squareup\\.sqldelight\\d*:"],
         "groupName": "sqldelight"
       },
       {
-        "description": "Group Wire dependencies",
+        "description": ["squareup wire", "Group Wire dependencies"],
         "packagePatterns": ["^com\\.squareup\\.wire\\d*:"],
         "groupName": "wire"
       }
