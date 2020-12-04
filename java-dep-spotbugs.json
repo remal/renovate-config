@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": ["Settings for Java dependencies: SpotBugs"],
+  "java": {
+    "packageRules": [
+      {
+        "description": ["spotbugs", "Group dependencies"],
+        "packagePatterns": ["^com\\.github\\.spotbugs:"],
+        "groupName": "spotbugs"
+      }
+    ]
+  }
+}
