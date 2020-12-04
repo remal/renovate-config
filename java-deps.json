@@ -7,6 +7,7 @@
     "github>remal/renovate-config:java-dep-detekt",
     "github>remal/renovate-config:java-dep-graalvm",
     "github>remal/renovate-config:java-dep-immutables",
+    "github>remal/renovate-config:java-dep-jackson",
     "github>remal/renovate-config:java-dep-jacoco",
     "github>remal/renovate-config:java-dep-jgit",
     "github>remal/renovate-config:java-dep-kotlin",
