@@ -6,7 +6,7 @@
       {
         "description": ["graalvm", "Group dependencies"],
         "packagePatterns": ["^org\\.graalvm[.:].+"],
-        "groupName": "graalvm"
+        "groupName": "org.graalvm"
       }
     ]
   }

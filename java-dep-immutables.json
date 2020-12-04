@@ -11,7 +11,7 @@
       {
         "description": ["immutables", "Group dependencies"],
         "packagePatterns": ["^org\\.immutables:.+"],
-        "groupName": "immutables"
+        "groupName": "org.immutables"
       }
     ]
   }

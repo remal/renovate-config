@@ -6,7 +6,7 @@
       {
         "description": ["jgit", "Group dependencies"],
         "packagePatterns": ["^org\\.eclipse\\.jgit:"],
-        "groupName": "jgit"
+        "groupName": "org.eclipse.jgit"
       }
     ]
   }

@@ -6,7 +6,7 @@
       {
         "description": ["asm", "Group dependencies"],
         "packagePatterns": ["^org\\.ow2\\.asm:"],
-        "groupName": "asm"
+        "groupName": "org.ow2.asm"
       }
     ]
   }

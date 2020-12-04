@@ -6,7 +6,7 @@
       {
         "description": ["jacoco", "Group dependencies"],
         "packagePatterns": ["^org\\.jacoco:"],
-        "groupName": "jacoco"
+        "groupName": "org.jacoco"
       }
     ]
   }

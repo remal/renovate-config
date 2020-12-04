@@ -13,42 +13,42 @@
       {
         "description": ["squareup okhttp", "Group OkHttp dependencies"],
         "packagePatterns": ["^com\\.squareup\\.okhttp\\d*:"],
-        "groupName": "okhttp"
+        "groupName": "com.squareup.okhttp"
       },
       {
         "description": ["squareup okio", "Group Okio dependencies"],
         "packagePatterns": ["^com\\.squareup\\.okio\\d*:"],
-        "groupName": "okio"
+        "groupName": "com.squareup.okio"
       },
       {
         "description": ["squareup leakcanary", "Group LeakCanary dependencies"],
         "packagePatterns": ["^com\\.squareup\\.leakcanary\\d*:"],
-        "groupName": "leakcanary"
+        "groupName": "com.squareup.leakcanary"
       },
       {
         "description": ["squareup moshi", "Group Moshi dependencies"],
         "packagePatterns": ["^com\\.squareup\\.moshi\\d*:"],
-        "groupName": "moshi"
+        "groupName": "com.squareup.moshi"
       },
       {
         "description": ["squareup misk", "Group Misk dependencies"],
         "packagePatterns": ["^com\\.squareup\\.misk\\d*:"],
-        "groupName": "misk"
+        "groupName": "com.squareup.misk"
       },
       {
         "description": ["squareup retrofit", "Group Retrofit dependencies"],
         "packagePatterns": ["^com\\.squareup\\.retrofit\\d*:"],
-        "groupName": "retrofit"
+        "groupName": "com.squareup.retrofit"
       },
       {
         "description": ["squareup sqldelight", "Group SQLDelight dependencies"],
         "packagePatterns": ["^com\\.squareup\\.sqldelight\\d*:"],
-        "groupName": "sqldelight"
+        "groupName": "com.squareup.sqldelight"
       },
       {
         "description": ["squareup wire", "Group Wire dependencies"],
         "packagePatterns": ["^com\\.squareup\\.wire\\d*:"],
-        "groupName": "wire"
+        "groupName": "com.squareup.wire"
       }
     ]
   }

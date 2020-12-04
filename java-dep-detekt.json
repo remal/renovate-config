@@ -6,7 +6,7 @@
       {
         "description": ["detekt", "Group dependencies"],
         "packagePatterns": ["^io\\.gitlab\\.arturbosch\\.detekt:"],
-        "groupName": "detekt"
+        "groupName": "io.gitlab.arturbosch.detekt"
       }
     ]
   }
