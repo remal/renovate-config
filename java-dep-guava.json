@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": ["Settings for Java dependencies: Guava"],
+  "java": {
+    "packageRules": [
+      {
+        "description": ["guava", "Keep suffix: jre"],
+        "packageNames": ["'com.google.guava:guava"],
+        "matchCurrentVersion": "-jre$",
+        "allowedVersions": "-jre$"
+      },
+      {
+        "description": ["guava", "Keep suffix: android"],
+        "packageNames": ["'com.google.guava:guava"],
+        "matchCurrentVersion": "-android$",
+        "allowedVersions": "-android$"
+      }
+    ]
+  }
+}
