@@ -13,6 +13,7 @@
     "github>remal/renovate-config:java-dep-jgit",
     "github>remal/renovate-config:java-dep-kotlin",
     "github>remal/renovate-config:java-dep-plantuml",
+    "github>remal/renovate-config:java-dep-postgresql",
     "github>remal/renovate-config:java-dep-spotbugs",
     "github>remal/renovate-config:java-dep-spring",
     "github>remal/renovate-config:java-dep-squareup"

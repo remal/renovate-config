@@ -3,15 +3,5 @@
   "description": ["Settings for JRE projects"],
   "extends": [
     "github>remal/renovate-config:global"
-  ],
-
-  "java": {
-    "packageRules": [
-      {
-        "description": ["postgresql", "Deny versions with 'jre*' suffix"],
-        "packageNames": ["org.postgresql:postgresql"],
-        "allowedVersions": "!/-jre\\d*$/"
-      }
-    ]
-  }
+  ]
 }

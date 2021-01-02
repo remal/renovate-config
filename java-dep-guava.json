@@ -15,6 +15,7 @@
         "matchCurrentVersion": "/-android$/",
         "allowedVersions": "/-android$/"
       },
+
       {
         "description": ["guava", "Deny other suffixes"],
         "packageNames": ["com.google.guava:guava"],
