@@ -19,6 +19,7 @@
       {
         "description": ["guava", "Deny other suffixes"],
         "packageNames": ["com.google.guava:guava"],
+        "matchCurrentVersion": "!/-(jre|android)$/",
         "enabled": "false"
       }
     ]
