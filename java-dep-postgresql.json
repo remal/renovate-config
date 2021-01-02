@@ -51,6 +51,7 @@
       {
         "description": ["postgresql", "Deny other suffixes"],
         "packageNames": ["org.postgresql:postgresql"],
+        "matchCurrentVersion": "!/(^[\\d.]+$|-(jre7|jre6|jdbc42|jdbc41|jdbc4|jdbc3)$)/",
         "enabled": "false"
       }
     ]
