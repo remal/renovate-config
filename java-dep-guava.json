@@ -5,19 +5,19 @@
     "packageRules": [
       {
         "description": ["guava", "Keep suffix: jre"],
-        "packageNames": ["'com.google.guava:guava"],
+        "packageNames": ["com.google.guava:guava"],
         "matchCurrentVersion": "/-jre$/",
         "allowedVersions": "/-jre$/"
       },
       {
         "description": ["guava", "Keep suffix: android"],
-        "packageNames": ["'com.google.guava:guava"],
+        "packageNames": ["com.google.guava:guava"],
         "matchCurrentVersion": "/-android$/",
         "allowedVersions": "/-android$/"
       },
       {
         "description": ["guava", "Deny other suffixes"],
-        "packageNames": ["'com.google.guava:guava"],
+        "packageNames": ["com.google.guava:guava"],
         "enabled": "false"
       }
     ]
