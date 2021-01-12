@@ -8,15 +8,45 @@
     "extends": ["github>remal/renovate-config:parameterized-label(submodules)"]
   },
 
+  "dart": {
+    "extends": ["github>remal/renovate-config:parameterized-label(dart)"]
+  },
   "docker": {
     "extends": ["github>remal/renovate-config:parameterized-label(docker)"]
   },
-
+  "dotnet": {
+    "extends": ["github>remal/renovate-config:parameterized-label(dotnet)"]
+  },
+  "elixir": {
+    "extends": ["github>remal/renovate-config:parameterized-label(elixir)"]
+  },
+  "golang": {
+    "extends": ["github>remal/renovate-config:parameterized-label(golang)"]
+  },
   "java": {
     "extends": ["github>remal/renovate-config:parameterized-label(java)"]
   },
+  "js": {
+    "extends": ["github>remal/renovate-config:parameterized-label(js)"]
+  },
+  "php": {
+    "extends": ["github>remal/renovate-config:parameterized-label(php)"]
+  },
+  "python": {
+    "extends": ["github>remal/renovate-config:parameterized-label(python)"]
+  },
+  "ruby": {
+    "extends": ["github>remal/renovate-config:parameterized-label(ruby)"]
+  },
+  "rust": {
+    "extends": ["github>remal/renovate-config:parameterized-label(rust)"]
+  },
+
   "gradle-wrapper": {
     "extends": ["github>remal/renovate-config:parameterized-label(gradle)"]
+  },
+  "node": {
+    "extends": ["github>remal/renovate-config:parameterized-label(node)"]
   },
 
   "github-actions": {
