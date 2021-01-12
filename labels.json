@@ -2,27 +2,27 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": ["Pull Request labels"],
 
-  "extends": ["github>remal/renovate-config:label(unknown)"],
+  "extends": ["github>remal/renovate-config:parameterized-label(unknown)"],
 
   "git-submodules": {
-    "extends": ["github>remal/renovate-config:label(submodules)"]
+    "extends": ["github>remal/renovate-config:parameterized-label(submodules)"]
   },
 
   "docker": {
-    "extends": ["github>remal/renovate-config:label(docker)"]
+    "extends": ["github>remal/renovate-config:parameterized-label(docker)"]
   },
 
   "java": {
-    "extends": ["github>remal/renovate-config:label(java)"]
+    "extends": ["github>remal/renovate-config:parameterized-label(java)"]
   },
   "gradle-wrapper": {
-    "extends": ["github>remal/renovate-config:label(gradle)"]
+    "extends": ["github>remal/renovate-config:parameterized-label(gradle)"]
   },
 
   "github-actions": {
-    "extends": ["github>remal/renovate-config:label(ci)"]
+    "extends": ["github>remal/renovate-config:parameterized-label(ci)"]
   },
   "travis": {
-    "extends": ["github>remal/renovate-config:label(ci)"]
+    "extends": ["github>remal/renovate-config:parameterized-label(ci)"]
   }
 }
