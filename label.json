@@ -1,0 +1,13 @@
+{
+  "labels": ["dependencies", "{{arg0}}"],
+
+  "major": {
+    "labels": ["dependencies", "dependencies-major", "{{arg0}}"]
+  },
+  "minor": {
+    "labels": ["dependencies", "dependencies-minor", "{{arg0}}"]
+  },
+  "patch": {
+    "labels": ["dependencies", "dependencies-patch", "{{arg0}}"]
+  }
+}
