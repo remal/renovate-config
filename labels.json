@@ -49,7 +49,25 @@
     "extends": ["github>remal/renovate-config:parameterized-label(node)"]
   },
 
+  "azure-pipelines": {
+    "extends": ["github>remal/renovate-config:parameterized-label(ci)"]
+  },
+  "circleci": {
+    "extends": ["github>remal/renovate-config:parameterized-label(ci)"]
+  },
+  "droneci": {
+    "extends": ["github>remal/renovate-config:parameterized-label(ci)"]
+  },
   "github-actions": {
+    "extends": ["github>remal/renovate-config:parameterized-label(ci)"]
+  },
+  "gitlabci": {
+    "extends": ["github>remal/renovate-config:parameterized-label(ci)"]
+  },
+  "gitlabci-include": {
+    "extends": ["github>remal/renovate-config:parameterized-label(ci)"]
+  },
+  "jenkins": {
     "extends": ["github>remal/renovate-config:parameterized-label(ci)"]
   },
   "travis": {
