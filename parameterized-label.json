@@ -11,5 +11,20 @@
   },
   "patch": {
     "labels": ["dependencies", "dependencies-patch", "{{arg0}}"]
+  },
+  "pin": {
+    "labels": ["dependencies", "dependencies-pin", "{{arg0}}"]
+  },
+  "digest": {
+    "labels": ["dependencies", "dependencies-digest", "{{arg0}}"]
+  },
+  "lockFileMaintenance": {
+    "labels": ["dependencies", "dependencies-lockFileMaintenance", "{{arg0}}"]
+  },
+  "rollback": {
+    "labels": ["dependencies", "dependencies-rollback", "{{arg0}}"]
+  },
+  "bump": {
+    "labels": ["dependencies", "dependencies-bump", "{{arg0}}"]
   }
 }
