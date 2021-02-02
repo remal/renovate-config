@@ -4,27 +4,27 @@
   "labels": ["dependencies", "dependencies-{{arg0}}"],
 
   "major": {
-    "labels": ["dependencies", "dependencies-major", "dependencies-{{arg0}}"]
+    "labels": ["dependencies", "dependencies-major", "dependencies-{{arg0}}", "dependencies-{{arg0}}-major"]
   },
   "minor": {
-    "labels": ["dependencies", "dependencies-minor", "dependencies-{{arg0}}"]
+    "labels": ["dependencies", "dependencies-minor", "dependencies-{{arg0}}", "dependencies-{{arg0}}-minor"]
   },
   "patch": {
-    "labels": ["dependencies", "dependencies-patch", "dependencies-{{arg0}}"]
+    "labels": ["dependencies", "dependencies-patch", "dependencies-{{arg0}}", "dependencies-{{arg0}}-patch"]
   },
   "pin": {
-    "labels": ["dependencies", "dependencies-pin", "dependencies-{{arg0}}"]
+    "labels": ["dependencies", "dependencies-pin", "dependencies-{{arg0}}", "dependencies-{{arg0}}-pin"]
   },
   "digest": {
-    "labels": ["dependencies", "dependencies-digest", "dependencies-{{arg0}}"]
+    "labels": ["dependencies", "dependencies-digest", "dependencies-{{arg0}}", "dependencies-{{arg0}}-digest"]
   },
   "lockFileMaintenance": {
-    "labels": ["dependencies", "dependencies-lockFileMaintenance", "dependencies-{{arg0}}"]
+    "labels": ["dependencies", "dependencies-lockFileMaintenance", "dependencies-{{arg0}}", "dependencies-{{arg0}}-lockFileMaintenance"]
   },
   "rollback": {
-    "labels": ["dependencies", "dependencies-rollback", "dependencies-{{arg0}}"]
+    "labels": ["dependencies", "dependencies-rollback", "dependencies-{{arg0}}", "dependencies-{{arg0}}-rollback"]
   },
   "bump": {
-    "labels": ["dependencies", "dependencies-bump", "dependencies-{{arg0}}"]
+    "labels": ["dependencies", "dependencies-bump", "dependencies-{{arg0}}", "dependencies-{{arg0}}-bump"]
   }
 }
