@@ -6,6 +6,7 @@
     "github>remal/renovate-config:java-dep-closure-compiler",
     "github>remal/renovate-config:java-dep-detekt",
     "github>remal/renovate-config:java-dep-graalvm",
+    "github>remal/renovate-config:java-dep-gradle-api",
     "github>remal/renovate-config:java-dep-guava",
     "github>remal/renovate-config:java-dep-immutables",
     "github>remal/renovate-config:java-dep-jackson",

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": ["Settings for Java dependencies: Gradle API"],
+  "java": {
+    "packageRules": [
+      {
+        "description": ["gradle-api", "Disable automatic Gradle API upgrades"],
+        "packagePatterns": [
+            "^name\\.remal\\.gradle-api:"
+        ],
+        "enabled": false
+      }
+    ]
+  }
+}
