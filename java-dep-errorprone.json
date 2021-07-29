@@ -4,7 +4,7 @@
   "java": {
     "packageRules": [
       {
-        "description": ["errorprone", "Group dependencies"],
+        "description": ["errorprone: group dependencies"],
         "packagePatterns": ["^com\\.google\\.errorprone:"],
         "groupName": "com.google.errorprone"
       }

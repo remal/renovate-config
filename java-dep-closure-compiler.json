@@ -4,7 +4,7 @@
   "java": {
     "packageRules": [
       {
-        "description": ["closure-compiler", "Allow only vYYYYMMDD versions"],
+        "description": ["closure-compiler: allow only vYYYYMMDD versions"],
         "packageNames": ["com.google.javascript:closure-compiler"],
         "allowedVersions": "/^v\\d{4}\\d{2}\\d{2}$/",
         "versioning": "loose"

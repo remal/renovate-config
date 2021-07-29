@@ -4,7 +4,7 @@
   "java": {
     "packageRules": [
       {
-        "description": ["auto-service", "Group dependencies"],
+        "description": ["auto-service: group dependencies"],
         "packagePatterns": ["^com\\.google\\.auto\\.service:"],
         "groupName": "com.google.auto.service"
       }

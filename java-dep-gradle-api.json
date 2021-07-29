@@ -4,7 +4,7 @@
   "java": {
     "packageRules": [
       {
-        "description": ["gradle-api", "Disable automatic Gradle API upgrades"],
+        "description": ["gradle-api: disable automatic Gradle API upgrades"],
         "packagePatterns": [
             "^name\\.remal\\.gradle-api:"
         ],

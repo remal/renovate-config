@@ -4,7 +4,7 @@
   "java": {
     "packageRules": [
       {
-        "description": ["graalvm", "Group dependencies"],
+        "description": ["graalvm: group dependencies"],
         "packagePatterns": ["^org\\.graalvm[.:].+"],
         "groupName": "org.graalvm"
       }

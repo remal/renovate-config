@@ -4,7 +4,7 @@
   "java": {
     "packageRules": [
       {
-        "description": ["spotbugs", "Group dependencies"],
+        "description": ["spotbugs: group dependencies"],
         "packagePatterns": ["^com\\.github\\.spotbugs:"],
         "groupName": "com.github.spotbugs"
       }

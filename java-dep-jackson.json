@@ -4,7 +4,7 @@
   "java": {
     "packageRules": [
       {
-        "description": ["jackson", "Group dependencies"],
+        "description": ["jackson: group dependencies"],
         "packagePatterns": ["^com\\.fasterxml\\.jackson[.:].+"],
         "groupName": "com.fasterxml.jackson"
       }

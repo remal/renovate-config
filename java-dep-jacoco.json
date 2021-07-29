@@ -4,7 +4,7 @@
   "java": {
     "packageRules": [
       {
-        "description": ["jacoco", "Group dependencies"],
+        "description": ["jacoco: group dependencies"],
         "packagePatterns": ["^org\\.jacoco:"],
         "groupName": "org.jacoco"
       }

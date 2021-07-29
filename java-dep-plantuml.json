@@ -4,7 +4,7 @@
   "java": {
     "packageRules": [
       {
-        "description": ["plantuml", "Allow only semver versions"],
+        "description": ["plantuml: allow only semver versions"],
         "packageNames": ["net.sourceforge.plantuml:plantuml"],
         "allowedVersions": "/^\\d+(\\.\\d+){3,}$/"
       }
