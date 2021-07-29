@@ -4,6 +4,11 @@
   "java": {
     "packageRules": [
       {
+        "description": ["springframework: group dependencies"],
+        "packagePatterns": ["^org\\.springframework[:.].+"],
+        "groupName": "org.springframework"
+      },
+      {
         "description": ["springframework: Spring release train BOMs: use CalVer only"],
         "packageNames": [
           "org.springframework.data:spring-data-bom",
