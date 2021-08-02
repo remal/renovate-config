@@ -16,7 +16,9 @@
   "separateMultipleMajor": false,
   "separateMajorMinor": false,
   "separateMinorPatch": false,
+  "semanticCommits": "disabled",
   "prCreation": "immediate",
+  "rollbackPrs": true,
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "assigneesFromCodeOwners": true,
@@ -24,5 +26,9 @@
 
   "dependencyDashboard": false,
   "dependencyDashboardAutoclose": true,
-  "dependencyDashboardTitle": "Renovate updates"
+  "dependencyDashboardTitle": "Renovate updates",
+
+  "gitIgnoredAuthors": [
+    "mergify[bot]@users.noreply.github.com"
+  ]
 }
