@@ -18,7 +18,7 @@
   "separateMinorPatch": false,
   "semanticCommits": "disabled",
   "prCreation": "immediate",
-  "rollbackPrs": true,
+  "rollbackPrs": false,
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "assigneesFromCodeOwners": true,
