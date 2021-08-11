@@ -21,8 +21,11 @@
   "rollbackPrs": false,
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
+
   "assigneesFromCodeOwners": true,
+  "assigneesSampleSize": 1,
   "reviewersFromCodeOwners": true,
+  "reviewersSampleSize": 1,
 
   "dependencyDashboard": false,
   "dependencyDashboardAutoclose": true,
