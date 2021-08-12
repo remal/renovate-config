@@ -5,6 +5,7 @@
     "github>remal/renovate-config:java-dep-asm",
     "github>remal/renovate-config:java-dep-auto-service",
     "github>remal/renovate-config:java-dep-closure-compiler",
+    "github>remal/renovate-config:java-dep-database-rider",
     "github>remal/renovate-config:java-dep-detekt",
     "github>remal/renovate-config:java-dep-errorprone",
     "github>remal/renovate-config:java-dep-graalvm",

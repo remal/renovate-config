@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": ["Settings for Java dependencies: Database Rider"],
+  "java": {
+    "packageRules": [
+      {
+        "description": ["Database Rider: group dependencies"],
+        "packagePatterns": ["^com\\.github\\.database-rider:"],
+        "groupName": "com.github.database-rider"
+      }
+    ]
+  }
+}
