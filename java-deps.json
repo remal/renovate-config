@@ -14,6 +14,7 @@
     "github>remal/renovate-config:java-dep-immutables",
     "github>remal/renovate-config:java-dep-jackson",
     "github>remal/renovate-config:java-dep-jacoco",
+    "github>remal/renovate-config:java-dep-javaparser",
     "github>remal/renovate-config:java-dep-jgit",
     "github>remal/renovate-config:java-dep-kotlin",
     "github>remal/renovate-config:java-dep-plantuml",
