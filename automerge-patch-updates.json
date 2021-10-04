@@ -1,0 +1,12 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": ["Automerge patch updates"],
+
+  "patch": {
+    "description": ["Automerge patch updates"],
+    "automerge": true,
+    "gitLabAutomerge": true,
+    "assigneesFromCodeOwners": false,
+    "reviewersFromCodeOwners": false
+  }
+}

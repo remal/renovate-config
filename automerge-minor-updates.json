@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": ["Automerge minor updates"],
+
+  "extends": ["github>remal/renovate-config:automerge-patch-updates"],
+
+  "minor": {
+    "description": ["Automerge minor updates"],
+    "automerge": true,
+    "gitLabAutomerge": true,
+    "assigneesFromCodeOwners": false,
+    "reviewersFromCodeOwners": false
+  }
+}
