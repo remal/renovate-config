@@ -13,9 +13,9 @@
   "configWarningReuseIssue": false,
 
   "stabilityDays": 1,
-  "separateMultipleMajor": false,
-  "separateMajorMinor": false,
-  "separateMinorPatch": false,
+  "separateMultipleMajor": true,
+  "separateMajorMinor": true,
+  "separateMinorPatch": true,
   "semanticCommits": "disabled",
   "prCreation": "immediate",
   "rollbackPrs": false,
