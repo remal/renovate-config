@@ -6,9 +6,8 @@
 
   "minor": {
     "description": ["Automerge minor updates"],
-    "automerge": true,
-    "gitLabAutomerge": true,
-    "assigneesFromCodeOwners": false,
-    "reviewersFromCodeOwners": false
+    "extends": [
+      "github>remal/renovate-config:automerge",
+    ]
   }
 }

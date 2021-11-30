@@ -4,9 +4,8 @@
 
   "patch": {
     "description": ["Automerge patch updates"],
-    "automerge": true,
-    "gitLabAutomerge": true,
-    "assigneesFromCodeOwners": false,
-    "reviewersFromCodeOwners": false
+    "extends": [
+      "github>remal/renovate-config:automerge",
+    ]
   }
 }
