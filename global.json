@@ -12,9 +12,6 @@
   "onboarding": false,
   "configWarningReuseIssue": false,
 
-  "pin": true,
-  "pinDigests": true,
-
   "stabilityDays": 1,
   "separateMultipleMajor": true,
   "separateMajorMinor": true,
