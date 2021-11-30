@@ -7,7 +7,7 @@
   "minor": {
     "description": ["Automerge minor updates"],
     "extends": [
-      "github>remal/renovate-config:automerge",
+      "github>remal/renovate-config:automerge"
     ]
   }
 }

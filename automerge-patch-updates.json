@@ -5,7 +5,7 @@
   "patch": {
     "description": ["Automerge patch updates"],
     "extends": [
-      "github>remal/renovate-config:automerge",
+      "github>remal/renovate-config:automerge"
     ]
   }
 }

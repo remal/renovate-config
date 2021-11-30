@@ -5,7 +5,7 @@
   "digest": {
     "description": ["Automerge Docker digest updates"],
     "extends": [
-      "github>remal/renovate-config:automerge",
+      "github>remal/renovate-config:automerge"
     ]
   }
 }
