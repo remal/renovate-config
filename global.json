@@ -13,9 +13,11 @@
   "configWarningReuseIssue": false,
 
   "stabilityDays": 1,
+
   "separateMultipleMajor": true,
   "separateMajorMinor": true,
   "separateMinorPatch": true,
+
   "semanticCommits": "disabled",
   "prCreation": "immediate",
   "rollbackPrs": false,
@@ -30,6 +32,10 @@
   "dependencyDashboard": false,
   "dependencyDashboardAutoclose": true,
   "dependencyDashboardTitle": "Renovate updates",
+
+  "patch": {
+    "stabilityDays": 0
+  },
 
   "gitIgnoredAuthors": [
     "mergify[bot]@users.noreply.github.com"
