@@ -6,5 +6,6 @@
   "platformAutomerge": true,
   "gitLabAutomerge": true,
   "assigneesFromCodeOwners": false,
-  "reviewersFromCodeOwners": false
+  "reviewersFromCodeOwners": false,
+  "addLabels": ["dependencies-automerge"]
 }

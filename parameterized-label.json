@@ -1,30 +1,30 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
 
-  "labels": ["dependencies", "dependencies-{{arg0}}"],
+  "addLabels": ["dependencies", "dependencies-{{arg0}}"],
 
   "major": {
-    "labels": ["dependencies", "dependencies-major", "dependencies-{{arg0}}", "dependencies-{{arg0}}-major"]
+    "addLabels": ["dependencies-major", "dependencies-{{arg0}}-major"]
   },
   "minor": {
-    "labels": ["dependencies", "dependencies-minor", "dependencies-{{arg0}}", "dependencies-{{arg0}}-minor"]
+    "addLabels": ["dependencies-minor", "dependencies-{{arg0}}-minor"]
   },
   "patch": {
-    "labels": ["dependencies", "dependencies-patch", "dependencies-{{arg0}}", "dependencies-{{arg0}}-patch"]
+    "addLabels": ["dependencies-patch", "dependencies-{{arg0}}-patch"]
   },
   "pin": {
-    "labels": ["dependencies", "dependencies-pin", "dependencies-{{arg0}}", "dependencies-{{arg0}}-pin"]
+    "addLabels": ["dependencies-pin", "dependencies-{{arg0}}-pin"]
   },
   "digest": {
-    "labels": ["dependencies", "dependencies-digest", "dependencies-{{arg0}}", "dependencies-{{arg0}}-digest"]
+    "addLabels": ["dependencies-digest", "dependencies-{{arg0}}-digest"]
   },
   "lockFileMaintenance": {
-    "labels": ["dependencies", "dependencies-lockFileMaintenance", "dependencies-{{arg0}}", "dependencies-{{arg0}}-lockFileMaintenance"]
+    "addLabels": ["dependencies-lockFileMaintenance", "dependencies-{{arg0}}-lockFileMaintenance"]
   },
   "rollback": {
-    "labels": ["dependencies", "dependencies-rollback", "dependencies-{{arg0}}", "dependencies-{{arg0}}-rollback"]
+    "addLabels": ["dependencies-rollback", "dependencies-{{arg0}}-rollback"]
   },
   "bump": {
-    "labels": ["dependencies", "dependencies-bump", "dependencies-{{arg0}}", "dependencies-{{arg0}}-bump"]
+    "addLabels": ["dependencies-bump", "dependencies-{{arg0}}-bump"]
   }
 }
