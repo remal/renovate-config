@@ -23,6 +23,7 @@
   "rollbackPrs": false,
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
+  "updateInternalDeps": true,
 
   "assigneesFromCodeOwners": true,
   "assigneesSampleSize": 1,
