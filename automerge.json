@@ -5,6 +5,8 @@
   "automerge": true,
   "platformAutomerge": true,
   "gitLabAutomerge": true,
+  "azureAutoApprove": true,
+  "assignAutomerge": false,
   "assigneesFromCodeOwners": false,
   "reviewersFromCodeOwners": false,
   "addLabels": [
