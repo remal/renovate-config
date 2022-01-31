@@ -1,9 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": ["Automerge Docker digest updates"],
+  "description": "Automerge Docker digest updates",
 
   "digest": {
-    "description": ["Automerge Docker digest updates"],
+    "description": "Automerge Docker digest updates",
     "extends": [
       "github>remal/renovate-config:automerge"
     ]

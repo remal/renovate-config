@@ -1,11 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": ["Enable automerge"],
+  "description": "Enable automerge",
 
   "automerge": true,
   "platformAutomerge": true,
   "gitLabAutomerge": true,
   "assigneesFromCodeOwners": false,
   "reviewersFromCodeOwners": false,
-  "addLabels": ["dependencies-automerge"]
+  "addLabels": [
+    "dependencies-automerge"
+  ]
 }

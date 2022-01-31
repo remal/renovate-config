@@ -1,11 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": ["Settings for Java dependencies: Jackson"],
+  "description": "Settings for Java dependencies: Jackson",
+
   "java": {
     "packageRules": [
       {
-        "description": ["jackson: group dependencies"],
-        "packagePatterns": ["^com\\.fasterxml\\.jackson[.:].+"],
+        "description": "jackson: group dependencies",
+        "packagePatterns": [
+          "^com\\.fasterxml\\.jackson[.:].+"
+        ],
         "groupName": "com.fasterxml.jackson"
       }
     ]

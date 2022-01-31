@@ -1,30 +1,48 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
 
-  "addLabels": ["dependencies", "dependencies-{{arg0}}"],
+  "addLabels": [
+    "dependencies-{{arg0}}"
+  ],
 
   "major": {
-    "addLabels": ["dependencies-major", "dependencies-{{arg0}}-major"]
+    "addLabels": [
+      "dependencies-{{arg0}}-major"
+    ]
   },
   "minor": {
-    "addLabels": ["dependencies-minor", "dependencies-{{arg0}}-minor"]
+    "addLabels": [
+      "dependencies-{{arg0}}-minor"
+    ]
   },
   "patch": {
-    "addLabels": ["dependencies-patch", "dependencies-{{arg0}}-patch"]
+    "addLabels": [
+      "dependencies-{{arg0}}-patch"
+    ]
   },
   "pin": {
-    "addLabels": ["dependencies-pin", "dependencies-{{arg0}}-pin"]
+    "addLabels": [
+      "dependencies-{{arg0}}-pin"
+    ]
   },
   "digest": {
-    "addLabels": ["dependencies-digest", "dependencies-{{arg0}}-digest"]
+    "addLabels": [
+      "dependencies-{{arg0}}-digest"
+    ]
   },
   "lockFileMaintenance": {
-    "addLabels": ["dependencies-lockFileMaintenance", "dependencies-{{arg0}}-lockFileMaintenance"]
+    "addLabels": [
+      "dependencies-{{arg0}}-lockFileMaintenance"
+    ]
   },
   "rollback": {
-    "addLabels": ["dependencies-rollback", "dependencies-{{arg0}}-rollback"]
+    "addLabels": [
+      "dependencies-{{arg0}}-rollback"
+    ]
   },
   "bump": {
-    "addLabels": ["dependencies-bump", "dependencies-{{arg0}}-bump"]
+    "addLabels": [
+      "dependencies-{{arg0}}-bump"
+    ]
   }
 }

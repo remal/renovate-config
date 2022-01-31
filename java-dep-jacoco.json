@@ -1,11 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": ["Settings for Java dependencies: Jacoco"],
+  "description": "Settings for Java dependencies: Jacoco",
+
   "java": {
     "packageRules": [
       {
-        "description": ["jacoco: group dependencies"],
-        "packagePatterns": ["^org\\.jacoco:"],
+        "description": "jacoco: group dependencies",
+        "packagePatterns": [
+          "^org\\.jacoco:"
+        ],
         "groupName": "org.jacoco"
       }
     ]

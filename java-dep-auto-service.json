@@ -1,11 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": ["Settings for Java dependencies: auto-service"],
+  "description": "Settings for Java dependencies: auto-service",
+
   "java": {
     "packageRules": [
       {
-        "description": ["auto-service: group dependencies"],
-        "packagePatterns": ["^com\\.google\\.auto\\.service:"],
+        "description": "auto-service: group dependencies",
+        "packagePatterns": [
+          "^com\\.google\\.auto\\.service:"
+        ],
         "groupName": "com.google.auto.service"
       }
     ]

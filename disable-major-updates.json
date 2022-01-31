@@ -1,10 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": ["Disable major updates"],
+  "description": "Disable major updates",
 
   "separateMajorMinor": true,
   "major": {
-    "description": ["Disable major updates"],
+    "description": "Disable major updates",
     "enabled": false
   }
 }

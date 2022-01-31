@@ -1,10 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": ["Settings for Java dependencies: Spring Framework"],
+  "description": "Settings for Java dependencies: Spring Framework",
+
   "java": {
     "packageRules": [
       {
-        "description": ["springframework: Spring release train BOMs: use CalVer only"],
+        "description": "springframework: Spring release train BOMs: use CalVer only",
         "packageNames": [
           "org.springframework.data:spring-data-bom",
           "org.springframework.cloud:spring-cloud-dependencies"
@@ -12,13 +13,17 @@
         "allowedVersions": "/^\\d{4}[.-]/"
       },
       {
-        "description": ["springframework: Spring Data release train BOM: ignore 0-9.*"],
-        "packageNames": ["org.springframework.data:spring-data-releasetrain"],
+        "description": "springframework: Spring Data release train BOM: ignore 0-9.*",
+        "packageNames": [
+          "org.springframework.data:spring-data-releasetrain"
+        ],
         "allowedVersions": "!/^\\d\\./"
       },
       {
-        "description": ["springframework: group dependencies"],
-        "packagePatterns": ["^org\\.springframework[:.].+"],
+        "description": "springframework: group dependencies",
+        "packagePatterns": [
+          "^org\\.springframework[:.].+"
+        ],
         "groupName": "org.springframework"
       }
     ]

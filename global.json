@@ -1,6 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": ["Settings for all projects"],
+  "description": "Settings for all projects",
+
   "extends": [
     "config:base",
     "group:recommended",

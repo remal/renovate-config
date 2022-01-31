@@ -1,11 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": ["Settings for Java dependencies: JavaParser"],
+  "description": "Settings for Java dependencies: JavaParser",
+
   "java": {
     "packageRules": [
       {
-        "description": ["javaparser: group dependencies"],
-        "packagePatterns": ["^com\\.github\\.javaparser:"],
+        "description": "javaparser: group dependencies",
+        "packagePatterns": [
+          "^com\\.github\\.javaparser:"
+        ],
         "groupName": "com.github.javaparser"
       }
     ]

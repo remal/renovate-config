@@ -1,11 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": ["Settings for Java dependencies: Kotlin"],
+  "description": "Settings for Java dependencies: Kotlin",
+
   "java": {
     "packageRules": [
       {
-        "description": ["kotlin: group dependencies"],
-        "packagePatterns": ["^org\\.jetbrains\\.kotlin:"],
+        "description": "kotlin: group dependencies",
+        "packagePatterns": [
+          "^org\\.jetbrains\\.kotlin:"
+        ],
         "groupName": "org.jetbrains.kotlin"
       }
     ]

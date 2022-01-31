@@ -1,11 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": ["Settings for Java dependencies: ErrorProne"],
+  "description": "Settings for Java dependencies: ErrorProne",
+
   "java": {
     "packageRules": [
       {
-        "description": ["errorprone: group dependencies"],
-        "packagePatterns": ["^com\\.google\\.errorprone:"],
+        "description": "errorprone: group dependencies",
+        "packagePatterns": [
+          "^com\\.google\\.errorprone:"
+        ],
         "groupName": "com.google.errorprone"
       }
     ]

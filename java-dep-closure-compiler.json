@@ -1,11 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": ["Settings for Java dependencies: Closure Compiler"],
+  "description": "Settings for Java dependencies: Closure Compiler",
+
   "java": {
     "packageRules": [
       {
-        "description": ["closure-compiler: allow only vYYYYMMDD versions"],
-        "packageNames": ["com.google.javascript:closure-compiler"],
+        "description": "closure-compiler: allow only vYYYYMMDD versions",
+        "packageNames": [
+          "com.google.javascript:closure-compiler"
+        ],
         "allowedVersions": "/^v\\d{4}\\d{2}\\d{2}$/",
         "versioning": "loose"
       }

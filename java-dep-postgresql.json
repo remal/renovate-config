@@ -1,56 +1,73 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": ["Settings for Java dependencies: PostgreSQL"],
+  "description": "Settings for Java dependencies: PostgreSQL",
+
   "java": {
     "packageRules": [
       {
-        "description": ["postgresql: keep without suffix"],
-        "packageNames": ["org.postgresql:postgresql"],
+        "description": "postgresql: keep without suffix",
+        "packageNames": [
+          "org.postgresql:postgresql"
+        ],
         "matchCurrentVersion": "/^[\\d.]+$/",
         "allowedVersions": "/^[\\d.]+$/"
       },
 
       {
-        "description": ["postgresql: keep suffix: jre7"],
-        "packageNames": ["org.postgresql:postgresql"],
+        "description": "postgresql: keep suffix: jre7",
+        "packageNames": [
+          "org.postgresql:postgresql"
+        ],
         "matchCurrentVersion": "/-jre7$/",
         "allowedVersions": "/-jre7$/"
       },
       {
-        "description": ["postgresql: keep suffix: jre6"],
-        "packageNames": ["org.postgresql:postgresql"],
+        "description": "postgresql: keep suffix: jre6",
+        "packageNames": [
+          "org.postgresql:postgresql"
+        ],
         "matchCurrentVersion": "/-jre6$/",
         "allowedVersions": "/-jre6$/"
       },
 
       {
-        "description": ["postgresql: keep suffix: jdbc42"],
-        "packageNames": ["org.postgresql:postgresql"],
+        "description": "postgresql: keep suffix: jdbc42",
+        "packageNames": [
+          "org.postgresql:postgresql"
+        ],
         "matchCurrentVersion": "/-jdbc42$/",
         "allowedVersions": "/-jdbc42$/"
       },
       {
-        "description": ["postgresql: keep suffix: jdbc41"],
-        "packageNames": ["org.postgresql:postgresql"],
+        "description": "postgresql: keep suffix: jdbc41",
+        "packageNames": [
+          "org.postgresql:postgresql"
+        ],
         "matchCurrentVersion": "/-jdbc41$/",
         "allowedVersions": "/-jdbc41$/"
       },
       {
-        "description": ["postgresql: keep suffix: jdbc4"],
-        "packageNames": ["org.postgresql:postgresql"],
+        "description": "postgresql: keep suffix: jdbc4",
+        "packageNames": [
+          "org.postgresql:postgresql"
+        ],
         "matchCurrentVersion": "/-jdbc4$/",
         "allowedVersions": "/-jdbc4$/"
       },
       {
-        "description": ["postgresql: keep suffix: jdbc3"],
-        "packageNames": ["org.postgresql:postgresql"],
+        "description": "postgresql: keep suffix: jdbc3",
+        "packageNames": [
+          "org.postgresql:postgresql"
+        ],
         "matchCurrentVersion": "/-jdbc3$/",
         "allowedVersions": "/-jdbc3$/"
       },
 
       {
-        "description": ["postgresql: deny other suffixes"],
-        "packageNames": ["org.postgresql:postgresql"],
+        "description": "postgresql: deny other suffixes",
+        "packageNames": [
+          "org.postgresql:postgresql"
+        ],
         "matchCurrentVersion": "!/(^[\\d.]+$|-(jre7|jre6|jdbc42|jdbc41|jdbc4|jdbc3)$)/",
         "enabled": "false"
       }

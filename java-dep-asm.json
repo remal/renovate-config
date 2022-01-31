@@ -1,11 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": ["Settings for Java dependencies: asm"],
+  "description": "Settings for Java dependencies: asm",
+
   "java": {
     "packageRules": [
       {
-        "description": ["asm: group dependencies"],
-        "packagePatterns": ["^org\\.ow2\\.asm:"],
+        "description": "asm: group dependencies",
+        "packagePatterns": [
+          "^org\\.ow2\\.asm:"
+        ],
         "groupName": "org.ow2.asm"
       }
     ]
