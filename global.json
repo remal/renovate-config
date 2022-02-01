@@ -15,7 +15,7 @@
   "configWarningReuseIssue": false,
 
   "stabilityDays": 1,
-  "prCreation": "immediate",
+  "prCreation": "not-pending",
 
   "separateMultipleMajor": true,
   "separateMajorMinor": true,
@@ -33,9 +33,10 @@
   "reviewersFromCodeOwners": true,
   "reviewersSampleSize": 1,
 
-  "dependencyDashboard": false,
+  "dependencyDashboard": true,
   "dependencyDashboardAutoclose": true,
-  "dependencyDashboardTitle": "Renovate updates",
+  "dependencyDashboardTitle": "Renovate dependency updates",
+  "dependencyDashboardLabels":["dependencies"],
 
   "gitIgnoredAuthors": [
     "mergify[bot]@users.noreply.github.com"
