@@ -21,6 +21,7 @@
   "separateMajorMinor": true,
   "separateMinorPatch": true,
 
+  "transitiveRemediation": true,
   "semanticCommits": "disabled",
   "rollbackPrs": false,
   "prHourlyLimit": 0,
