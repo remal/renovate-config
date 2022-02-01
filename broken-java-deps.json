@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Disable broken version",
+
+  "java": {
+    "packageRules": [
+      {
+        "description": "https://github.com/KengoTODA/errorprone-slf4j/issues/147",
+        "packageNames": [
+          "jp.skypencil.errorprone.slf4j:errorprone-slf4j"
+        ],
+        "matchCurrentVersion": "0.1.5",
+        "enabled": false
+      }
+    ]
+  }
+}

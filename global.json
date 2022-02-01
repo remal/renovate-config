@@ -7,7 +7,8 @@
     "group:recommended",
     "github>whitesource/merge-confidence:beta",
     "github>remal/renovate-config:labels",
-    "github>remal/renovate-config:java-deps"
+    "github>remal/renovate-config:java-deps",
+    "github>remal/renovate-config:broken-java-deps"
   ],
 
   "onboarding": false,
