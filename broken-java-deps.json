@@ -9,8 +9,7 @@
         "packageNames": [
           "jp.skypencil.errorprone.slf4j:errorprone-slf4j"
         ],
-        "matchCurrentVersion": "0.1.5",
-        "enabled": false
+        "allowedVersions": "!/^0\\.1\\.5$/"
       }
     ]
   }
