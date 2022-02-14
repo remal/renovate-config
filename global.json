@@ -38,6 +38,8 @@
   "dependencyDashboardTitle": "Renovate dependency updates",
   "dependencyDashboardLabels":["dependencies"],
 
+  "pinDigests": true,
+
   "gitIgnoredAuthors": [
     "mergify[bot]@users.noreply.github.com"
   ]
