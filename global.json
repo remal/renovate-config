@@ -38,7 +38,9 @@
   "dependencyDashboardTitle": "Renovate dependency updates",
   "dependencyDashboardLabels":["dependencies"],
 
-  "pinDigests": true,
+  "docker": {
+    "pinDigests": true,
+  },
 
   "gitIgnoredAuthors": [
     "mergify[bot]@users.noreply.github.com"
