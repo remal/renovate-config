@@ -33,7 +33,7 @@
   "reviewersFromCodeOwners": true,
   "reviewersSampleSize": 1,
 
-  "dependencyDashboard": true,
+  "dependencyDashboard": false,
   "dependencyDashboardAutoclose": true,
   "dependencyDashboardTitle": "Renovate dependency updates",
   "dependencyDashboardLabels":["dependencies"],
