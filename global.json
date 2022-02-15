@@ -39,7 +39,7 @@
   "dependencyDashboardLabels":["dependencies"],
 
   "docker": {
-    "pinDigests": true,
+    "pinDigests": true
   },
 
   "gitIgnoredAuthors": [
