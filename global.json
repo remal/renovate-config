@@ -44,5 +44,11 @@
 
   "gitIgnoredAuthors": [
     "mergify[bot]@users.noreply.github.com"
+  ],
+    
+  "hostRules": [
+    {
+      "timeout": 30000
+    }
   ]
 }
