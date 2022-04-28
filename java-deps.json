@@ -65,7 +65,8 @@
         "packagePatterns": [
           "^com\\.google\\.errorprone[.:]",
           "^org\\.mockito:mockito-errorprone$",
-          "^jp\\.skypencil\\.errorprone[.:]"
+          "^jp\\.skypencil\\.errorprone[.:]",
+          "^net\\.ltgt\\.gradle:gradle-errorprone-plugin$"
         ],
         "groupName": "com.google.errorprone"
       },
