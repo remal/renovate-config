@@ -7,7 +7,9 @@
       {
         "description": "errorprone: group dependencies",
         "packagePatterns": [
-          "^com\\.google\\.errorprone:"
+          "^com\\.google\\.errorprone[.:]",
+          "^org\\.mockito:mockito-errorprone$",
+          "^jp\\.skypencil\\.errorprone[.:]"
         ],
         "groupName": "com.google.errorprone"
       }
