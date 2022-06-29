@@ -40,7 +40,9 @@
   },
 
   "gitIgnoredAuthors": [
-    "mergify[bot]@users.noreply.github.com"
+    "mergify[bot]@users.noreply.github.com",
+    "29139614+renovate[bot]@users.noreply.github.com",
+    "bot@renovateapp.com"
   ],
     
   "hostRules": [
