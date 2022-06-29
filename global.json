@@ -14,9 +14,6 @@
   "onboarding": false,
   "configWarningReuseIssue": false,
 
-  "stabilityDays": 1,
-  "prCreation": "not-pending",
-
   "separateMultipleMajor": true,
   "separateMajorMinor": true,
   "separateMinorPatch": true,
