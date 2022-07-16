@@ -392,6 +392,15 @@
           "^com\\.squareup\\.wire\\d*:"
         ],
         "groupName": "com.squareup.wire"
+      },
+
+
+      {
+        "description": "name.remal:gradle-plugins",
+        "packagePatterns": [
+          "^name\\.remal:gradle-plugins(-.+)?$"
+        ],
+        "groupName": "name.remal:gradle-plugins"
       }
     ]
   }
