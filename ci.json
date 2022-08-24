@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Settings CI dependencies",
+
+  "github-actions": {
+    "packageRules": [
+      {
+        "description": "Add additional labels for remal-github-actions/sync-with-template",
+        "packageNames": ["remal-github-actions/sync-with-template"],
+        "major": {
+          "addLabels": [
+            "sync-with-template"
+          ]
+        }
+      }
+    ]
+  }
+}
