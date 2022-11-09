@@ -49,7 +49,7 @@
 
   "hostRules": [
     {
-      "timeout": 20000
+      "timeout": 10000
     }
   ]
 }
