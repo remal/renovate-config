@@ -37,10 +37,6 @@
   "dependencyDashboardTitle": "Renovate dependency updates",
   "dependencyDashboardLabels":["dependencies"],
 
-  "docker": {
-    "pinDigests": true
-  },
-
   "gitIgnoredAuthors": [
     "mergify[bot]@users.noreply.github.com",
     "29139614+renovate[bot]@users.noreply.github.com",
@@ -51,5 +47,10 @@
     {
       "timeout": 10000
     }
-  ]
+  ],
+
+
+  "docker": {
+    "pinDigests": true
+  }
 }
