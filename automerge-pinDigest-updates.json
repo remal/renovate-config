@@ -1,9 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Automerge pinDigests updates",
+  "description": "Automerge pinDigest updates",
 
-  "pinDigests": {
-    "description": "Automerge pinDigests updates",
+  "pinDigest": {
+    "description": "Automerge pinDigest updates",
     "extends": "github>remal/renovate-config:automerge"
   }
 }
