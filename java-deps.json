@@ -401,6 +401,15 @@
           "^name\\.remal:gradle-plugins(-.+)?$"
         ],
         "groupName": "name.remal:gradle-plugins"
+      },
+
+
+      {
+        "description": "org.sonarsource.slang",
+        "packagePatterns": [
+          "^org\\.sonarsource\\.slang:"
+        ],
+        "groupName": "org.sonarsource.slang"
       }
     ]
   }
