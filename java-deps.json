@@ -16,6 +16,17 @@
 
 
       {
+        "description": "mapstruct: group dependencies",
+        "packagePatterns": [
+          "^org\\.mapstruct:"
+        ],
+        "groupName": "org.mapstruct"
+      },
+
+
+
+
+      {
         "description": "auto-service: group dependencies",
         "packagePatterns": [
           "^com\\.google\\.auto\\.service:"
