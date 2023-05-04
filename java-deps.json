@@ -27,6 +27,17 @@
 
 
       {
+        "description": "micronaut: group dependencies",
+        "packagePatterns": [
+          "^io\\.micronaut:"
+        ],
+        "groupName": "io.micronaut"
+      },
+
+
+
+
+      {
         "description": "auto-service: group dependencies",
         "packagePatterns": [
           "^com\\.google\\.auto\\.service:"
