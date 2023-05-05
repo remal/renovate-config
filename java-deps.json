@@ -13,8 +13,6 @@
       },
 
 
-
-
       {
         "description": "mapstruct: group dependencies",
         "packagePatterns": [
@@ -22,8 +20,6 @@
         ],
         "groupName": "org.mapstruct"
       },
-
-
 
 
       {
@@ -35,8 +31,6 @@
       },
 
 
-
-
       {
         "description": "auto-service: group dependencies",
         "packagePatterns": [
@@ -44,8 +38,6 @@
         ],
         "groupName": "com.google.auto.service"
       },
-
-
 
 
       {
@@ -58,8 +50,6 @@
       },
 
 
-
-
       {
         "description": "Database Rider: group dependencies",
         "packagePatterns": [
@@ -67,8 +57,6 @@
         ],
         "groupName": "com.github.database-rider"
       },
-
-
 
 
       {
@@ -80,8 +68,6 @@
       },
 
 
-
-
       {
         "description": "errorprone: group dependencies",
         "packagePatterns": [
@@ -89,8 +75,6 @@
         ],
         "groupName": "errorprone"
       },
-
-
 
 
       {
@@ -102,8 +86,6 @@
       },
 
 
-
-
       {
         "description": "gradle-api: disable automatic Gradle API upgrades",
         "packagePatterns": [
@@ -111,8 +93,6 @@
         ],
         "enabled": false
       },
-
-
 
 
       {
@@ -141,8 +121,6 @@
       },
 
 
-
-
       {
         "description": "immutables: deny versions with 'ea' suffix",
         "packagePatterns": [
@@ -159,8 +137,6 @@
       },
 
 
-
-
       {
         "description": "jackson: group dependencies",
         "packagePatterns": [
@@ -168,8 +144,6 @@
         ],
         "groupName": "com.fasterxml.jackson"
       },
-
-
 
 
       {
@@ -181,8 +155,6 @@
       },
 
 
-
-
       {
         "description": "javaparser: group dependencies",
         "packagePatterns": [
@@ -190,8 +162,6 @@
         ],
         "groupName": "com.github.javaparser"
       },
-
-
 
 
       {
@@ -203,8 +173,6 @@
       },
 
 
-
-
       {
         "description": "kotlin: group dependencies",
         "packagePatterns": [
@@ -214,8 +182,6 @@
       },
 
 
-
-
       {
         "description": "plantuml: allow only semver versions",
         "packageNames": [
@@ -223,8 +189,6 @@
         ],
         "allowedVersions": "/^\\d+(\\.\\d+){3,}$/"
       },
-
-
 
 
       {
@@ -293,8 +257,6 @@
       },
 
 
-
-
       {
         "description": "simpleflatmapper: group dependencies",
         "packagePatterns": [
@@ -304,8 +266,6 @@
       },
 
 
-
-
       {
         "description": "spotbugs: group dependencies",
         "packagePatterns": [
@@ -313,8 +273,6 @@
         ],
         "groupName": "com.github.spotbugs"
       },
-
-
 
 
       {
@@ -339,8 +297,6 @@
         ],
         "groupName": "org.springframework"
       },
-
-
 
 
       {
