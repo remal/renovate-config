@@ -85,12 +85,9 @@
       {
         "description": "errorprone: group dependencies",
         "packagePatterns": [
-          "^com\\.google\\.errorprone[.:]",
-          "^org\\.mockito:mockito-errorprone$",
-          "^jp\\.skypencil\\.errorprone[.:]",
-          "^net\\.ltgt\\.gradle:gradle-errorprone-plugin$"
+          "\\berrorprone\\b",
         ],
-        "groupName": "com.google.errorprone"
+        "groupName": "errorprone"
       },
 
 
