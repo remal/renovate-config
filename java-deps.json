@@ -131,7 +131,6 @@
         "matchCurrentVersion": "/-android$/",
         "allowedVersions": "/-android$/"
       },
-
       {
         "description": "guava: deny other suffixes",
         "packageNames": [
@@ -236,7 +235,6 @@
         "matchCurrentVersion": "/^[\\d.]+$/",
         "allowedVersions": "/^[\\d.]+$/"
       },
-
       {
         "description": "postgresql: keep suffix: jre7",
         "packageNames": [
@@ -253,7 +251,6 @@
         "matchCurrentVersion": "/-jre6$/",
         "allowedVersions": "/-jre6$/"
       },
-
       {
         "description": "postgresql: keep suffix: jdbc42",
         "packageNames": [
@@ -286,7 +283,6 @@
         "matchCurrentVersion": "/-jdbc3$/",
         "allowedVersions": "/-jdbc3$/"
       },
-
       {
         "description": "postgresql: deny other suffixes",
         "packageNames": [
@@ -355,7 +351,6 @@
         "matchCurrentVersion": "/^3\\./",
         "allowedVersions": "/^3\\./"
       },
-
       {
         "description": "squareup okhttp: group OkHttp dependencies",
         "packagePatterns": [
