@@ -8,8 +8,7 @@
     "github>whitesource/merge-confidence:beta",
     "github>remal/renovate-config:labels",
     "github>remal/renovate-config:ci",
-    "github>remal/renovate-config:java-deps",
-    "github>remal/renovate-config:broken-java-deps"
+    "github>remal/renovate-config:java-deps"
   ],
 
   "onboarding": false,
@@ -50,7 +49,11 @@
   ],
 
 
-  "docker": {
-    "pinDigests": true
-  }
+  "packageRules": [
+    {
+      "matchLanguages": ["docker"],
+      "matchCategories": ["docker"],
+      "pinDigests": true
+    }
+  ]
 }

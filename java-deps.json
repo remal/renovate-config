@@ -2,385 +2,484 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Settings for Java libraries",
 
-  "java": {
-    "packageRules": [
-      {
-        "description": "asm: group dependencies",
-        "packagePatterns": [
-          "^org\\.ow2\\.asm:"
-        ],
-        "groupName": "org.ow2.asm"
-      },
+  "packageRules": [
+    {
+      "description": "asm: group dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^org\\.ow2\\.asm:"
+      ],
+      "groupName": "org.ow2.asm"
+    },
 
 
-      {
-        "description": "mapstruct: group dependencies",
-        "packagePatterns": [
-          "^org\\.mapstruct:"
-        ],
-        "groupName": "org.mapstruct"
-      },
+    {
+      "description": "mapstruct: group dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^org\\.mapstruct:"
+      ],
+      "groupName": "org.mapstruct"
+    },
 
 
-      {
-        "description": "micronaut: group dependencies",
-        "packagePatterns": [
-          "^io\\.micronaut:"
-        ],
-        "groupName": "io.micronaut"
-      },
+    {
+      "description": "micronaut: group dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^io\\.micronaut:"
+      ],
+      "groupName": "io.micronaut"
+    },
 
 
-      {
-        "description": "auto-service: group dependencies",
-        "packagePatterns": [
-          "^com\\.google\\.auto\\.service:"
-        ],
-        "groupName": "com.google.auto.service"
-      },
+    {
+      "description": "auto-service: group dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^com\\.google\\.auto\\.service:"
+      ],
+      "groupName": "com.google.auto.service"
+    },
 
 
-      {
-        "description": "closure-compiler: allow only vYYYYMMDD versions",
-        "packageNames": [
-          "com.google.javascript:closure-compiler"
-        ],
-        "allowedVersions": "/^v\\d{4}\\d{2}\\d{2}$/",
-        "versioning": "loose"
-      },
+    {
+      "description": "closure-compiler: allow only vYYYYMMDD versions",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackageNames": [
+        "com.google.javascript:closure-compiler"
+      ],
+      "allowedVersions": "/^v\\d{4}\\d{2}\\d{2}$/",
+      "versioning": "loose"
+    },
 
 
-      {
-        "description": "Database Rider: group dependencies",
-        "packagePatterns": [
-          "^com\\.github\\.database-rider:"
-        ],
-        "groupName": "com.github.database-rider"
-      },
+    {
+      "description": "Database Rider: group dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^com\\.github\\.database-rider:"
+      ],
+      "groupName": "com.github.database-rider"
+    },
 
 
-      {
-        "description": "detekt: group dependencies",
-        "packagePatterns": [
-          "^io\\.gitlab\\.arturbosch\\.detekt:"
-        ],
-        "groupName": "io.gitlab.arturbosch.detekt"
-      },
+    {
+      "description": "detekt: group dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^io\\.gitlab\\.arturbosch\\.detekt:"
+      ],
+      "groupName": "io.gitlab.arturbosch.detekt"
+    },
 
 
-      {
-        "description": "errorprone: group dependencies",
-        "packagePatterns": [
-          "\\berrorprone\\b",
-        ],
-        "groupName": "errorprone"
-      },
+    {
+      "description": "errorprone: group dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "\\berrorprone\\b",
+      ],
+      "groupName": "errorprone"
+    },
 
 
-      {
-        "description": "graalvm: group dependencies",
-        "packagePatterns": [
-          "^org\\.graalvm[.:].+"
-        ],
-        "groupName": "org.graalvm"
-      },
+    {
+      "description": "graalvm: group dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^org\\.graalvm[.:].+"
+      ],
+      "groupName": "org.graalvm"
+    },
 
 
-      {
-        "description": "gradle-api: disable automatic Gradle API upgrades",
-        "packagePatterns": [
-          "^name\\.remal\\.gradle-api:"
-        ],
-        "enabled": false
-      },
+    {
+      "description": "gradle-api: disable automatic Gradle API upgrades",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^name\\.remal\\.gradle-api:"
+      ],
+      "enabled": false
+    },
 
 
-      {
-        "description": "guava: keep suffix: jre",
-        "packageNames": [
-          "com.google.guava:guava"
-        ],
-        "matchCurrentVersion": "/-jre$/",
-        "allowedVersions": "/-jre$/"
-      },
-      {
-        "description": "guava: keep suffix: android",
-        "packageNames": [
-          "com.google.guava:guava"
-        ],
-        "matchCurrentVersion": "/-android$/",
-        "allowedVersions": "/-android$/"
-      },
-      {
-        "description": "guava: deny other suffixes",
-        "packageNames": [
-          "com.google.guava:guava"
-        ],
-        "matchCurrentVersion": "!/-(jre|android)$/",
-        "enabled": "false"
-      },
+    {
+      "description": "guava: keep suffix: jre",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackageNames": [
+        "com.google.guava:guava"
+      ],
+      "matchCurrentVersion": "/-jre$/",
+      "allowedVersions": "/-jre$/"
+    },
+    {
+      "description": "guava: keep suffix: android",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackageNames": [
+        "com.google.guava:guava"
+      ],
+      "matchCurrentVersion": "/-android$/",
+      "allowedVersions": "/-android$/"
+    },
+    {
+      "description": "guava: deny other suffixes",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackageNames": [
+        "com.google.guava:guava"
+      ],
+      "matchCurrentVersion": "!/-(jre|android)$/",
+      "enabled": false
+    },
 
 
-      {
-        "description": "immutables: deny versions with 'ea' suffix",
-        "packagePatterns": [
-          "^org\\.immutables:.+"
-        ],
-        "allowedVersions": "!/[-.]ea[-.\\d]/"
-      },
-      {
-        "description": "immutables: group dependencies",
-        "packagePatterns": [
-          "^org\\.immutables:.+"
-        ],
-        "groupName": "org.immutables"
-      },
+    {
+      "description": "immutables: deny versions with 'ea' suffix",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^org\\.immutables:.+"
+      ],
+      "allowedVersions": "!/[-.]ea[-.\\d]/"
+    },
+    {
+      "description": "immutables: group dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^org\\.immutables:.+"
+      ],
+      "groupName": "org.immutables"
+    },
 
 
-      {
-        "description": "jackson: group dependencies",
-        "packagePatterns": [
-          "^com\\.fasterxml\\.jackson[.:].+"
-        ],
-        "groupName": "com.fasterxml.jackson"
-      },
+    {
+      "description": "jackson: group dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^com\\.fasterxml\\.jackson[.:].+"
+      ],
+      "groupName": "com.fasterxml.jackson"
+    },
 
 
-      {
-        "description": "jacoco: group dependencies",
-        "packagePatterns": [
-          "^org\\.jacoco:"
-        ],
-        "groupName": "org.jacoco"
-      },
+    {
+      "description": "jacoco: group dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^org\\.jacoco:"
+      ],
+      "groupName": "org.jacoco"
+    },
 
 
-      {
-        "description": "javaparser: group dependencies",
-        "packagePatterns": [
-          "^com\\.github\\.javaparser:"
-        ],
-        "groupName": "com.github.javaparser"
-      },
+    {
+      "description": "javaparser: group dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^com\\.github\\.javaparser:"
+      ],
+      "groupName": "com.github.javaparser"
+    },
 
 
-      {
-        "description": "jgit: group dependencies",
-        "packagePatterns": [
-          "^org\\.eclipse\\.jgit:"
-        ],
-        "groupName": "org.eclipse.jgit"
-      },
+    {
+      "description": "jgit: group dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^org\\.eclipse\\.jgit:"
+      ],
+      "groupName": "org.eclipse.jgit"
+    },
 
 
-      {
-        "description": "kotlin: group dependencies",
-        "packagePatterns": [
-          "^org\\.jetbrains\\.kotlin:"
-        ],
-        "groupName": "org.jetbrains.kotlin"
-      },
+    {
+      "description": "kotlin: group dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^org\\.jetbrains\\.kotlin:"
+      ],
+      "groupName": "org.jetbrains.kotlin"
+    },
 
 
-      {
-        "description": "plantuml: allow only semver versions",
-        "packageNames": [
-          "net.sourceforge.plantuml:plantuml"
-        ],
-        "allowedVersions": "/^\\d+(\\.\\d+){3,}$/"
-      },
+    {
+      "description": "plantuml: allow only semver versions",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackageNames": [
+        "net.sourceforge.plantuml:plantuml"
+      ],
+      "allowedVersions": "/^\\d+(\\.\\d+){3,}$/"
+    },
 
 
-      {
-        "description": "postgresql: keep without suffix",
-        "packageNames": [
-          "org.postgresql:postgresql"
-        ],
-        "matchCurrentVersion": "/^[\\d.]+$/",
-        "allowedVersions": "/^[\\d.]+$/"
-      },
-      {
-        "description": "postgresql: keep suffix: jre7",
-        "packageNames": [
-          "org.postgresql:postgresql"
-        ],
-        "matchCurrentVersion": "/-jre7$/",
-        "allowedVersions": "/-jre7$/"
-      },
-      {
-        "description": "postgresql: keep suffix: jre6",
-        "packageNames": [
-          "org.postgresql:postgresql"
-        ],
-        "matchCurrentVersion": "/-jre6$/",
-        "allowedVersions": "/-jre6$/"
-      },
-      {
-        "description": "postgresql: keep suffix: jdbc42",
-        "packageNames": [
-          "org.postgresql:postgresql"
-        ],
-        "matchCurrentVersion": "/-jdbc42$/",
-        "allowedVersions": "/-jdbc42$/"
-      },
-      {
-        "description": "postgresql: keep suffix: jdbc41",
-        "packageNames": [
-          "org.postgresql:postgresql"
-        ],
-        "matchCurrentVersion": "/-jdbc41$/",
-        "allowedVersions": "/-jdbc41$/"
-      },
-      {
-        "description": "postgresql: keep suffix: jdbc4",
-        "packageNames": [
-          "org.postgresql:postgresql"
-        ],
-        "matchCurrentVersion": "/-jdbc4$/",
-        "allowedVersions": "/-jdbc4$/"
-      },
-      {
-        "description": "postgresql: keep suffix: jdbc3",
-        "packageNames": [
-          "org.postgresql:postgresql"
-        ],
-        "matchCurrentVersion": "/-jdbc3$/",
-        "allowedVersions": "/-jdbc3$/"
-      },
-      {
-        "description": "postgresql: deny other suffixes",
-        "packageNames": [
-          "org.postgresql:postgresql"
-        ],
-        "matchCurrentVersion": "!/(^[\\d.]+$|-(jre7|jre6|jdbc42|jdbc41|jdbc4|jdbc3)$)/",
-        "enabled": "false"
-      },
+    {
+      "description": "postgresql: keep without suffix",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackageNames": [
+        "org.postgresql:postgresql"
+      ],
+      "matchCurrentVersion": "/^[\\d.]+$/",
+      "allowedVersions": "/^[\\d.]+$/"
+    },
+    {
+      "description": "postgresql: keep suffix: jre7",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackageNames": [
+        "org.postgresql:postgresql"
+      ],
+      "matchCurrentVersion": "/-jre7$/",
+      "allowedVersions": "/-jre7$/"
+    },
+    {
+      "description": "postgresql: keep suffix: jre6",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackageNames": [
+        "org.postgresql:postgresql"
+      ],
+      "matchCurrentVersion": "/-jre6$/",
+      "allowedVersions": "/-jre6$/"
+    },
+    {
+      "description": "postgresql: keep suffix: jdbc42",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackageNames": [
+        "org.postgresql:postgresql"
+      ],
+      "matchCurrentVersion": "/-jdbc42$/",
+      "allowedVersions": "/-jdbc42$/"
+    },
+    {
+      "description": "postgresql: keep suffix: jdbc41",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackageNames": [
+        "org.postgresql:postgresql"
+      ],
+      "matchCurrentVersion": "/-jdbc41$/",
+      "allowedVersions": "/-jdbc41$/"
+    },
+    {
+      "description": "postgresql: keep suffix: jdbc4",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackageNames": [
+        "org.postgresql:postgresql"
+      ],
+      "matchCurrentVersion": "/-jdbc4$/",
+      "allowedVersions": "/-jdbc4$/"
+    },
+    {
+      "description": "postgresql: keep suffix: jdbc3",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackageNames": [
+        "org.postgresql:postgresql"
+      ],
+      "matchCurrentVersion": "/-jdbc3$/",
+      "allowedVersions": "/-jdbc3$/"
+    },
+    {
+      "description": "postgresql: deny other suffixes",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackageNames": [
+        "org.postgresql:postgresql"
+      ],
+      "matchCurrentVersion": "!/(^[\\d.]+$|-(jre7|jre6|jdbc42|jdbc41|jdbc4|jdbc3)$)/",
+      "enabled": false
+    },
 
 
-      {
-        "description": "simpleflatmapper: group dependencies",
-        "packagePatterns": [
-          "^org\\.simpleflatmapper:"
-        ],
-        "groupName": "org.simpleflatmapper"
-      },
+    {
+      "description": "simpleflatmapper: group dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^org\\.simpleflatmapper:"
+      ],
+      "groupName": "org.simpleflatmapper"
+    },
 
 
-      {
-        "description": "spotbugs: group dependencies",
-        "packagePatterns": [
-          "^com\\.github\\.spotbugs:"
-        ],
-        "groupName": "com.github.spotbugs"
-      },
+    {
+      "description": "spotbugs: group dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^com\\.github\\.spotbugs:"
+      ],
+      "groupName": "com.github.spotbugs"
+    },
 
 
-      {
-        "description": "springframework: Spring release train BOMs: use CalVer only",
-        "packageNames": [
-          "org.springframework.data:spring-data-bom",
-          "org.springframework.cloud:spring-cloud-dependencies"
-        ],
-        "allowedVersions": "/^\\d{4}[.-]/"
-      },
-      {
-        "description": "springframework: Spring Data release train BOM: ignore 0-9.*",
-        "packageNames": [
-          "org.springframework.data:spring-data-releasetrain"
-        ],
-        "allowedVersions": "!/^\\d\\./"
-      },
-      {
-        "description": "springframework: group dependencies",
-        "packagePatterns": [
-          "^org\\.springframework[:.].+"
-        ],
-        "groupName": "org.springframework"
-      },
+    {
+      "description": "springframework: Spring release train BOMs: use CalVer only",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackageNames": [
+        "org.springframework.data:spring-data-bom",
+        "org.springframework.cloud:spring-cloud-dependencies"
+      ],
+      "allowedVersions": "/^\\d{4}[.-]/"
+    },
+    {
+      "description": "springframework: Spring Data release train BOM: ignore 0-9.*",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackageNames": [
+        "org.springframework.data:spring-data-releasetrain"
+      ],
+      "allowedVersions": "!/^\\d\\./"
+    },
+    {
+      "description": "springframework: group dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^org\\.springframework[:.].+"
+      ],
+      "groupName": "org.springframework"
+    },
 
 
-      {
-        "description": "squareup okhttp: keep OkHttp3 major version if current version is 3.*",
-        "packagePatterns": [
-          "^com\\.squareup\\.okhttp3:"
-        ],
-        "matchCurrentVersion": "/^3\\./",
-        "allowedVersions": "/^3\\./"
-      },
-      {
-        "description": "squareup okhttp: group OkHttp dependencies",
-        "packagePatterns": [
-          "^com\\.squareup\\.okhttp\\d*:"
-        ],
-        "groupName": "com.squareup.okhttp"
-      },
-      {
-        "description": "squareup okio: group Okio dependencies",
-        "packagePatterns": [
-          "^com\\.squareup\\.okio\\d*:"
-        ],
-        "groupName": "com.squareup.okio"
-      },
-      {
-        "description": "squareup leakcanary: group LeakCanary dependencies",
-        "packagePatterns": [
-          "^com\\.squareup\\.leakcanary\\d*:"
-        ],
-        "groupName": "com.squareup.leakcanary"
-      },
-      {
-        "description": "squareup moshi: group Moshi dependencies",
-        "packagePatterns": [
-          "^com\\.squareup\\.moshi\\d*:"
-        ],
-        "groupName": "com.squareup.moshi"
-      },
-      {
-        "description": "squareup misk: group Misk dependencies",
-        "packagePatterns": [
-          "^com\\.squareup\\.misk\\d*:"
-        ],
-        "groupName": "com.squareup.misk"
-      },
-      {
-        "description": "squareup retrofit: group Retrofit dependencies",
-        "packagePatterns": [
-          "^com\\.squareup\\.retrofit\\d*:"
-        ],
-        "groupName": "com.squareup.retrofit"
-      },
-      {
-        "description": "squareup sqldelight: group SQLDelight dependencies",
-        "packagePatterns": [
-          "^com\\.squareup\\.sqldelight\\d*:"
-        ],
-        "groupName": "com.squareup.sqldelight"
-      },
-      {
-        "description": "squareup wire: group Wire dependencies",
-        "packagePatterns": [
-          "^com\\.squareup\\.wire\\d*:"
-        ],
-        "groupName": "com.squareup.wire"
-      },
+    {
+      "description": "squareup okhttp: keep OkHttp3 major version if current version is 3.*",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^com\\.squareup\\.okhttp3:"
+      ],
+      "matchCurrentVersion": "/^3\\./",
+      "allowedVersions": "/^3\\./"
+    },
+    {
+      "description": "squareup okhttp: group OkHttp dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^com\\.squareup\\.okhttp\\d*:"
+      ],
+      "groupName": "com.squareup.okhttp"
+    },
+    {
+      "description": "squareup okio: group Okio dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^com\\.squareup\\.okio\\d*:"
+      ],
+      "groupName": "com.squareup.okio"
+    },
+    {
+      "description": "squareup leakcanary: group LeakCanary dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^com\\.squareup\\.leakcanary\\d*:"
+      ],
+      "groupName": "com.squareup.leakcanary"
+    },
+    {
+      "description": "squareup moshi: group Moshi dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^com\\.squareup\\.moshi\\d*:"
+      ],
+      "groupName": "com.squareup.moshi"
+    },
+    {
+      "description": "squareup misk: group Misk dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^com\\.squareup\\.misk\\d*:"
+      ],
+      "groupName": "com.squareup.misk"
+    },
+    {
+      "description": "squareup retrofit: group Retrofit dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^com\\.squareup\\.retrofit\\d*:"
+      ],
+      "groupName": "com.squareup.retrofit"
+    },
+    {
+      "description": "squareup sqldelight: group SQLDelight dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^com\\.squareup\\.sqldelight\\d*:"
+      ],
+      "groupName": "com.squareup.sqldelight"
+    },
+    {
+      "description": "squareup wire: group Wire dependencies",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^com\\.squareup\\.wire\\d*:"
+      ],
+      "groupName": "com.squareup.wire"
+    },
 
 
-      {
-        "description": "name.remal:gradle-plugins",
-        "packagePatterns": [
-          "^name\\.remal:gradle-plugins(-.+)?$"
-        ],
-        "groupName": "name.remal:gradle-plugins"
-      },
+    {
+      "description": "name.remal:gradle-plugins",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^name\\.remal:gradle-plugins(-.+)?$"
+      ],
+      "groupName": "name.remal:gradle-plugins"
+    },
 
 
-      {
-        "description": "org.sonarsource.slang",
-        "packagePatterns": [
-          "^org\\.sonarsource\\.slang:"
-        ],
-        "groupName": "org.sonarsource.slang"
-      }
-    ]
-  }
+    {
+      "description": "org.sonarsource.slang",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackagePatterns": [
+        "^org\\.sonarsource\\.slang:"
+      ],
+      "groupName": "org.sonarsource.slang"
+    },
+
+
+    {
+      "description": "https://github.com/KengoTODA/errorprone-slf4j/issues/147",
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "matchPackageNames": [
+        "jp.skypencil.errorprone.slf4j:errorprone-slf4j"
+      ],
+      "allowedVersions": "!/^0\\.1\\.5$/"
+    }
+  ]
 }

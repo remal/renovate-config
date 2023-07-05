@@ -2,10 +2,10 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Automerge minor updates",
 
-  "extends": "github>remal/renovate-config:automerge-patch-updates",
+  "extends": ["github>remal/renovate-config:automerge-patch-updates"],
 
   "minor": {
     "description": "Automerge minor updates",
-    "extends": "github>remal/renovate-config:automerge"
+    "extends": ["github>remal/renovate-config:automerge"]
   }
 }

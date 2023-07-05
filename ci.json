@@ -6,7 +6,7 @@
     "packageRules": [
       {
         "description": "Add additional labels for remal-github-actions/sync-with-template",
-        "packageNames": ["remal-github-actions/sync-with-template"],
+        "matchPackageNames": ["remal-github-actions/sync-with-template"],
         "major": {
           "addLabels": [
             "sync-with-template"

@@ -2,163 +2,137 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Pull Request labels",
 
-  "addLabels": [
-    "dependencies"
+  "addLabels": ["dependencies"],
+
+  "major": {"addLabels": ["dependencies-major"]},
+  "minor": {"addLabels": ["dependencies-minor"]},
+  "patch": {"addLabels": ["dependencies-patch"]},
+  "pin": {"addLabels": ["dependencies-pin"]},
+  "pinDigest": {"addLabels": ["dependencies-pinDigest"]},
+  "digest": {"addLabels": ["dependencies-digest"]},
+  "lockFileMaintenance": {"addLabels": ["dependencies-lockFileMaintenance"]},
+  "rollback": {"addLabels": ["dependencies-rollback"]},
+  "bump": {"addLabels": ["dependencies-bump"]},
+  "replacement": {"addLabels": ["dependencies-replacement"]},
+
+  "packageRules": [
+    {
+      "matchLanguages": ["rust"],
+      "matchCategories": ["rust"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(rust)"]
+    },
+    {
+      "matchLanguages": ["batect"],
+      "matchCategories": ["batect"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(batect)"]
+    },
+    {
+      "matchLanguages": ["bazel"],
+      "matchCategories": ["bazel"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(bazel)"]
+    },
+    {
+      "matchLanguages": ["c"],
+      "matchCategories": ["c"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(c)"]
+    },
+    {
+      "matchLanguages": ["cd"],
+      "matchCategories": ["cd"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(cd)"]
+    },
+    {
+      "matchLanguages": ["ci"],
+      "matchCategories": ["ci"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(ci)"]
+    },
+    {
+      "matchLanguages": ["dart"],
+      "matchCategories": ["dart"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(dart)"]
+    },
+    {
+      "matchLanguages": ["docker"],
+      "matchCategories": ["docker"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(docker)"]
+    },
+    {
+      "matchLanguages": ["dotnet"],
+      "matchCategories": ["dotnet"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(dotnet)"]
+    },
+    {
+      "matchLanguages": ["elixir"],
+      "matchCategories": ["elixir"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(elixir)"]
+    },
+    {
+      "matchLanguages": ["golang"],
+      "matchCategories": ["golang"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(golang)"]
+    },
+    {
+      "matchLanguages": ["helm"],
+      "matchCategories": ["helm"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(helm)"]
+    },
+    {
+      "matchLanguages": ["iac"],
+      "matchCategories": ["iac"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(iac)"]
+    },
+    {
+      "matchLanguages": ["java"],
+      "matchCategories": ["java"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(java)"]
+    },
+    {
+      "matchLanguages": ["js"],
+      "matchCategories": ["js"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(js)"]
+    },
+    {
+      "matchLanguages": ["kubernetes"],
+      "matchCategories": ["kubernetes"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(kubernetes)"]
+    },
+    {
+      "matchLanguages": ["node"],
+      "matchCategories": ["node"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(node)"]
+    },
+    {
+      "matchLanguages": ["php"],
+      "matchCategories": ["php"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(php)"]
+    },
+    {
+      "matchLanguages": ["python"],
+      "matchCategories": ["python"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(python)"]
+    },
+    {
+      "matchLanguages": ["ruby"],
+      "matchCategories": ["ruby"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(ruby)"]
+    },
+    {
+      "matchLanguages": ["rust"],
+      "matchCategories": ["rust"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(rust)"]
+    },
+    {
+      "matchLanguages": ["swift"],
+      "matchCategories": ["swift"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(swift)"]
+    },
+    {
+      "matchLanguages": ["terraform"],
+      "matchCategories": ["terraform"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(terraform)"]
+    }
   ],
 
-  "major": {
-    "addLabels": [
-      "dependencies-major"
-    ]
-  },
-  "minor": {
-    "addLabels": [
-      "dependencies-minor"
-    ]
-  },
-  "patch": {
-    "addLabels": [
-      "dependencies-patch"
-    ]
-  },
-  "pin": {
-    "addLabels": [
-      "dependencies-pin"
-    ]
-  },
-  "digest": {
-    "addLabels": [
-      "dependencies-digest"
-    ]
-  },
-  "lockFileMaintenance": {
-    "addLabels": [
-      "dependencies-lockFileMaintenance"
-    ]
-  },
-  "rollback": {
-    "addLabels": [
-      "dependencies-rollback"
-    ]
-  },
-  "bump": {
-    "addLabels": [
-      "dependencies-bump"
-    ]
-  },
-
-
-  "git-submodules": {
-    "extends": [
-      "github>remal/renovate-config:parameterized-labels(submodules)"
-    ]
-  },
-
-  "dart": {
-    "extends": [
-      "github>remal/renovate-config:parameterized-labels(dart)"
-    ]
-  },
-  "docker": {
-    "extends": [
-      "github>remal/renovate-config:parameterized-labels(docker)"
-    ]
-  },
-  "dotnet": {
-    "extends": [
-      "github>remal/renovate-config:parameterized-labels(dotnet)"
-    ]
-  },
-  "elixir": {
-    "extends": [
-      "github>remal/renovate-config:parameterized-labels(elixir)"
-    ]
-  },
-  "golang": {
-    "extends": [
-      "github>remal/renovate-config:parameterized-labels(golang)"
-    ]
-  },
-  "java": {
-    "extends": [
-      "github>remal/renovate-config:parameterized-labels(java)"
-    ]
-  },
-  "js": {
-    "extends": [
-      "github>remal/renovate-config:parameterized-labels(js)"
-    ]
-  },
-  "php": {
-    "extends": [
-      "github>remal/renovate-config:parameterized-labels(php)"
-    ]
-  },
-  "python": {
-    "extends": [
-      "github>remal/renovate-config:parameterized-labels(python)"
-    ]
-  },
-  "ruby": {
-    "extends": [
-      "github>remal/renovate-config:parameterized-labels(ruby)"
-    ]
-  },
-  "rust": {
-    "extends": [
-      "github>remal/renovate-config:parameterized-labels(rust)"
-    ]
-  },
-
-  "gradle-wrapper": {
-    "extends": [
-      "github>remal/renovate-config:parameterized-labels(gradle)"
-    ]
-  },
-  "node": {
-    "extends": [
-      "github>remal/renovate-config:parameterized-labels(node)"
-    ]
-  },
-
-  "azure-pipelines": {
-    "extends": [
-      "github>remal/renovate-config:parameterized-labels(ci)"
-    ]
-  },
-  "circleci": {
-    "extends": [
-      "github>remal/renovate-config:parameterized-labels(ci)"
-    ]
-  },
-  "droneci": {
-    "extends": [
-      "github>remal/renovate-config:parameterized-labels(ci)"
-    ]
-  },
-  "github-actions": {
-    "extends": [
-      "github>remal/renovate-config:parameterized-labels(ci)"
-    ]
-  },
-  "gitlabci": {
-    "extends": [
-      "github>remal/renovate-config:parameterized-labels(ci)"
-    ]
-  },
-  "gitlabci-include": {
-    "extends": [
-      "github>remal/renovate-config:parameterized-labels(ci)"
-    ]
-  },
-  "jenkins": {
-    "extends": [
-      "github>remal/renovate-config:parameterized-labels(ci)"
-    ]
-  },
-  "travis": {
-    "extends": [
-      "github>remal/renovate-config:parameterized-labels(ci)"
-    ]
-  }
+  "git-submodules": {"extends": ["github>remal/renovate-config:parameterized-labels(git-submodules)"]},
+  "maven-wrapper": {"extends": ["github>remal/renovate-config:parameterized-labels(maven-wrapper)"]}
 }

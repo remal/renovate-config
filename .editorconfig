@@ -322,17 +322,17 @@ ij_editorconfig_space_before_colon = false
 ij_editorconfig_space_before_comma = false
 ij_editorconfig_spaces_around_assignment_operators = true
 
-[{spring.schemas, spring.handlers, *.properties}]
+[{spring.schemas,spring.handlers,*.properties}]
 charset = latin1
 max_line_length = 999
 
-[*.{yml, yaml, xml, json, json5, puml, md, svg}]
+[{*.yml,*.yaml,*.xml,*.json,*.json5,*.puml,*.md,*.svg}]
 max_line_length = 999
 tab_width = 2
 indent_size = 2
 continuation_indent_size = 2
 ij_continuation_indent_size = 2
 
-[*.{cmd, bat}]
+[{*.cmd,*.bat}]
 end_of_line = crlf
 max_line_length = 999
