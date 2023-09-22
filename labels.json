@@ -19,9 +19,9 @@
 
   "packageRules": [
     {
-      "matchLanguages": ["rust"],
-      "matchCategories": ["rust"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(rust)"]
+      "matchLanguages": ["ansible"],
+      "matchCategories": ["ansible"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(ansible)"]
     },
     {
       "matchLanguages": ["batect"],
@@ -104,6 +104,11 @@
       "extends": ["github>remal/renovate-config:parameterized-labels(node)"]
     },
     {
+      "matchLanguages": ["perl"],
+      "matchCategories": ["perl"],
+      "extends": ["github>remal/renovate-config:parameterized-labels(perl)"]
+    },
+    {
       "matchLanguages": ["php"],
       "matchCategories": ["php"],
       "extends": ["github>remal/renovate-config:parameterized-labels(php)"]
@@ -135,6 +140,13 @@
     }
   ],
 
+  "asdf": {"extends": ["github>remal/renovate-config:parameterized-labels(asdf)"]},
+  "bicep": {"extends": ["github>remal/renovate-config:parameterized-labels(bicep)"]},
+  "fvm": {"extends": ["github>remal/renovate-config:parameterized-labels(fvm)"]},
   "git-submodules": {"extends": ["github>remal/renovate-config:parameterized-labels(git-submodules)"]},
-  "maven-wrapper": {"extends": ["github>remal/renovate-config:parameterized-labels(maven-wrapper)"]}
+  "hermit": {"extends": ["github>remal/renovate-config:parameterized-labels(hermit)"]},
+  "homebrew": {"extends": ["github>remal/renovate-config:parameterized-labels(homebrew)"]},
+  "nix": {"extends": ["github>remal/renovate-config:parameterized-labels(nix)"]},
+  "osgi": {"extends": ["github>remal/renovate-config:parameterized-labels(osgi)"]},
+  "pre-commit": {"extends": ["github>remal/renovate-config:parameterized-labels(pre-commit)"]}
 }
