@@ -34,7 +34,7 @@
   "dependencyDashboard": false,
   "dependencyDashboardAutoclose": true,
   "dependencyDashboardTitle": "Renovate dependency updates",
-  "dependencyDashboardLabels":["dependencies"],
+  "dependencyDashboardLabels": ["renovate", "dependencies"],
 
   "osvVulnerabilityAlerts": true,
 
@@ -46,7 +46,7 @@
 
   "hostRules": [
     {
-      "timeout": 10000
+      "timeout": 30000
     }
   ],
 

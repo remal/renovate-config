@@ -4,6 +4,8 @@
 
   "addLabels": ["renovate", "dependencies"],
 
+  "vulnerabilityAlerts": {"addLabels": ["security"]},
+
   "major": {"addLabels": ["dependencies-major"]},
   "minor": {"addLabels": ["dependencies-minor"]},
   "patch": {"addLabels": ["dependencies-patch"]},
