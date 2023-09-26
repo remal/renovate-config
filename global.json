@@ -36,7 +36,7 @@
   "dependencyDashboardTitle": "Renovate dependency updates",
   "dependencyDashboardLabels": ["renovate", "dependencies"],
 
-  "osvVulnerabilityAlerts": true,
+  "osvVulnerabilityAlerts": false,
 
   "gitIgnoredAuthors": [
     "mergify[bot]@users.noreply.github.com",
