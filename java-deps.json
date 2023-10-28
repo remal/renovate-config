@@ -19,7 +19,7 @@
       "matchLanguages": ["java"],
       "matchCategories": ["java"],
       "matchPackagePatterns": [
-        "^org\\.mapstruct:"
+        "^org\\.mapstruct[:.]"
       ],
       "groupName": "org.mapstruct"
     },
@@ -30,7 +30,7 @@
       "matchLanguages": ["java"],
       "matchCategories": ["java"],
       "matchPackagePatterns": [
-        "^io\\.micronaut:"
+        "^io\\.micronaut[:.]"
       ],
       "groupName": "io.micronaut"
     },
@@ -360,7 +360,7 @@
       "matchLanguages": ["java"],
       "matchCategories": ["java"],
       "matchPackagePatterns": [
-        "^org\\.springframework[:.].+"
+        "^org\\.springframework[:.]"
       ],
       "groupName": "org.springframework"
     },
