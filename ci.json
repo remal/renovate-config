@@ -7,7 +7,7 @@
       {
         "description": "actions/*-artifact: group dependencies",
         "matchPackagePatterns": ["^actions/.+-artifact$"],
-        "groupName": "actions/artifacts"
+        "groupName": "actions/*-artifacts"
       },
 
       {
