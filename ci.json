@@ -5,6 +5,12 @@
   "github-actions": {
     "packageRules": [
       {
+        "description": "actions/*-artifact: group dependencies",
+        "matchPackagePatterns": ["^actions/.+-artifact$"],
+        "groupName": "actions/artifacts"
+      },
+
+      {
         "description": "Add additional labels for remal-github-actions/sync-with-template",
         "matchPackageNames": ["remal-github-actions/sync-with-template"],
         "major": {
