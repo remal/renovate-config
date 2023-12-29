@@ -86,7 +86,7 @@
       "matchLanguages": ["java"],
       "matchCategories": ["java"],
       "matchPackagePatterns": [
-        "\\berrorprone\\b",
+        "\\berrorprone\\b"
       ],
       "groupName": "errorprone"
     },
