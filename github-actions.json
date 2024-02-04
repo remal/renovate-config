@@ -8,7 +8,7 @@
         "(^|/)(workflow-templates|\\.(?:github|gitea|forgejo)/(?:workflows|actions))/.+\\.ya?ml$"
       ],
       "matchStrings": [
-        "^(\\s+)-?\\s+?uses: ['\"]?Wandalen\\/wretry.action@[^'\"]+['\"]?\\S*[\\n\\r]+(\\s*[\\n\\r]+|\\s+\\S+[\\n\\r]+)*\\s+action: ['\"]?(?<depName>[\\w-]+\\/[.\\w-]+)(?<path>\\/\\S*)?@(?<currentValue>[^\\s'\"]+)['\"]?(?:\\s+#\\s*(?:renovate\\s*:\\s*)?(?:pin\\s+|tag\\s*=\\s*)?@?(?<tag>v?\\d+(?:\\.\\d+(?:\\.\\d+)?)?))?"
+        "[\\r\\n]+    (- |  )uses: ['\"]?Wandalen\\/wretry.action@[^'\"\\s]+['\"]?\\s*[\\n\\r]+     \\s*with:\\s*[\\r\\n]+(?:\\s*[\\n\\r]+|     .+[\\n\\r]+)*     \\s*action: ['\"]?(?<depName>[\\w-]+\\/[.\\w-]+)(?<path>\\/\\S*)?@(?<currentValue>[^\\s'\"]+)['\"]?(?:\\s+#\\s*(?:renovate\\s*:\\s*)?(?:pin\\s+|tag\\s*=\\s*)?@?(?<tag>v?\\d+(?:\\.\\d+(?:\\.\\d+)?)?))?",
       ],
       "datasourceTemplate": "github-tags",
       "versioningTemplate": "docker"
@@ -18,7 +18,7 @@
         "(^|/)(workflow-templates|\\.(?:github|gitea|forgejo)/(?:workflows|actions))/.+\\.ya?ml$"
       ],
       "matchStrings": [
-        "^(\\s+)-?\\s+?uses: ['\"]?Wandalen\\/wretry.action@[^'\"]+['\"]?\\S*[\\n\\r]+(\\s*[\\n\\r]+|\\s+\\S+[\\n\\r]+)*\\s+action: ['\"]?docker:\\/\\/(?<depName>[^\\s:'\"]+):(?<currentValue>[^\\s'\"]+)['\"]?(?:\\s+#\\s*(?:renovate\\s*:\\s*)?(?:pin\\s+|tag\\s*=\\s*)?@?(?<tag>v?\\d+(?:\\.\\d+(?:\\.\\d+)?)?))?"
+        "[\\r\\n]+    (- |  )uses: ['\"]?Wandalen\\/wretry.action@[^'\"\\s]+['\"]?\\s*[\\n\\r]+     \\s*with:\\s*[\\r\\n]+(?:\\s*[\\n\\r]+|     .+[\\n\\r]+)*     \\s*action: ['\"]?docker:\\/\\/(?<depName>[^\\s:'\"]+):(?<currentValue>[^\\s'\"]+)['\"]?(?:\\s+#\\s*(?:renovate\\s*:\\s*)?(?:pin\\s+|tag\\s*=\\s*)?@?(?<tag>v?\\d+(?:\\.\\d+(?:\\.\\d+)?)?))",
       ],
       "datasourceTemplate": "docker",
       "versioningTemplate": "docker"
