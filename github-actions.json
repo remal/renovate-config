@@ -1,0 +1,25 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Settings for GitHub Actions updates",
+
+  "regexManagers": [
+    {
+      "fileMatch": [
+        "(^|/)(workflow-templates|\\.(?:github|gitea|forgejo)/(?:workflows|actions))/.+\\.ya?ml$"
+      ],
+      "matchStrings": [
+        "^(\\s+)-?\\s+?uses: ['\"]?Wandalen\\/wretry.action@[^'\"]+['\"]?\\S*[\\n\\r]+(\\s*[\\n\\r]+|\\1\\s+\\S+[\\n\\r]+)* \\1\\s+action: ['\"]?(?<depName>[\\w-]+\\/[.\\w-]+)(?<path>\\/\\S*)?@(?<currentValue>[^\\s'\"]+)['\"]?(?:\\s+#\\s*(?:renovate\\s*:\\s*)?(?:pin\\s+|tag\\s*=\\s*)?@?(?<tag>v?\\d+(?:\\.\\d+(?:\\.\\d+)?)?))?"
+      ],
+      "datasourceTemplate": "github-tags"
+    },
+    {
+      "fileMatch": [
+        "(^|/)(workflow-templates|\\.(?:github|gitea|forgejo)/(?:workflows|actions))/.+\\.ya?ml$"
+      ],
+      "matchStrings": [
+        "^(\\s+)-?\\s+?uses: ['\"]?Wandalen\\/wretry.action@[^'\"]+['\"]?\\S*[\\n\\r]+(\\s*[\\n\\r]+|\\1\\s+\\S+[\\n\\r]+)* \\1\\s+action: ['\"]?docker:\\/\\/(?<depName>[^\\s:'\"]+):(?<currentValue>[^\\s'\"]+)['\"]?(?:\\s+#\\s*(?:renovate\\s*:\\s*)?(?:pin\\s+|tag\\s*=\\s*)?@?(?<tag>v?\\d+(?:\\.\\d+(?:\\.\\d+)?)?))?"
+      ],
+      "datasourceTemplate": "docker"
+    }
+  ]
+}
