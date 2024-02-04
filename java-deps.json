@@ -5,8 +5,12 @@
   "packageRules": [
     {
       "description": "asm: group dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^org\\.ow2\\.asm:"
       ],
@@ -16,8 +20,12 @@
 
     {
       "description": "mapstruct: group dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^org\\.mapstruct[:.]"
       ],
@@ -27,8 +35,12 @@
 
     {
       "description": "micronaut: group dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^io\\.micronaut[:.]"
       ],
@@ -38,8 +50,12 @@
 
     {
       "description": "auto-service: group dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^com\\.google\\.auto\\.service:"
       ],
@@ -49,8 +65,12 @@
 
     {
       "description": "closure-compiler: allow only vYYYYMMDD versions",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackageNames": [
         "com.google.javascript:closure-compiler"
       ],
@@ -61,8 +81,12 @@
 
     {
       "description": "Database Rider: group dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^com\\.github\\.database-rider:"
       ],
@@ -72,8 +96,12 @@
 
     {
       "description": "detekt: group dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^io\\.gitlab\\.arturbosch\\.detekt:"
       ],
@@ -83,8 +111,12 @@
 
     {
       "description": "errorprone: group dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "\\berrorprone\\b"
       ],
@@ -94,8 +126,12 @@
 
     {
       "description": "graalvm: group dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^org\\.graalvm[.:].+"
       ],
@@ -105,8 +141,12 @@
 
     {
       "description": "gradle-api: disable automatic Gradle API upgrades",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^name\\.remal\\.gradle-api:"
       ],
@@ -116,8 +156,12 @@
 
     {
       "description": "guava: keep suffix: jre",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackageNames": [
         "com.google.guava:guava"
       ],
@@ -126,8 +170,12 @@
     },
     {
       "description": "guava: keep suffix: android",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackageNames": [
         "com.google.guava:guava"
       ],
@@ -136,8 +184,12 @@
     },
     {
       "description": "guava: deny other suffixes",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackageNames": [
         "com.google.guava:guava"
       ],
@@ -148,8 +200,12 @@
 
     {
       "description": "immutables: deny versions with 'ea' suffix",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^org\\.immutables:.+"
       ],
@@ -157,8 +213,12 @@
     },
     {
       "description": "immutables: group dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^org\\.immutables:.+"
       ],
@@ -168,8 +228,12 @@
 
     {
       "description": "jackson: group dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^com\\.fasterxml\\.jackson[.:].+"
       ],
@@ -179,8 +243,12 @@
 
     {
       "description": "jacoco: group dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^org\\.jacoco:"
       ],
@@ -190,8 +258,12 @@
 
     {
       "description": "javaparser: group dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^com\\.github\\.javaparser:"
       ],
@@ -201,8 +273,12 @@
 
     {
       "description": "jgit: group dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^org\\.eclipse\\.jgit:"
       ],
@@ -212,8 +288,12 @@
 
     {
       "description": "kotlin: group dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^org\\.jetbrains\\.kotlin:"
       ],
@@ -223,8 +303,12 @@
 
     {
       "description": "plantuml: allow only semver versions",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackageNames": [
         "net.sourceforge.plantuml:plantuml"
       ],
@@ -234,8 +318,12 @@
 
     {
       "description": "postgresql: keep without suffix",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackageNames": [
         "org.postgresql:postgresql"
       ],
@@ -244,8 +332,12 @@
     },
     {
       "description": "postgresql: keep suffix: jre7",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackageNames": [
         "org.postgresql:postgresql"
       ],
@@ -254,8 +346,12 @@
     },
     {
       "description": "postgresql: keep suffix: jre6",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackageNames": [
         "org.postgresql:postgresql"
       ],
@@ -264,8 +360,12 @@
     },
     {
       "description": "postgresql: keep suffix: jdbc42",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackageNames": [
         "org.postgresql:postgresql"
       ],
@@ -274,8 +374,12 @@
     },
     {
       "description": "postgresql: keep suffix: jdbc41",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackageNames": [
         "org.postgresql:postgresql"
       ],
@@ -284,8 +388,12 @@
     },
     {
       "description": "postgresql: keep suffix: jdbc4",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackageNames": [
         "org.postgresql:postgresql"
       ],
@@ -294,8 +402,12 @@
     },
     {
       "description": "postgresql: keep suffix: jdbc3",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackageNames": [
         "org.postgresql:postgresql"
       ],
@@ -304,8 +416,12 @@
     },
     {
       "description": "postgresql: deny other suffixes",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackageNames": [
         "org.postgresql:postgresql"
       ],
@@ -316,8 +432,12 @@
 
     {
       "description": "simpleflatmapper: group dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^org\\.simpleflatmapper:"
       ],
@@ -327,8 +447,12 @@
 
     {
       "description": "spotbugs: group dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^com\\.github\\.spotbugs:"
       ],
@@ -338,8 +462,12 @@
 
     {
       "description": "springframework: Spring release train BOMs: use CalVer only",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackageNames": [
         "org.springframework.data:spring-data-bom",
         "org.springframework.cloud:spring-cloud-dependencies"
@@ -348,8 +476,12 @@
     },
     {
       "description": "springframework: Spring Data release train BOM: ignore 0-9.*",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackageNames": [
         "org.springframework.data:spring-data-releasetrain"
       ],
@@ -357,8 +489,12 @@
     },
     {
       "description": "springframework: group dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^org\\.springframework[:.]"
       ],
@@ -368,8 +504,12 @@
 
     {
       "description": "squareup okhttp: keep OkHttp3 major version if current version is 3.*",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^com\\.squareup\\.okhttp3:"
       ],
@@ -378,8 +518,12 @@
     },
     {
       "description": "squareup okhttp: group OkHttp dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^com\\.squareup\\.okhttp\\d*:"
       ],
@@ -387,8 +531,12 @@
     },
     {
       "description": "squareup okio: group Okio dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^com\\.squareup\\.okio\\d*:"
       ],
@@ -396,8 +544,12 @@
     },
     {
       "description": "squareup leakcanary: group LeakCanary dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^com\\.squareup\\.leakcanary\\d*:"
       ],
@@ -405,8 +557,12 @@
     },
     {
       "description": "squareup moshi: group Moshi dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^com\\.squareup\\.moshi\\d*:"
       ],
@@ -414,8 +570,12 @@
     },
     {
       "description": "squareup misk: group Misk dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^com\\.squareup\\.misk\\d*:"
       ],
@@ -423,8 +583,12 @@
     },
     {
       "description": "squareup retrofit: group Retrofit dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^com\\.squareup\\.retrofit\\d*:"
       ],
@@ -432,8 +596,12 @@
     },
     {
       "description": "squareup sqldelight: group SQLDelight dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^com\\.squareup\\.sqldelight\\d*:"
       ],
@@ -441,8 +609,12 @@
     },
     {
       "description": "squareup wire: group Wire dependencies",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^com\\.squareup\\.wire\\d*:"
       ],
@@ -452,8 +624,12 @@
 
     {
       "description": "name.remal:gradle-plugins",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^name\\.remal:gradle-plugins(-.+)?$"
       ],
@@ -463,8 +639,12 @@
 
     {
       "description": "org.sonarsource.slang",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^org\\.sonarsource\\.slang:"
       ],
@@ -474,8 +654,12 @@
 
     {
       "description": "https://github.com/KengoTODA/errorprone-slf4j/issues/147",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackageNames": [
         "jp.skypencil.errorprone.slf4j:errorprone-slf4j"
       ],

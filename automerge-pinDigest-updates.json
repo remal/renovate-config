@@ -4,6 +4,8 @@
 
   "pinDigest": {
     "description": "Automerge pinDigest updates",
-    "extends": ["github>remal/renovate-config:automerge"]
+    "extends": [
+      "github>remal/renovate-config:automerge"
+    ]
   }
 }

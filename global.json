@@ -34,7 +34,10 @@
   "dependencyDashboard": false,
   "dependencyDashboardAutoclose": true,
   "dependencyDashboardTitle": "Renovate dependency updates",
-  "dependencyDashboardLabels": ["renovate", "dependencies"],
+  "dependencyDashboardLabels": [
+    "renovate",
+    "dependencies"
+  ],
 
   "osvVulnerabilityAlerts": false,
 
@@ -53,8 +56,12 @@
 
   "packageRules": [
     {
-      "matchLanguages": ["docker"],
-      "matchCategories": ["docker"],
+      "matchLanguages": [
+        "docker"
+      ],
+      "matchCategories": [
+        "docker"
+      ],
       "pinDigests": true
     }
   ]

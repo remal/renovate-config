@@ -1,16 +1,58 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
 
-  "addLabels": ["dependencies-{{arg0}}"],
+  "addLabels": [
+    "dependencies-{{arg0}}"
+  ],
 
-  "major": {"addLabels": ["dependencies-{{arg0}}-major"]},
-  "minor": {"addLabels": ["dependencies-{{arg0}}-minor"]},
-  "patch": {"addLabels": ["dependencies-{{arg0}}-patch"]},
-  "pin": {"addLabels": ["dependencies-{{arg0}}-pin"]},
-  "pinDigest": {"addLabels": ["dependencies-{{arg0}}-pinDigest"]},
-  "digest": {"addLabels": ["dependencies-{{arg0}}-digest"]},
-  "lockFileMaintenance": {"addLabels": ["dependencies-{{arg0}}-lockFileMaintenance"]},
-  "rollback": {"addLabels": ["dependencies-{{arg0}}-rollback"]},
-  "bump": {"addLabels": ["dependencies-{{arg0}}-bump"]},
-  "replacement": {"addLabels": ["dependencies-{{arg0}}-replacement"]}
+  "major": {
+    "addLabels": [
+      "dependencies-{{arg0}}-major"
+    ]
+  },
+  "minor": {
+    "addLabels": [
+      "dependencies-{{arg0}}-minor"
+    ]
+  },
+  "patch": {
+    "addLabels": [
+      "dependencies-{{arg0}}-patch"
+    ]
+  },
+  "pin": {
+    "addLabels": [
+      "dependencies-{{arg0}}-pin"
+    ]
+  },
+  "pinDigest": {
+    "addLabels": [
+      "dependencies-{{arg0}}-pinDigest"
+    ]
+  },
+  "digest": {
+    "addLabels": [
+      "dependencies-{{arg0}}-digest"
+    ]
+  },
+  "lockFileMaintenance": {
+    "addLabels": [
+      "dependencies-{{arg0}}-lockFileMaintenance"
+    ]
+  },
+  "rollback": {
+    "addLabels": [
+      "dependencies-{{arg0}}-rollback"
+    ]
+  },
+  "bump": {
+    "addLabels": [
+      "dependencies-{{arg0}}-bump"
+    ]
+  },
+  "replacement": {
+    "addLabels": [
+      "dependencies-{{arg0}}-replacement"
+    ]
+  }
 }

@@ -2,151 +2,378 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Pull Request labels",
 
-  "addLabels": ["renovate", "dependencies"],
+  "addLabels": [
+    "renovate",
+    "dependencies"
+  ],
 
-  "vulnerabilityAlerts": {"addLabels": ["security"]},
+  "vulnerabilityAlerts": {
+    "addLabels": [
+      "security"
+    ]
+  },
 
-  "major": {"addLabels": ["dependencies-major"]},
-  "minor": {"addLabels": ["dependencies-minor"]},
-  "patch": {"addLabels": ["dependencies-patch"]},
-  "pin": {"addLabels": ["dependencies-pin"]},
-  "pinDigest": {"addLabels": ["dependencies-pinDigest"]},
-  "digest": {"addLabels": ["dependencies-digest"]},
-  "lockFileMaintenance": {"addLabels": ["dependencies-lockFileMaintenance"]},
-  "rollback": {"addLabels": ["dependencies-rollback"]},
-  "bump": {"addLabels": ["dependencies-bump"]},
-  "replacement": {"addLabels": ["dependencies-replacement"]},
+  "major": {
+    "addLabels": [
+      "dependencies-major"
+    ]
+  },
+  "minor": {
+    "addLabels": [
+      "dependencies-minor"
+    ]
+  },
+  "patch": {
+    "addLabels": [
+      "dependencies-patch"
+    ]
+  },
+  "pin": {
+    "addLabels": [
+      "dependencies-pin"
+    ]
+  },
+  "pinDigest": {
+    "addLabels": [
+      "dependencies-pinDigest"
+    ]
+  },
+  "digest": {
+    "addLabels": [
+      "dependencies-digest"
+    ]
+  },
+  "lockFileMaintenance": {
+    "addLabels": [
+      "dependencies-lockFileMaintenance"
+    ]
+  },
+  "rollback": {
+    "addLabels": [
+      "dependencies-rollback"
+    ]
+  },
+  "bump": {
+    "addLabels": [
+      "dependencies-bump"
+    ]
+  },
+  "replacement": {
+    "addLabels": [
+      "dependencies-replacement"
+    ]
+  },
 
   "packageRules": [
     {
-      "matchLanguages": ["ansible"],
-      "matchCategories": ["ansible"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(ansible)"]
+      "matchLanguages": [
+        "ansible"
+      ],
+      "matchCategories": [
+        "ansible"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(ansible)"
+      ]
     },
     {
-      "matchLanguages": ["batect"],
-      "matchCategories": ["batect"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(batect)"]
+      "matchLanguages": [
+        "batect"
+      ],
+      "matchCategories": [
+        "batect"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(batect)"
+      ]
     },
     {
-      "matchLanguages": ["bazel"],
-      "matchCategories": ["bazel"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(bazel)"]
+      "matchLanguages": [
+        "bazel"
+      ],
+      "matchCategories": [
+        "bazel"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(bazel)"
+      ]
     },
     {
-      "matchLanguages": ["c"],
-      "matchCategories": ["c"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(c)"]
+      "matchLanguages": [
+        "c"
+      ],
+      "matchCategories": [
+        "c"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(c)"
+      ]
     },
     {
-      "matchLanguages": ["cd"],
-      "matchCategories": ["cd"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(cd)"]
+      "matchLanguages": [
+        "cd"
+      ],
+      "matchCategories": [
+        "cd"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(cd)"
+      ]
     },
     {
-      "matchLanguages": ["ci"],
-      "matchCategories": ["ci"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(ci)"]
+      "matchLanguages": [
+        "ci"
+      ],
+      "matchCategories": [
+        "ci"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(ci)"
+      ]
     },
     {
-      "matchLanguages": ["dart"],
-      "matchCategories": ["dart"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(dart)"]
+      "matchLanguages": [
+        "dart"
+      ],
+      "matchCategories": [
+        "dart"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(dart)"
+      ]
     },
     {
-      "matchLanguages": ["docker"],
-      "matchCategories": ["docker"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(docker)"]
+      "matchLanguages": [
+        "docker"
+      ],
+      "matchCategories": [
+        "docker"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(docker)"
+      ]
     },
     {
-      "matchLanguages": ["dotnet"],
-      "matchCategories": ["dotnet"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(dotnet)"]
+      "matchLanguages": [
+        "dotnet"
+      ],
+      "matchCategories": [
+        "dotnet"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(dotnet)"
+      ]
     },
     {
-      "matchLanguages": ["elixir"],
-      "matchCategories": ["elixir"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(elixir)"]
+      "matchLanguages": [
+        "elixir"
+      ],
+      "matchCategories": [
+        "elixir"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(elixir)"
+      ]
     },
     {
-      "matchLanguages": ["golang"],
-      "matchCategories": ["golang"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(golang)"]
+      "matchLanguages": [
+        "golang"
+      ],
+      "matchCategories": [
+        "golang"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(golang)"
+      ]
     },
     {
-      "matchLanguages": ["helm"],
-      "matchCategories": ["helm"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(helm)"]
+      "matchLanguages": [
+        "helm"
+      ],
+      "matchCategories": [
+        "helm"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(helm)"
+      ]
     },
     {
-      "matchLanguages": ["iac"],
-      "matchCategories": ["iac"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(iac)"]
+      "matchLanguages": [
+        "iac"
+      ],
+      "matchCategories": [
+        "iac"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(iac)"
+      ]
     },
     {
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(java)"]
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(java)"
+      ]
     },
     {
-      "matchLanguages": ["js"],
-      "matchCategories": ["js"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(js)"]
+      "matchLanguages": [
+        "js"
+      ],
+      "matchCategories": [
+        "js"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(js)"
+      ]
     },
     {
-      "matchLanguages": ["kubernetes"],
-      "matchCategories": ["kubernetes"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(kubernetes)"]
+      "matchLanguages": [
+        "kubernetes"
+      ],
+      "matchCategories": [
+        "kubernetes"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(kubernetes)"
+      ]
     },
     {
-      "matchLanguages": ["node"],
-      "matchCategories": ["node"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(node)"]
+      "matchLanguages": [
+        "node"
+      ],
+      "matchCategories": [
+        "node"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(node)"
+      ]
     },
     {
-      "matchLanguages": ["perl"],
-      "matchCategories": ["perl"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(perl)"]
+      "matchLanguages": [
+        "perl"
+      ],
+      "matchCategories": [
+        "perl"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(perl)"
+      ]
     },
     {
-      "matchLanguages": ["php"],
-      "matchCategories": ["php"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(php)"]
+      "matchLanguages": [
+        "php"
+      ],
+      "matchCategories": [
+        "php"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(php)"
+      ]
     },
     {
-      "matchLanguages": ["python"],
-      "matchCategories": ["python"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(python)"]
+      "matchLanguages": [
+        "python"
+      ],
+      "matchCategories": [
+        "python"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(python)"
+      ]
     },
     {
-      "matchLanguages": ["ruby"],
-      "matchCategories": ["ruby"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(ruby)"]
+      "matchLanguages": [
+        "ruby"
+      ],
+      "matchCategories": [
+        "ruby"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(ruby)"
+      ]
     },
     {
-      "matchLanguages": ["rust"],
-      "matchCategories": ["rust"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(rust)"]
+      "matchLanguages": [
+        "rust"
+      ],
+      "matchCategories": [
+        "rust"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(rust)"
+      ]
     },
     {
-      "matchLanguages": ["swift"],
-      "matchCategories": ["swift"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(swift)"]
+      "matchLanguages": [
+        "swift"
+      ],
+      "matchCategories": [
+        "swift"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(swift)"
+      ]
     },
     {
-      "matchLanguages": ["terraform"],
-      "matchCategories": ["terraform"],
-      "extends": ["github>remal/renovate-config:parameterized-labels(terraform)"]
+      "matchLanguages": [
+        "terraform"
+      ],
+      "matchCategories": [
+        "terraform"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(terraform)"
+      ]
     }
   ],
 
-  "asdf": {"extends": ["github>remal/renovate-config:parameterized-labels(asdf)"]},
-  "bicep": {"extends": ["github>remal/renovate-config:parameterized-labels(bicep)"]},
-  "fvm": {"extends": ["github>remal/renovate-config:parameterized-labels(fvm)"]},
-  "git-submodules": {"extends": ["github>remal/renovate-config:parameterized-labels(git-submodules)"]},
-  "hermit": {"extends": ["github>remal/renovate-config:parameterized-labels(hermit)"]},
-  "homebrew": {"extends": ["github>remal/renovate-config:parameterized-labels(homebrew)"]},
-  "nix": {"extends": ["github>remal/renovate-config:parameterized-labels(nix)"]},
-  "osgi": {"extends": ["github>remal/renovate-config:parameterized-labels(osgi)"]},
-  "pre-commit": {"extends": ["github>remal/renovate-config:parameterized-labels(pre-commit)"]}
+  "asdf": {
+    "extends": [
+      "github>remal/renovate-config:parameterized-labels(asdf)"
+    ]
+  },
+  "bicep": {
+    "extends": [
+      "github>remal/renovate-config:parameterized-labels(bicep)"
+    ]
+  },
+  "fvm": {
+    "extends": [
+      "github>remal/renovate-config:parameterized-labels(fvm)"
+    ]
+  },
+  "git-submodules": {
+    "extends": [
+      "github>remal/renovate-config:parameterized-labels(git-submodules)"
+    ]
+  },
+  "hermit": {
+    "extends": [
+      "github>remal/renovate-config:parameterized-labels(hermit)"
+    ]
+  },
+  "homebrew": {
+    "extends": [
+      "github>remal/renovate-config:parameterized-labels(homebrew)"
+    ]
+  },
+  "nix": {
+    "extends": [
+      "github>remal/renovate-config:parameterized-labels(nix)"
+    ]
+  },
+  "osgi": {
+    "extends": [
+      "github>remal/renovate-config:parameterized-labels(osgi)"
+    ]
+  },
+  "pre-commit": {
+    "extends": [
+      "github>remal/renovate-config:parameterized-labels(pre-commit)"
+    ]
+  }
 }

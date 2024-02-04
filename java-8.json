@@ -5,8 +5,12 @@
   "packageRules": [
     {
       "description": "Mockito >=5 supports Java >=11",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "packagePatterns": [
         "^org\\.mockito[.:]"
       ],
@@ -15,8 +19,12 @@
     },
     {
       "description": "JGit >=6 supports Java >=11",
-      "matchLanguages": ["java"],
-      "matchCategories": ["java"],
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
       "matchPackagePatterns": [
         "^org\\.eclipse\\.jgit[.:]"
       ],
