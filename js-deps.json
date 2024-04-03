@@ -1,0 +1,46 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Settings for Java libraries",
+
+  "packageRules": [
+    {
+      "description": "@octokit/plugin-request-log: group dependencies",
+      "matchLanguages": [
+        "js"
+      ],
+      "matchCategories": [
+        "js"
+      ],
+      "matchPackageNames": [
+        "@octokit/plugin-request-log"
+      ],
+      "groupName": "@octokit/plugin-request-log"
+    },
+    {
+      "description": "@octokit/plugin-retry: group dependencies",
+      "matchLanguages": [
+        "js"
+      ],
+      "matchCategories": [
+        "js"
+      ],
+      "matchPackageNames": [
+        "@octokit/plugin-retry"
+      ],
+      "groupName": "@octokit/plugin-retry"
+    },
+    {
+      "description": "@octokit/plugin-throttling: group dependencies",
+      "matchLanguages": [
+        "js"
+      ],
+      "matchCategories": [
+        "js"
+      ],
+      "matchPackageNames": [
+        "@octokit/plugin-throttling"
+      ],
+      "groupName": "@octokit/plugin-throttling"
+    }
+  ]
+}
