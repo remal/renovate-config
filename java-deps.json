@@ -155,7 +155,7 @@
 
 
     {
-      "description": "guava: version compatibility",
+      "description": "guava: jre suffix should not be updated to android",
       "matchLanguages": [
         "java"
       ],
@@ -165,7 +165,22 @@
       "matchPackageNames": [
         "com.google.guava:guava"
       ],
-      "versionCompatibility": "^(?<version>[^-]+)(?<compatibility>-.+)?$"
+      "matchCurrentVersion": "/((-jre)|(\\d)$/",
+      "allowedVersions": "!/-android$/"
+    },
+    {
+      "description": "guava: keep suffix: android",
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
+      "matchPackageNames": [
+        "com.google.guava:guava"
+      ],
+      "matchCurrentVersion": "/-android$/",
+      "allowedVersions": "/-android$/"
     },
     {
       "description": "guava: deny 0.* version",
