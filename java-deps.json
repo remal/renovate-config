@@ -155,7 +155,7 @@
 
 
     {
-      "description": "guava: keep suffix: jre",
+      "description": "guava: compatibility",
       "matchLanguages": [
         "java"
       ],
@@ -165,36 +165,7 @@
       "matchPackageNames": [
         "com.google.guava:guava"
       ],
-      "matchCurrentVersion": "/-jre$/",
-      "allowedVersions": "/-jre$/"
-    },
-    {
-      "description": "guava: keep suffix: android",
-      "matchLanguages": [
-        "java"
-      ],
-      "matchCategories": [
-        "java"
-      ],
-      "matchPackageNames": [
-        "com.google.guava:guava"
-      ],
-      "matchCurrentVersion": "/-android$/",
-      "allowedVersions": "/-android$/"
-    },
-    {
-      "description": "guava: deny other suffixes",
-      "matchLanguages": [
-        "java"
-      ],
-      "matchCategories": [
-        "java"
-      ],
-      "matchPackageNames": [
-        "com.google.guava:guava"
-      ],
-      "matchCurrentVersion": "!/-(jre|android)$/",
-      "enabled": false
+      "versionCompatibility": "^(?<version>[^-]+)(?<compatibility>-.+)?$"
     },
 
 
