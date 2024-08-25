@@ -165,7 +165,7 @@
       "matchPackageNames": [
         "com.google.guava:guava"
       ],
-      "matchCurrentVersion": "/((-jre)|(\\d)$/",
+      "matchCurrentVersion": "/((-jre)|(\\d))$/",
       "allowedVersions": "!/-android$/"
     },
     {
