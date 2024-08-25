@@ -166,7 +166,7 @@
         "com.google.guava:guava"
       ],
       "matchCurrentVersion": "/-jre$/",
-      "allowedVersions": "/-jre$/"
+      "allowedVersions": "!/-android$/"
     },
     {
       "description": "guava: keep suffix: android",
