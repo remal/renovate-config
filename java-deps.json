@@ -653,6 +653,36 @@
 
 
     {
+      "description": "jetbrains: intellij: calver",
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
+      "matchPackagePatterns": [
+        "^com\\.jetbrains\\.intellij\\."
+      ],
+      "matchCurrentVersion": "/^\\d{4,}\\./",
+      "allowedVersions": "/^\\d{4,}\\./"
+    },
+    {
+      "description": "jetbrains: intellij: build number",
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
+      "matchPackagePatterns": [
+        "^com\\.jetbrains\\.intellij\\."
+      ],
+      "matchCurrentVersion": "/^\\d{3}\\./",
+      "allowedVersions": "/^\\d{3}\\./"
+    },
+
+
+    {
       "description": "https://github.com/KengoTODA/errorprone-slf4j/issues/147",
       "matchLanguages": [
         "java"
