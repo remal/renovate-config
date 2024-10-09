@@ -12,6 +12,13 @@
     "github>remal/renovate-config:github-actions"
   ],
 
+  "logLevelRemap": [
+    {
+      "matchMessage": "/^Custom manager fetcher/",
+      "newLogLevel": "info"
+    }
+  ],
+
   "onboarding": false,
   "configWarningReuseIssue": false,
   "rebaseWhen": "behind-base-branch",
