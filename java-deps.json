@@ -638,19 +638,6 @@
 
 
     {
-      "description": "org.sonarsource.slang",
-      "matchLanguages": [
-        "java"
-      ],
-      "matchCategories": [
-        "java"
-      ],
-      "matchPackagePatterns": [
-        "^org\\.sonarsource\\.slang:"
-      ],
-      "groupName": "org.sonarsource.slang"
-    },
-    {
       "description": "org.sonarsource.sonarlint.core",
       "matchLanguages": [
         "java"
@@ -662,6 +649,32 @@
         "^org\\.sonarsource\\.sonarlint\\.core:"
       ],
       "groupName": "org.sonarsource.sonarlint.core"
+    },
+    {
+      "description": "org.sonarsource.java",
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
+      "matchPackagePatterns": [
+        "^org\\.sonarsource\\.java:"
+      ],
+      "groupName": "org.sonarsource.java"
+    },
+    {
+      "description": "org.sonarsource.slang",
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
+      "matchPackagePatterns": [
+        "^org\\.sonarsource\\.slang:"
+      ],
+      "groupName": "org.sonarsource.slang"
     },
 
 
