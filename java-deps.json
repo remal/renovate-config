@@ -650,6 +650,19 @@
       ],
       "groupName": "org.sonarsource.slang"
     },
+    {
+      "description": "org.sonarsource.sonarlint.core",
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
+      "matchPackagePatterns": [
+        "^org\\.sonarsource\\.sonarlint\\.core:"
+      ],
+      "groupName": "org.sonarsource.sonarlint.core"
+    },
 
 
     {
