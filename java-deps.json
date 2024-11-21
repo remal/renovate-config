@@ -676,6 +676,19 @@
       ],
       "groupName": "org.sonarsource.slang"
     },
+    {
+      "description": "com.sonarsource.dotnet",
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
+      "matchPackagePatterns": [
+        "^com\\.sonarsource\\.dotnet:"
+      ],
+      "groupName": "com.sonarsource.dotnet"
+    },
 
 
     {
