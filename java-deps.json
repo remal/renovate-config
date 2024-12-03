@@ -19,6 +19,36 @@
 
 
     {
+      "description": "org.apache.commons: allow all versions if current version is a milestone version",
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
+      "matchPackagePatterns": [
+        "^org\\.apache\\.commons:"
+      ],
+      "matchCurrentVersion": "/-M\\d*$/",
+      "allowedVersions": "/.*/"
+    },
+    {
+      "description": "org.apache.commons: skip milestone versions",
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
+      "matchPackagePatterns": [
+        "^org\\.apache\\.commons:"
+      ],
+      "matchCurrentVersion": "!/-M\\d*$/",
+      "allowedVersions": "!/-M\\d*$/"
+    },
+
+
+    {
       "description": "mapstruct: group dependencies",
       "matchLanguages": [
         "java"
