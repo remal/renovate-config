@@ -19,6 +19,21 @@
 
 
     {
+      "description": "dagger 2: group dependencies",
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
+      "matchPackagePatterns": [
+        "^com\\.google\\.dagger:dagger"
+      ],
+      "groupName": "com.google.dagger:dagger"
+    },
+
+
+    {
       "description": "org.apache.commons: allow all versions if current version is a milestone version",
       "matchLanguages": [
         "java"
