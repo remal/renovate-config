@@ -27,9 +27,9 @@
         "java"
       ],
       "matchPackagePatterns": [
-        "^com\\.google\\.dagger:dagger"
+        "^com\\.google\\.dagger:"
       ],
-      "groupName": "com.google.dagger:dagger"
+      "groupName": "com.google.dagger"
     },
 
 
