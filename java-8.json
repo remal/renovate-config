@@ -17,6 +17,7 @@
       "matchCurrentVersion": "(,4.9999)",
       "allowedVersions": "(,4.9999)"
     },
+
     {
       "description": "JGit >=6 supports Java >=11",
       "matchLanguages": [

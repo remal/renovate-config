@@ -46,6 +46,34 @@
       ],
       "groupName": "io.avaje:avaje-inject"
     },
+    {
+      "description": "io.avaje:avaje-inject: keep javax suffix",
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
+      "matchPackagePatterns": [
+        "^io\\.avaje:avaje-inject(-.+)"
+      ],
+      "matchCurrentVersion": "/-javax$/",
+      "allowedVersions": "/-javax$/"
+    },
+    {
+      "description": "io.avaje:avaje-inject: don't udpate to javax suffix",
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
+      "matchPackagePatterns": [
+        "^io\\.avaje:avaje-inject(-.+)"
+      ],
+      "matchCurrentVersion": "/\\d$/",
+      "allowedVersions": "!/-javax$/"
+    },
 
 
     {
