@@ -31,6 +31,19 @@
       ],
       "groupName": "com.google.dagger"
     },
+    {
+      "description": "toothpick: group dependencies",
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
+      "matchPackagePatterns": [
+        "^com\\.github\\.stephanenicolas\\.toothpick:"
+      ],
+      "groupName": "com.github.stephanenicolas.toothpick"
+    },
 
 
     {
