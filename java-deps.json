@@ -713,6 +713,21 @@
 
 
     {
+      "description": "name.remal.gradle-plugins.toolkit",
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
+      "matchPackagePatterns": [
+        "^name\\.remal\\.gradle-plugins\\.toolkit:"
+      ],
+      "groupName": "name.remal.gradle-plugins.toolkit"
+    },
+
+
+    {
       "description": "org.sonarsource.sonarlint.core",
       "matchLanguages": [
         "java"
