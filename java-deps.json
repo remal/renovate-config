@@ -31,6 +31,23 @@
       ],
       "groupName": "com.google.dagger"
     },
+
+
+    {
+      "description": "io.avaje:avaje-inject: group dependencies",
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
+      "matchPackagePatterns": [
+        "^io\\.avaje:avaje-inject(-.+)"
+      ],
+      "groupName": "io.avaje:avaje-inject"
+    },
+
+
     {
       "description": "toothpick: group dependencies",
       "matchLanguages": [
