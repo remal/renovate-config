@@ -2,8 +2,9 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Settings for GitHub Actions updates",
 
-  "regexManagers": [
+  "customManagers": [
     {
+      "customType": "regex",
       "fileMatch": [
         "(^|/)(workflow-templates|\\.(?:github|gitea|forgejo)/(?:workflows|actions))/.+\\.ya?ml$"
       ],
@@ -16,6 +17,7 @@
       "versioningTemplate": "docker"
     },
     {
+      "customType": "regex",
       "fileMatch": [
         "(^|/)(workflow-templates|\\.(?:github|gitea|forgejo)/(?:workflows|actions))/.+\\.ya?ml$"
       ],
