@@ -756,6 +756,21 @@
 
 
     {
+      "description": "name.remal.gradle-plugins.generate-sources",
+      "matchLanguages": [
+        "java"
+      ],
+      "matchCategories": [
+        "java"
+      ],
+      "matchPackagePatterns": [
+        "^name\\.remal\\.gradle-plugins\\.generate-sources:"
+      ],
+      "groupName": "name.remal.gradle-plugins.generate-sources"
+    },
+
+
+    {
       "description": "org.sonarsource.sonarlint.core",
       "matchLanguages": [
         "java"
