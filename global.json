@@ -13,9 +13,12 @@
   ],
 
   "onboarding": false,
+  "printConfig": true,
   "configWarningReuseIssue": false,
-  "rebaseLabel": "renovate-rebase",
   "rebaseWhen": "behind-base-branch",
+  "rebaseLabel": "renovate-rebase",
+  "stopUpdatingLabel": "renovate-stop-updating",
+  "keepUpdatedLabel": "renovate-keep-updated",
 
   "separateMultipleMajor": true,
   "separateMajorMinor": true,
@@ -65,6 +68,10 @@
         "docker"
       ],
       "pinDigests": true
+    },
+    {
+      "matchDatasources": ["npm"],
+      "minimumReleaseAge": "3 days"
     }
   ]
 }
