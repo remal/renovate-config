@@ -4,6 +4,11 @@
 
   "extends": [
     "config:recommended",
+    "docker:pinDigests",
+    "customManagers:dockerfileVersions",
+    "customManagers:githubActionsVersions",
+    "customManagers:gitlabPipelineVersions",
+    "customManagers:mavenPropertyVersions",
     "github>whitesource/merge-confidence:beta",
     "github>remal/renovate-config:labels",
     "github>remal/renovate-config:ci",
@@ -60,15 +65,6 @@
 
 
   "packageRules": [
-    {
-      "matchLanguages": [
-        "docker"
-      ],
-      "matchCategories": [
-        "docker"
-      ],
-      "pinDigests": true
-    },
     {
       "matchDatasources": ["npm"],
       "minimumReleaseAge": "3 days"
