@@ -4,6 +4,7 @@
 
   "extends": [
     "config:recommended",
+    ":configMigration",
     "docker:pinDigests",
     "customManagers:dockerfileVersions",
     "customManagers:githubActionsVersions",
