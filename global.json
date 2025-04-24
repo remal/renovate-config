@@ -19,7 +19,7 @@
   ],
 
   "onboarding": false,
-  "printConfig": true,
+  "printConfig": false,
   "configWarningReuseIssue": false,
   "rebaseWhen": "behind-base-branch",
   "rebaseLabel": "renovate-rebase",
