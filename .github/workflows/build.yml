@@ -24,7 +24,7 @@ jobs:
       group: ${{github.workflow}}-search-configs
       cancel-in-progress: true
     outputs:
-      configFiles: ${{fromJSON(steps.configs.outputs.result)}}
+      configFiles: ${{steps.configs.outputs.result}}
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
