@@ -11,7 +11,8 @@ if (newConfig === log) {
 }
 
 newConfig = JSON.stringify(JSON.parse(newConfig), null, 2)
-console.log(`Writing new config:\n  ${newConfig.replace(/\n/g, '\n  ')}`)
+console.log(`New config:\n${newConfig}`)
 
+console.log(`Migrating ${configFile}`)
 fs.writeFileSync(configFile, newConfig + '\n', encoding)
 
