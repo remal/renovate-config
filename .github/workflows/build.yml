@@ -80,8 +80,5 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
     - name: Validate config
-      uses: suzuki-shunsuke/github-action-renovate-config-validator@v1.1.1
-      with:
-        validator_version: 31.15.0
-        config_file_path: ${{matrix.config}}
-        strict: 'false'
+      run: |
+        npx --yes --package "renovate@40.11.10" -- renovate-config-validator "${{matrix.config}}"
