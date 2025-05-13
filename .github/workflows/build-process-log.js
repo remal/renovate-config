@@ -10,7 +10,10 @@ if (newConfig === log || !newConfig.trim().length) {
     process.exit(1)
 }
 
-const newConfigPrefix = newConfig.replace(/^\n+([ \t]+)[\s\S]+/, '$1')
+while (newConfig.startsWith('\n')) { newConfig = newConfig.substring(1) }
+while (newConfig.endsWith('\n')) { newConfig = newConfig.substring(0, newConfig.length - 1) }
+
+const newConfigPrefix = newConfig.replace(/^([ \t]+)[\s\S]+/, '$1')
 console.log(`newConfigPrefix='${newConfigPrefix}'`)
 newConfig = '{\n' + newConfig.split('\n')
     .map(line => line.substring(newConfigPrefix.length))
