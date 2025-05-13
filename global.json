@@ -1,7 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Settings for all projects",
-
   "extends": [
     "config:recommended",
     ":configMigration",
@@ -11,14 +10,13 @@
     "customManagers:githubActionsVersions",
     "customManagers:gitlabPipelineVersions",
     "customManagers:mavenPropertyVersions",
-    "github>whitesource/merge-confidence:beta",
+    "mergeConfidence:all-badges",
     "github>remal/renovate-config:labels",
     "github>remal/renovate-config:ci",
     "github>remal/renovate-config:java-deps",
     "github>remal/renovate-config:js-deps",
     "github>remal/renovate-config:github-actions"
   ],
-
   "onboarding": false,
   "printConfig": false,
   "configWarningReuseIssue": false,
@@ -26,23 +24,18 @@
   "rebaseLabel": "renovate-rebase",
   "stopUpdatingLabel": "renovate-stop-updating",
   "keepUpdatedLabel": "renovate-keep-updated",
-
   "separateMultipleMajor": true,
   "separateMajorMinor": true,
   "separateMinorPatch": true,
-
-  "transitiveRemediation": true,
   "semanticCommits": "disabled",
   "rollbackPrs": false,
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "updateInternalDeps": true,
-
   "assigneesFromCodeOwners": true,
   "assigneesSampleSize": 1,
   "reviewersFromCodeOwners": true,
   "reviewersSampleSize": 1,
-
   "dependencyDashboard": false,
   "dependencyDashboardAutoclose": true,
   "dependencyDashboardTitle": "Renovate dependency updates",
@@ -50,15 +43,12 @@
     "renovate",
     "dependencies"
   ],
-
   "osvVulnerabilityAlerts": false,
-
   "gitIgnoredAuthors": [
     "mergify[bot]@users.noreply.github.com",
     "29139614+renovate[bot]@users.noreply.github.com",
     "bot@renovateapp.com"
   ],
-
   "hostRules": [
     {
       "timeout": 60000

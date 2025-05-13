@@ -1,18 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Pull Request labels",
-
   "addLabels": [
     "renovate",
     "dependencies"
   ],
-
   "vulnerabilityAlerts": {
     "addLabels": [
       "security"
     ]
   },
-
   "major": {
     "addLabels": [
       "dependencies-major"
@@ -58,17 +55,8 @@
       "dependencies-replacement"
     ]
   },
-  "rollback": {
-    "addLabels": [
-      "dependencies-rollback"
-    ]
-  },
-
   "packageRules": [
     {
-      "matchLanguages": [
-        "ansible"
-      ],
       "matchCategories": [
         "ansible"
       ],
@@ -77,9 +65,6 @@
       ]
     },
     {
-      "matchLanguages": [
-        "batect"
-      ],
       "matchCategories": [
         "batect"
       ],
@@ -88,9 +73,6 @@
       ]
     },
     {
-      "matchLanguages": [
-        "bazel"
-      ],
       "matchCategories": [
         "bazel"
       ],
@@ -99,9 +81,6 @@
       ]
     },
     {
-      "matchLanguages": [
-        "c"
-      ],
       "matchCategories": [
         "c"
       ],
@@ -110,9 +89,6 @@
       ]
     },
     {
-      "matchLanguages": [
-        "cd"
-      ],
       "matchCategories": [
         "cd"
       ],
@@ -121,9 +97,6 @@
       ]
     },
     {
-      "matchLanguages": [
-        "ci"
-      ],
       "matchCategories": [
         "ci"
       ],
@@ -132,9 +105,6 @@
       ]
     },
     {
-      "matchLanguages": [
-        "dart"
-      ],
       "matchCategories": [
         "dart"
       ],
@@ -143,9 +113,6 @@
       ]
     },
     {
-      "matchLanguages": [
-        "docker"
-      ],
       "matchCategories": [
         "docker"
       ],
@@ -154,9 +121,6 @@
       ]
     },
     {
-      "matchLanguages": [
-        "dotnet"
-      ],
       "matchCategories": [
         "dotnet"
       ],
@@ -165,9 +129,6 @@
       ]
     },
     {
-      "matchLanguages": [
-        "elixir"
-      ],
       "matchCategories": [
         "elixir"
       ],
@@ -176,9 +137,6 @@
       ]
     },
     {
-      "matchLanguages": [
-        "golang"
-      ],
       "matchCategories": [
         "golang"
       ],
@@ -187,9 +145,6 @@
       ]
     },
     {
-      "matchLanguages": [
-        "helm"
-      ],
       "matchCategories": [
         "helm"
       ],
@@ -198,9 +153,6 @@
       ]
     },
     {
-      "matchLanguages": [
-        "iac"
-      ],
       "matchCategories": [
         "iac"
       ],
@@ -209,9 +161,6 @@
       ]
     },
     {
-      "matchLanguages": [
-        "java"
-      ],
       "matchCategories": [
         "java"
       ],
@@ -220,9 +169,6 @@
       ]
     },
     {
-      "matchLanguages": [
-        "js"
-      ],
       "matchCategories": [
         "js"
       ],
@@ -231,9 +177,6 @@
       ]
     },
     {
-      "matchLanguages": [
-        "kubernetes"
-      ],
       "matchCategories": [
         "kubernetes"
       ],
@@ -242,9 +185,6 @@
       ]
     },
     {
-      "matchLanguages": [
-        "node"
-      ],
       "matchCategories": [
         "node"
       ],
@@ -253,9 +193,6 @@
       ]
     },
     {
-      "matchLanguages": [
-        "perl"
-      ],
       "matchCategories": [
         "perl"
       ],
@@ -264,9 +201,6 @@
       ]
     },
     {
-      "matchLanguages": [
-        "php"
-      ],
       "matchCategories": [
         "php"
       ],
@@ -275,9 +209,6 @@
       ]
     },
     {
-      "matchLanguages": [
-        "python"
-      ],
       "matchCategories": [
         "python"
       ],
@@ -286,9 +217,6 @@
       ]
     },
     {
-      "matchLanguages": [
-        "ruby"
-      ],
       "matchCategories": [
         "ruby"
       ],
@@ -297,9 +225,6 @@
       ]
     },
     {
-      "matchLanguages": [
-        "rust"
-      ],
       "matchCategories": [
         "rust"
       ],
@@ -308,9 +233,6 @@
       ]
     },
     {
-      "matchLanguages": [
-        "swift"
-      ],
       "matchCategories": [
         "swift"
       ],
@@ -319,9 +241,6 @@
       ]
     },
     {
-      "matchLanguages": [
-        "terraform"
-      ],
       "matchCategories": [
         "terraform"
       ],
@@ -330,7 +249,6 @@
       ]
     }
   ],
-
   "asdf": {
     "extends": [
       "github>remal/renovate-config:parameterized-labels(asdf)"

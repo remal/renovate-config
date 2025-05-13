@@ -1,13 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Enable automerge",
-
   "automerge": true,
   "platformAutomerge": true,
-  "gitLabAutomerge": true,
   "gitLabIgnoreApprovals": true,
   "autoApprove": true,
-  "azureAutoApprove": true,
   "assignAutomerge": false,
   "assigneesFromCodeOwners": false,
   "reviewersFromCodeOwners": false,

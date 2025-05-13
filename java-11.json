@@ -1,21 +1,17 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Settings for projects that support Java 8",
-
   "packageRules": [
     {
       "description": "JGit >=7 supports Java >=17",
-      "matchLanguages": [
-        "java"
-      ],
       "matchCategories": [
         "java"
       ],
-      "matchPackagePatterns": [
-        "^org\\.eclipse\\.jgit[.:]"
-      ],
       "matchCurrentVersion": "(,6.9999)",
-      "allowedVersions": "(,6.9999)"
+      "allowedVersions": "(,6.9999)",
+      "matchPackageNames": [
+        "/^org\\.eclipse\\.jgit[.:]/"
+      ]
     }
   ]
 }
