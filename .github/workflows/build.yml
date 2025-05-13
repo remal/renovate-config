@@ -81,8 +81,8 @@ jobs:
           logFile=$(mktemp -q)
           npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator --strict "$configFile" 2>&1 | tee "$logFile" \
             || ( \
-              node .github/workflows/build-process-log.js "$logFile" \
+              node .github/workflows/build-process-log.js "$configFile" "$logFile" \
               && echo "Revalidating $configFile" \
-              && npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator --strict "$configFile" "$configFile"
+              && npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator --strict "$configFile"
             )
         done
