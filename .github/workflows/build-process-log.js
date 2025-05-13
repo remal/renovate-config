@@ -1,6 +1,8 @@
 const fs = require('fs')
 
-const logFile = process.argv[2]
+const configFile = process.argv[2]
+const logFile = process.argv[3]
+
 const log = '\n' + fs.readFileSync(logFile, 'utf8') + '\n'
 
 let newConfig = log.replace(/\n\s*WARN: Config migration necessary(\n[ \t]+)"oldConfig": \{[\s\S]+?\1\},\1"newConfig": (\{[\s\S]+?\1\})/, '$2')
@@ -11,5 +13,5 @@ if (newConfig === log) {
 newConfig = JSON.stringify(JSON.parse(newConfig), null, 2)
 console.log(`Writing new config:\n  ${newConfig.replace(/\n/g, '\n  ')}`)
 
-fs.writeFileSync(logFile, newConfig + '\n', encoding)
+fs.writeFileSync(configFile, newConfig + '\n', encoding)
 

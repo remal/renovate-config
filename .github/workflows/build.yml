@@ -83,6 +83,6 @@ jobs:
             || ( \
               node .github/workflows/build-process-log.js "$logFile" \
               && echo "Revalidating $configFile" \
-              && npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator --strict "$configFile"
+              && npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator --strict "$configFile" "$configFile"
             )
         done
