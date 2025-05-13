@@ -39,7 +39,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: lts
+        node-version: lts/*
         cache: npm
         cache-dependency-path: .github/workflows/build.yml
     - name: Find Renovate config files
@@ -71,5 +71,5 @@ jobs:
       run: |
         for configFile in `cat "$CONFIGS_FILE"`; do
           echo "Validating $configFile"
-          npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator "$configFile"
+          npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator --strict "$configFile"
         done
