@@ -6,7 +6,7 @@
     {
       matchDepNames: ['renovate'],
       //schedule: ["after 6pm on sunday"]
-      minimumReleaseAge: '3 months',
+      minimumReleaseAge: '2 weeks',
       internalChecksFilter: 'strict',
       patch: {
         minimumReleaseAge: null,
