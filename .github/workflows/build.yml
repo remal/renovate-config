@@ -73,7 +73,7 @@ jobs:
           }
           fs.writeFileSync('${{steps.configsFile.outputs.path}}', files.join('\n'), 'utf8')
 
-    - name: Validate config
+    - name: Validate and migrate config
       run: |
         for configFile in `cat "${{steps.configsFile.outputs.path}}"`; do
           echo " "
@@ -86,3 +86,10 @@ jobs:
               && npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator --strict "$configFile"
             )
         done
+
+    - name: Push back
+      if: ${{startsWith(github.ref, 'refs/heads/')}}
+      uses: remal-github-actions/push-back@v1
+      with:
+        githubToken: ${{secrets.PUSH_BACK_TOKEN}}
+        message: '[push-back] Push-back migrated configs'
