@@ -9,7 +9,7 @@ on:
 
 defaults:
   run:
-    shell: cmd
+    shell: bash
 
 jobs:
   prepare:
@@ -19,7 +19,7 @@ jobs:
       || github.event_name != 'push'
       }}
     runs-on: windows-latest
-    timeout-minutes: 60
+    timeout-minutes: 10
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -31,11 +31,12 @@ jobs:
       with:
         result-encoding: json
         script: |
-          return await glob.create([
+          const globber = await glob.create([
             '**/*.json',
             '**/*.json5',
             '!.github/**',
-          ].join('\n')).glob()
+          ].join('\n'))
+          return await globber.glob()
     - name: Show all matching files
       run: |
         echo "${{ steps.configs.outputs.result }}"
