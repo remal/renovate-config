@@ -20,6 +20,11 @@ jobs:
       }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    concurrency:
+      group: ${{github.workflow}}-search-configs
+      cancel-in-progress: true
+    outputs:
+      configFiles: ${{fromJSON(steps.configs.outputs.result)}}
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -40,8 +45,25 @@ jobs:
           const files = await globber.glob()
           return files.map(file =>
             path.relative(process.cwd(), file)
-          )
+          ).sort()
     - name: Show all matching files
       run: |
-        echo "${{ steps.configs.outputs.result }}"
+        echo "${{steps.configs.outputs.result}}"
 
+  process-config:
+    needs:
+    - search-configs
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        config: ${{fromJSON(needs.build.outputs.configFiles)}}
+    concurrency:
+      group: ${{github.workflow}}-process-config-${{strategy.job-index||'0'}}
+      cancel-in-progress: false
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
