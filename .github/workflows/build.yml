@@ -79,7 +79,9 @@ jobs:
           echo " "
           echo "Validating $configFile"
           logFile=$(mktemp -q)
-          npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator --strict "$configFile" 2>&1 | tee ${logFile} \
-            && echo 'true' \
-            || echo 'false'
+          npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator --strict "$configFile" 2>&1 | tee "$logFile" \
+            || ( \
+              node .github/workflows/build-process-log.js "$logFile" \
+              && npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator --strict "$configFile"
+            )
         done
