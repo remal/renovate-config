@@ -66,11 +66,22 @@ jobs:
       matrix:
         config: ${{fromJSON(needs.search.outputs.configFiles)}}
     name: ${{matrix.config}}
+    env:
+      RENOVATE_ADDITIONAL_BRANCH_PREFIX: ${{matrix.config}}/
     concurrency:
       group: ${{github.workflow}}-process-${{strategy.job-index||'0'}}
+      #group: ${{github.workflow}}-process
       cancel-in-progress: false
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+    - name: Validate config
+      uses: suzuki-shunsuke/github-action-renovate-config-validator@v1.1.1
+      with:
+        validator_version: 31.15.0
+        config_file_path: ${{matrix.config}}
+        strict: 'false'
