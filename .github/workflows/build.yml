@@ -79,6 +79,9 @@ jobs:
         fetch-depth: 0
     - name: Setup Node.js
       uses: actions/setup-node@v4
+      with:
+        cache: npm
+        cache-dependency-path: .github/workflows/build.yml
     - name: Validate config
       run: |
         npx --yes --package "renovate@40.11.10" -- renovate-config-validator "${{matrix.config}}"
