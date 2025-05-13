@@ -87,7 +87,7 @@ jobs:
             )
         done
 
-    - name: Push back
+    - name: Push back migrated configs
       if: ${{startsWith(github.ref, 'refs/heads/')}}
       uses: remal-github-actions/push-back@v1
       with:
