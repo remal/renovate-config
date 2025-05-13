@@ -16,7 +16,7 @@ while (newConfig.endsWith('\n')) { newConfig = newConfig.substring(0, newConfig.
 const newConfigPrefix = newConfig.replace(/^([ \t]+)[\s\S]+/, '$1')
 console.log(`newConfigPrefix='${newConfigPrefix}'`)
 newConfig = '{\n' + newConfig.split('\n')
-    .map(line => line.substring(newConfigPrefix.length))
+    .map(line => '  ' + line.substring(newConfigPrefix.length))
     .join('\n') + '\n}'
 
 //newConfig = JSON.stringify(JSON.parse(newConfig), null, 2)
