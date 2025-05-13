@@ -8,9 +8,6 @@
       "matchLanguages": [
         "java"
       ],
-      "matchCategories": [
-        "java"
-      ],
       "matchPackagePatterns": [
         "^org\\.ow2\\.asm:"
       ],
