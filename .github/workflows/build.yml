@@ -9,7 +9,8 @@ on:
 
 env:
   # renovate: datasource=npm depName=renovate versioning=semver
-  RENOVATE_VERSION: 39.193.0
+  RENOVATE_VERSION: 40.11.1
+  #RENOVATE_VERSION: 39.193.0
 
 defaults:
   run:
@@ -95,7 +96,6 @@ jobs:
       with:
         token: ${{secrets.PUSH_BACK_TOKEN}}
         renovate-version: ${{env.RENOVATE_VERSION}}
-        #configurationFile: .github/workflows/build-renovate-config.json
         configurationFile: ${{matrix.config}}
 
 #    - name: Setup Node.js
