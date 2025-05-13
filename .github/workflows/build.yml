@@ -82,7 +82,7 @@ jobs:
         fetch-depth: 0
 
     - name: Execute Renovate with config
-      uses: renovatebot/github-action@v42.0.1
+      uses: renovatebot/github-action@v42.0.2
       env:
         RENOVATE_ADDITIONAL_BRANCH_PREFIX: ${{matrix.config}}/
         RENOVATE_CONFIG_MIGRATION: 'true'
