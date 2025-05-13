@@ -41,6 +41,7 @@ jobs:
         node-version: lts/*
         cache: npm
         cache-dependency-path: .github/workflows/build.yml
+
     - name: Create configs file
       id: configsFile
       run: |
@@ -71,6 +72,7 @@ jobs:
             core.warn("Not config files found")
           }
           fs.writeFileSync('${{steps.configsFile.outputs.path}}', files.join('\n'), 'utf8')
+
     - name: Validate config
       run: |
         for configFile in `cat "${{steps.configsFile.outputs.path}}"`; do
@@ -78,5 +80,6 @@ jobs:
           echo "Validating $configFile"
           logFile=$(mktemp -q)
           npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator --strict "$configFile" 2>&1 | tee ${logFile} \
-            echo 'fail'
+            && echo 'true' \
+            || echo 'false'
         done
