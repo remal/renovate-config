@@ -9,7 +9,7 @@ on:
 
 env:
   # renovate: datasource=npm depName=renovate versioning=semver
-  RENOVATE_VERSION: 39.193.1
+  RENOVATE_VERSION: 39.193.0
 
 defaults:
   run:
@@ -88,4 +88,4 @@ jobs:
         cache-dependency-path: .github/workflows/build.yml
     - name: Validate config
       run: |
-        npx --yes --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator "${{matrix.config}}"
+        npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator "${{matrix.config}}"

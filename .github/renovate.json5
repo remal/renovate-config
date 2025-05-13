@@ -3,8 +3,13 @@
   extends: ["github>remal/renovate-config:global"],
 
   packageRules: [
-    matchCategories: ['js'],
-    matchDepNames: ['renovate'],
-    minimumReleaseAge: '3 months',
+    {
+      matchCategories: ['js'],
+      matchDepNames: ['renovate'],
+      minimumReleaseAge: '3 months',
+      patch: {
+        minimumReleaseAge: '3 weeks',
+      }.
+    },
   ],
 }
