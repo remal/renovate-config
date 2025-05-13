@@ -53,11 +53,6 @@
       "dependencies-rollback"
     ]
   },
-  "bump": {
-    "addLabels": [
-      "dependencies-bump"
-    ]
-  },
   "replacement": {
     "addLabels": [
       "dependencies-replacement"

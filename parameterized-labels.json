@@ -45,11 +45,6 @@
       "dependencies-{{arg0}}-rollback"
     ]
   },
-  "bump": {
-    "addLabels": [
-      "dependencies-{{arg0}}-bump"
-    ]
-  },
   "replacement": {
     "addLabels": [
       "dependencies-{{arg0}}-replacement"
