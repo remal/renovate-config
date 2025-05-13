@@ -8,6 +8,9 @@
       //schedule: ["after 6pm on sunday"]
       minimumReleaseAge: '3 months',
       internalChecksFilter: 'strict',
+      patch: {
+        minimumReleaseAge: null,
+      },
     },
   ],
 }
