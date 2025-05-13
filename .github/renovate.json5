@@ -2,19 +2,13 @@
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
   extends: ["github>remal/renovate-config:global"],
 
-  "git-submodules": {
-    enabled: false, // This is in beta for now, so let's use Dependabot to update Git submodules
-  },
-
   packageRules: [
     {
       matchCategories: ['js'],
       matchDepNames: ['renovate'],
       //schedule: ["after 6pm on sunday"]
       minimumReleaseAge: '3 months',
-      patch: {
-        minimumReleaseAge: '3 weeks',
-      },
+      internalChecksFilter: 'strict',
     },
   ],
 }
