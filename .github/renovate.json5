@@ -9,7 +9,7 @@
       minimumReleaseAge: '2 weeks',
       internalChecksFilter: 'strict',
       patch: {
-        minimumReleaseAge: null,
+        minimumReleaseAge: '0 days',
       },
     },
   ],
