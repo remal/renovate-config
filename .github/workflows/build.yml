@@ -92,7 +92,8 @@ jobs:
         RENOVATE_SEMANTIC_COMMITS: disabled
         RENOVATE_REQUIRE_CONFIG: ignored
         RENOVATE_GIT_AUTHOR: Config Migration <bot@renovateapp.com>
-        LOG_LEVEL: trace
+        LOG_LEVEL: debug
+        #LOG_LEVEL: trace
         RENOVATE_DRY_RUN: ${{startsWith(github.ref, 'refs/pull/') && 'full' || 'full'}}
       with:
         token: ${{secrets.PUSH_BACK_TOKEN}}
