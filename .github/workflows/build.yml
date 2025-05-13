@@ -88,7 +88,7 @@ jobs:
         done
 
     - name: Push back
-      if: ${{false && startsWith(github.ref, 'refs/heads/')}}
+      if: ${{startsWith(github.ref, 'refs/heads/')}}
       uses: remal-github-actions/push-back@v1
       with:
         githubToken: ${{secrets.PUSH_BACK_TOKEN}}

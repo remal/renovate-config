@@ -14,13 +14,11 @@ while (newConfig.startsWith('\n')) { newConfig = newConfig.substring(1) }
 while (newConfig.endsWith('\n')) { newConfig = newConfig.substring(0, newConfig.length - 1) }
 
 const newConfigPrefix = newConfig.replace(/^([ \t]+)[\s\S]+/, '$1')
-console.log(`newConfigPrefix='${newConfigPrefix}'`)
 newConfig = '{\n' + newConfig.split('\n')
     .map(line => '  ' + line.substring(newConfigPrefix.length))
     .join('\n') + '\n}'
 
 //newConfig = JSON.stringify(JSON.parse(newConfig), null, 2)
-console.log(`newConfig:\n${newConfig}`)
 
 console.log(`Migrating ${configFile}`)
 fs.writeFileSync(configFile, newConfig + '\n', 'utf8')
