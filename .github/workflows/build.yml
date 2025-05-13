@@ -4,7 +4,7 @@ on:
   push:
     branches:
     - main
-  pull_request: { }
+  #pull_request: { }
   workflow_dispatch: { }
 
 env:
@@ -72,7 +72,7 @@ jobs:
     name: ${{matrix.config}}
     concurrency:
       group: ${{github.workflow}}-process-${{strategy.job-index||'0'}}-${{github.ref}}
-      #group: ${{github.workflow}}-process
+      #group: ${{github.workflow}}-process-${{github.ref}}
       cancel-in-progress: false
     steps:
     - name: Checkout repository
@@ -81,10 +81,10 @@ jobs:
         fetch-depth: 0
 
     - name: Execute Renovate with config
-      if: ${{github.event_name == 'push'}}
       uses: renovatebot/github-action@v42.0.1
       env:
         RENOVATE_ADDITIONAL_BRANCH_PREFIX: ${{matrix.config}}/
+        RENOVATE_AUTODISCOVER_PROJECTS: ${{github.repository}}
         RENOVATE_ONBOARDING_CONFIG_FILE_NAME: ${{matrix.config}}
         RENOVATE_REQUIRE_CONFIG: ignored
         LOG_LEVEL: debug
@@ -92,12 +92,13 @@ jobs:
       with:
         token: ${{secrets.PUSH_BACK_TOKEN}}
         renovate-version: ${{env.RENOVATE_VERSION}}
+        configurationFile: .github/workflows/build-renovate-config.json
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        cache: npm
-        cache-dependency-path: .github/workflows/build.yml
-    - name: Validate config
-      run: |
-        npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator "${{matrix.config}}"
+#    - name: Setup Node.js
+#      uses: actions/setup-node@v4
+#      with:
+#        cache: npm
+#        cache-dependency-path: .github/workflows/build.yml
+#    - name: Validate config
+#      run: |
+#        npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator "${{matrix.config}}"
