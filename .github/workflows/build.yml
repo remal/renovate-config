@@ -30,8 +30,8 @@ jobs:
       uses: tj-actions/glob@v22
       with:
         files: |
-          *.json
-          *.json5
+          **/*.json
+          **/*.json5
           !.github/**
     - name: Show all matching files
       run: |
