@@ -4,7 +4,7 @@
 
   packageRules: [
     {
-      matchCategories: ['js'],
+      //matchCategories: ['js'],
       matchDepNames: ['renovate'],
       //schedule: ["after 6pm on sunday"]
       minimumReleaseAge: '3 months',
