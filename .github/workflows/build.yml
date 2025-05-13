@@ -11,7 +11,6 @@ env:
   # renovate: datasource=npm depName=renovate versioning=semver
   RENOVATE_VERSION: 40.11.1
   #RENOVATE_VERSION: 39.193.0
-  CONFIGS_FILE: ${{github.workspace}}/.configs.txt
 
 defaults:
   run:
@@ -42,6 +41,11 @@ jobs:
         node-version: lts/*
         cache: npm
         cache-dependency-path: .github/workflows/build.yml
+    - name: Create configs file
+      id: configsFile
+      run: |
+        file=$(mktemp -q)
+        echo "path=$file" >> "$GITHUB_OUTPUT"
     - name: Find Renovate config files
       uses: actions/github-script@v7
       with:
@@ -66,14 +70,12 @@ jobs:
           } else {
             core.warn("Not config files found")
           }
-          fs.writeFileSync('${{env.CONFIGS_FILE}}', files.join('\n'), 'utf8')
+          fs.writeFileSync('${{steps.configsFile.outputs.path}}', files.join('\n'), 'utf8')
     - name: Validate config
       run: |
-        for configFile in `cat "$CONFIGS_FILE"`; do
-          echo ""
+        for configFile in `cat "${{steps.configsFile.outputs.path}}"`; do
+          echo " "
           echo "Validating $configFile"
           logFile=$(mktemp -q)
           npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator --strict "$configFile" 2>&1 | tee ${logFile}
-          echo Log
-          cat $logFile
         done
