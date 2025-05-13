@@ -10,10 +10,8 @@ if (newConfig === log) {
     process.exit(1)
 }
 
-console.log(`New config:\n${newConfig}`)
 newConfig = JSON.stringify(JSON.parse(newConfig), null, 2)
-console.log(`New config:\n${newConfig}`)
 
 console.log(`Migrating ${configFile}`)
-fs.writeFileSync(configFile, newConfig + '\n', encoding)
+fs.writeFileSync(configFile, newConfig + '\n', 'utf8')
 
