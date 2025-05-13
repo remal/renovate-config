@@ -5,14 +5,9 @@
   packageRules: [
     {
       matchDepNames: ['renovate'],
-      //schedule: ["after 6pm on sunday"]
+      //schedule: ["after 6pm"]
       minimumReleaseAge: '2 weeks',
       internalChecksFilter: 'strict',
-      separateMultipleMajor: true,
-      separateMultipleMinor: true,
-      patch: {
-        minimumReleaseAge: '0 days',
-      },
     },
   ],
 }
