@@ -74,7 +74,7 @@ jobs:
     concurrency:
       group: ${{github.workflow}}-process-${{strategy.job-index||'0'}}-${{github.ref}}
       #group: ${{github.workflow}}-process-${{github.ref}}
-      cancel-in-progress: ${{startsWith(github.ref, 'refs/pull/') && 'true' || 'false'}}
+      cancel-in-progress: ${{startsWith(github.ref, 'refs/pull/')}}
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
