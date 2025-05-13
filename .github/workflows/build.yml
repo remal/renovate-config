@@ -70,6 +70,6 @@ jobs:
     - name: Validate config
       run: |
         for configFile in `cat "$CONFIGS_FILE"`; do
-          echo "Validating $configFile"
+          echo -e "\nValidating $configFile"
           npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator --strict "$configFile"
         done

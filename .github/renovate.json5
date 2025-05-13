@@ -2,6 +2,8 @@
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
   extends: ["github>remal/renovate-config:global"],
 
+  schedule: ["after 6pm on sunday"],
+
   packageRules: [
     {
       matchCategories: ['js'],
@@ -9,11 +11,6 @@
       //schedule: ["after 6pm on sunday"]
       minimumReleaseAge: '3 months',
       internalChecksFilter: 'strict',
-    },
-    {
-      matchCategories: ['ci'],
-      matchDepNames: ['renovatebot/github-action'],
-      schedule: ["after 6pm on sunday"]
     },
   ],
 }
