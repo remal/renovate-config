@@ -12,13 +12,13 @@ defaults:
     shell: bash
 
 jobs:
-  prepare:
+  search-configs:
     if: ${{
       (github.event_name == 'push' && startsWith(github.ref, 'refs/tags/'))
       || (github.event_name == 'push' && !startsWith(github.event.head_commit.message, '[push-back]'))
       || github.event_name != 'push'
       }}
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
     - name: Checkout repository
@@ -31,12 +31,16 @@ jobs:
       with:
         result-encoding: json
         script: |
+          const path = require('path')
           const globber = await glob.create([
             '**/*.json',
             '**/*.json5',
             '!.github/**',
           ].join('\n'))
-          return await globber.glob()
+          const files = await globber.glob()
+          return files.map(file =>
+            path.relative(process.cwd(), file)
+          )
     - name: Show all matching files
       run: |
         echo "${{ steps.configs.outputs.result }}"
