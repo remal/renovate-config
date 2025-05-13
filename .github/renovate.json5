@@ -10,5 +10,10 @@
       minimumReleaseAge: '3 months',
       internalChecksFilter: 'strict',
     },
+    {
+      matchCategories: ['ci'],
+      matchDepNames: ['renovatebot/github-action'],
+      schedule: ["after 6pm on sunday"]
+    },
   ],
 }
