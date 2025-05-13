@@ -35,4 +35,4 @@ jobs:
           !.github/**
     - name: Show all matching files
       run: |
-        echo "${{ steps.glob.outputs.paths }}"
+        echo "${{ steps.configs.outputs.paths }}"
