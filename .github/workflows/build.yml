@@ -58,7 +58,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        config: ${{fromJSON(needs.build.outputs.configFiles)}}
+        config: ${{fromJSON(needs.search-configs.outputs.configFiles)}}
     concurrency:
       group: ${{github.workflow}}-process-config-${{strategy.job-index||'0'}}
       cancel-in-progress: false
