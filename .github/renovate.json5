@@ -6,6 +6,7 @@
     {
       //matchCategories: ['js'],
       matchDepNames: ['renovate'],
+      disabled: false,
       //schedule: ["after 6pm on sunday"]
       minimumReleaseAge: '3 months',
       internalChecksFilter: 'strict',
