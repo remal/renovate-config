@@ -12,7 +12,7 @@ defaults:
     shell: bash
 
 jobs:
-  search-configs:
+  search:
     if: ${{
       (github.event_name == 'push' && startsWith(github.ref, 'refs/tags/'))
       || (github.event_name == 'push' && !startsWith(github.event.head_commit.message, '[push-back]'))
@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     concurrency:
-      group: ${{github.workflow}}-search-configs
+      group: ${{github.workflow}}-search
       cancel-in-progress: true
     outputs:
       configFiles: ${{steps.configs.outputs.result}}
@@ -36,6 +36,7 @@ jobs:
       with:
         result-encoding: json
         script: |
+          core.info("${{github.workflow}}")
           const path = require('path')
           const globber = await glob.create([
             '**/*.json',
@@ -43,24 +44,30 @@ jobs:
             '!.github/**',
           ].join('\n'))
           const files = await globber.glob()
-          return files.map(file =>
-            path.relative(process.cwd(), file)
-          ).sort()
+          return files
+            .map(file =>
+              path.relative(process.cwd(), file)
+            )
+            .sort()
+            .map(file => {
+              core.info(file)
+              return file
+            })
     - name: Show all matching files
       run: |
         echo "${{steps.configs.outputs.result}}"
 
-  process-config:
+  process:
     needs:
-    - search-configs
+    - search
     runs-on: ubuntu-latest
     timeout-minutes: 60
     strategy:
       fail-fast: false
       matrix:
-        config: ${{fromJSON(needs.search-configs.outputs.configFiles)}}
+        config: ${{fromJSON(needs.search.outputs.configFiles)}}
     concurrency:
-      group: ${{github.workflow}}-process-config-${{strategy.job-index||'0'}}
+      group: ${{github.workflow}}-process-${{strategy.job-index||'0'}}
       cancel-in-progress: false
     steps:
     - name: Checkout repository
