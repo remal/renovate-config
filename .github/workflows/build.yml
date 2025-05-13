@@ -70,8 +70,6 @@ jobs:
       matrix:
         config: ${{fromJSON(needs.search.outputs.configFiles)}}
     name: ${{matrix.config}}
-    env:
-      RENOVATE_ADDITIONAL_BRANCH_PREFIX: ${{matrix.config}}/
     concurrency:
       group: ${{github.workflow}}-process-${{strategy.job-index||'0'}}
       #group: ${{github.workflow}}-process
@@ -81,6 +79,17 @@ jobs:
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
+    - name: Execute Renovate with config
+      uses: renovatebot/github-action@v42.0.1
+      env:
+        RENOVATE_ADDITIONAL_BRANCH_PREFIX: ${{matrix.config}}/
+        RENOVATE_ONBOARDING_CONFIG_FILE_NAME: ${{matrix.config}}
+        RENOVATE_REQUIRE_CONFIG: ignored
+        LOG_LEVEL: debug
+      with:
+        token: ${{secrets.PUSH_BACK_TOKEN}}
+        renovate-version: ${{env.RENOVATE_VERSION}}
+        #configurationFile: .github/workflows/build-renovate-config.js
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
