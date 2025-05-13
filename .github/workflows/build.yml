@@ -25,3 +25,14 @@ jobs:
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
+    - name: Find Renovate config files
+      id: configs
+      uses: tj-actions/glob@v22
+      with:
+        files: |
+          *.json
+          *.json5
+          !.github/**
+    - name: Show all matching files
+      run: |
+        echo "${{ steps.glob.outputs.paths }}"
