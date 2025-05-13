@@ -18,7 +18,8 @@ if (false) {
         .map(line => '  ' + line.substring(newConfigPrefix.length))
         .join('\n') + '\n}'
 } else {
-    newConfig = JSON.stringify(JSON.parse(newConfig), null, 2)
+    newConfig = '{\n' + newConfig + '\n}'
+    newConfig = '{\n' + JSON.stringify(JSON.parse(newConfig), null, 2)
 }
 
 console.log(`Migrating ${configFile}`)
