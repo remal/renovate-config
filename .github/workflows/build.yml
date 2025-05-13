@@ -85,6 +85,7 @@ jobs:
       env:
         RENOVATE_ADDITIONAL_BRANCH_PREFIX: ${{matrix.config}}/
         RENOVATE_CONFIG_MIGRATION: 'true'
+        RENOVATE_ENABLED_MANAGERS: 'renovate-config-presets'
         RENOVATE_REPOSITORIES: ${{github.repository}}
         RENOVATE_ONBOARDING_CONFIG_FILE_NAME: ${{matrix.config}}
         RENOVATE_REQUIRE_CONFIG: ignored
