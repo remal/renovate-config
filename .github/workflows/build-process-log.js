@@ -19,7 +19,7 @@ if (false) {
         .join('\n') + '\n}'
 } else {
     newConfig = '{\n' + newConfig + '\n}'
-    newConfig = '{\n' + JSON.stringify(JSON.parse(newConfig), null, 2)
+    newConfig = JSON.stringify(JSON.parse(newConfig), null, 2)
 }
 
 console.log(`Migrating ${configFile}`)
