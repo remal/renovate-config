@@ -2,7 +2,7 @@
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
   extends: ["github>remal/renovate-config:global"],
 
-  newLogLevel: [
+  logLevelRemap: [
     {
       matchMessage: '/.*/',
       newLogLevel: 'info',
