@@ -1,18 +1,14 @@
 {
-  $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  extends: ["github>remal/renovate-config:global"],
-
-  newLogLevel: [
-    {
-      matchMessage: '/.*/',
-      newLogLevel: 'info',
-    },
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  extends: [
+    'github>remal/renovate-config:global',
   ],
-
+  newLogLevel: '[object Object]',
   packageRules: [
     {
-      matchDepNames: ['renovate'],
-      //schedule: ["after 6pm"]
+      matchDepNames: [
+        'renovate',
+      ],
       minimumReleaseAge: '2 weeks',
       internalChecksFilter: 'strict',
     },
