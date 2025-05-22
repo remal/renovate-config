@@ -5,7 +5,7 @@
     {
       "customType": "regex",
       "managerFilePatterns": [
-        "/(^|/)(workflow-templates|\\.(?:github|gitea|forgejo)/(?:workflows|actions))/.+\\.ya?ml$/"
+        "/(^|\\/)(workflow-templates|\\.(?:github|gitea|forgejo)\\/(?:workflows|actions))\\/.+\\.ya?ml$/"
       ],
       "matchStringsStrategy": "recursive",
       "matchStrings": [
@@ -18,7 +18,7 @@
     {
       "customType": "regex",
       "managerFilePatterns": [
-        "/(^|/)(workflow-templates|\\.(?:github|gitea|forgejo)/(?:workflows|actions))/.+\\.ya?ml$/"
+        "/(^|\\/)(workflow-templates|\\.(?:github|gitea|forgejo)\\/(?:workflows|actions))\\/.+\\.ya?ml$/"
       ],
       "matchStringsStrategy": "recursive",
       "matchStrings": [
