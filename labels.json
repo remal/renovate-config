@@ -146,6 +146,14 @@
     },
     {
       "matchCategories": [
+        "haskell"
+      ],
+      "extends": [
+        "github>remal/renovate-config:parameterized-labels(haskell)"
+      ]
+    },
+    {
+      "matchCategories": [
         "helm"
       ],
       "extends": [
@@ -254,9 +262,14 @@
       "github>remal/renovate-config:parameterized-labels(asdf)"
     ]
   },
-  "bicep": {
+  "copier": {
     "extends": [
-      "github>remal/renovate-config:parameterized-labels(bicep)"
+      "github>remal/renovate-config:parameterized-labels(copier)"
+    ]
+  },
+  "devbox": {
+    "extends": [
+      "github>remal/renovate-config:parameterized-labels(devbox)"
     ]
   },
   "fvm": {
@@ -269,6 +282,11 @@
       "github>remal/renovate-config:parameterized-labels(git-submodules)"
     ]
   },
+  "gleam": {
+    "extends": [
+      "github>remal/renovate-config:parameterized-labels(gleam)"
+    ]
+  },
   "hermit": {
     "extends": [
       "github>remal/renovate-config:parameterized-labels(hermit)"
@@ -277,6 +295,11 @@
   "homebrew": {
     "extends": [
       "github>remal/renovate-config:parameterized-labels(homebrew)"
+    ]
+  },
+  "mise": {
+    "extends": [
+      "github>remal/renovate-config:parameterized-labels(mise)"
     ]
   },
   "nix": {
@@ -292,6 +315,16 @@
   "pre-commit": {
     "extends": [
       "github>remal/renovate-config:parameterized-labels(pre-commit)"
+    ]
+  },
+  "renovate-config-presets": {
+    "extends": [
+      "github>remal/renovate-config:parameterized-labels(renovate-config-presets)"
+    ]
+  },
+  "vendir": {
+    "extends": [
+      "github>remal/renovate-config:parameterized-labels(vendir)"
     ]
   }
 }
