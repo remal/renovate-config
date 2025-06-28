@@ -550,6 +550,7 @@
         "/^name\\.remal\\.gradle-plugins\\.generate-sources:/"
       ]
     },
+
     {
       "description": "org.sonarsource.sonarlint.core",
       "matchCategories": [
@@ -560,36 +561,7 @@
         "/^org\\.sonarsource\\.sonarlint\\.core:/"
       ]
     },
-    {
-      "description": "org.sonarsource.java",
-      "matchCategories": [
-        "java"
-      ],
-      "groupName": "org.sonarsource.java",
-      "matchPackageNames": [
-        "/^org\\.sonarsource\\.java:/"
-      ]
-    },
-    {
-      "description": "org.sonarsource.slang",
-      "matchCategories": [
-        "java"
-      ],
-      "groupName": "org.sonarsource.slang",
-      "matchPackageNames": [
-        "/^org\\.sonarsource\\.slang:/"
-      ]
-    },
-    {
-      "description": "com.sonarsource.dotnet",
-      "matchCategories": [
-        "java"
-      ],
-      "groupName": "com.sonarsource.dotnet",
-      "matchPackageNames": [
-        "/^com\\.sonarsource\\.dotnet:/"
-      ]
-    },
+
     {
       "description": "jetbrains: intellij: calver",
       "matchCategories": [
