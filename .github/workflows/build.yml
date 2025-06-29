@@ -9,7 +9,7 @@ on:
 
 env:
   # renovate: datasource=npm depName=renovate versioning=semver
-  RENOVATE_VERSION: 40.48.4
+  RENOVATE_VERSION: 40.48.11
 
 defaults:
   run:
