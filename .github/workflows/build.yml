@@ -31,7 +31,7 @@ jobs:
       configFiles: ${{steps.configs.outputs.result}}
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         fetch-depth: 0
     - name: Setup Node.js
