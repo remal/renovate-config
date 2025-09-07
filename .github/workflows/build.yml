@@ -47,7 +47,7 @@ jobs:
         file=$(mktemp -q)
         echo "path=$file" >> "$GITHUB_OUTPUT"
     - name: Find Renovate config files
-      uses: actions/github-script@v7
+      uses: actions/github-script@v8
       with:
         result-encoding: json
         script: |
