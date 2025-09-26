@@ -9,7 +9,7 @@
       ],
       "matchStringsStrategy": "recursive",
       "matchStrings": [
-        "[\\r\\n]+    (?:- |  )uses: ['\"]?Wandalen\\/wretry.action@[^'\"\\s]+['\"]?\\s*[\\n\\r]+     \\s*with:\\s*[\\r\\n]+(?:\\s*[\\n\\r]+|     .+[\\n\\r]+)*     \\s*action: .*(?:[\\r\\n]+|$)",
+        "[\\r\\n]+    (?:- |  )uses: ['\"]?Wandalen\\/wretry.action(?:|\\/pre|\\/main|\\/post)@[^'\"\\s]+['\"]?\\s*[\\n\\r]+     \\s*with:\\s*[\\r\\n]+(?:\\s*[\\n\\r]+|     .+[\\n\\r]+)*     \\s*action: .*(?:[\\r\\n]+|$)",
         "[\\r\\n]+\\s+action: ['\"]?(?<depName>[\\w-]+\\/[.\\w-]+)(?<path>\\/\\S*)?@(?<currentValue>[^\\s'\"]+)['\"]?"
       ],
       "datasourceTemplate": "github-tags",
@@ -22,7 +22,7 @@
       ],
       "matchStringsStrategy": "recursive",
       "matchStrings": [
-        "[\\r\\n]+    (?:- |  )uses: ['\"]?Wandalen\\/wretry.action@[^'\"\\s]+['\"]?\\s*[\\n\\r]+     \\s*with:\\s*[\\r\\n]+(?:\\s*[\\n\\r]+|     .+[\\n\\r]+)*     \\s*action: .*(?:[\\r\\n]+|$)",
+        "[\\r\\n]+    (?:- |  )uses: ['\"]?Wandalen\\/wretry.action(?:|\\/pre|\\/main|\\/post)@[^'\"\\s]+['\"]?\\s*[\\n\\r]+     \\s*with:\\s*[\\r\\n]+(?:\\s*[\\n\\r]+|     .+[\\n\\r]+)*     \\s*action: .*(?:[\\r\\n]+|$)",
         "[\\r\\n]+\\s+action: ['\"]?docker:\\/\\/(?<depName>[^\\s:'\"]+):(?<currentValue>[^\\s'\"]+)['\"]?"
       ],
       "datasourceTemplate": "docker",
