@@ -3,15 +3,37 @@
   "description": "Settings for projects that support Java 8",
   "packageRules": [
     {
+      "description": "JUnit >=6 supports Java >=17",
+      "matchCategories": [
+        "java"
+      ],
+      "matchPackageNames": [
+        "/^org\\.junit[.:]/"
+      ],
+      "matchCurrentVersion": "(,5.9999)",
+      "allowedVersions": "(,5.9999)"
+    },
+    {
       "description": "JGit >=7 supports Java >=17",
       "matchCategories": [
         "java"
       ],
-      "matchCurrentVersion": "(,6.9999)",
-      "allowedVersions": "(,6.9999)",
       "matchPackageNames": [
         "/^org\\.eclipse\\.jgit[.:]/"
-      ]
+      ],
+      "matchCurrentVersion": "(,6.9999)",
+      "allowedVersions": "(,6.9999)"
+    },
+    {
+      "description": "org.gradle.toolchains.foojay-resolver >=1 supports Java >=17",
+      "matchCategories": [
+        "java"
+      ],
+      "matchPackageNames": [
+        "/^org\\.gradle\\.toolchains[:.]foojay-resolver/"
+      ],
+      "matchCurrentVersion": "(,0.9999)",
+      "allowedVersions": "(,0.9999)"
     }
   ]
 }

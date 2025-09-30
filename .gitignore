@@ -1,2 +1,4 @@
-/.idea
+/.idea/*
+!/.idea/.editorconfig
+!/.idea/google-java-format.xml
 *.iml
