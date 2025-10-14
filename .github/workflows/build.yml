@@ -7,6 +7,9 @@ on:
   pull_request: { }
   workflow_dispatch: { }
 
+permissions:
+  contents: read
+
 env:
   # renovate: datasource=npm depName=renovate versioning=semver
   RENOVATE_VERSION: 41.131.9
@@ -34,8 +37,6 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v5
-      with:
-        fetch-depth: 0
     - name: Setup Node.js
       uses: actions/setup-node@v6
       with:
