@@ -521,6 +521,16 @@
       ]
     },
     {
+      "description": "org.apache.maven.resolver: group dependencies",
+      "matchCategories": [
+        "java"
+      ],
+      "groupName": "org.apache.maven.resolver",
+      "matchPackageNames": [
+        "/^org\\.apache\\.maven\\.resolver:/"
+      ]
+    },
+    {
       "description": "name.remal:gradle-plugins",
       "matchCategories": [
         "java"
