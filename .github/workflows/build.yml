@@ -14,10 +14,9 @@ env:
   # renovate: datasource=npm depName=renovate versioning=semver
   RENOVATE_VERSION: 41.131.9
   RENOVATE_DETECT_HOST_RULES_FROM_ENV: true
-  API_GITHUB_COM_TOKEN: ${{secrets.RENOVATE_TOKEN}}
-  GITHUB_COM_TOKEN: ${{secrets.RENOVATE_TOKEN}}
+  GITHUB_API_GITHUB_COM_TOKEN: ${{secrets.RENOVATE_TOKEN}}
   GITHUB_TOKEN: ${{secrets.RENOVATE_TOKEN}}
-  LOG_LEVEL: trace
+  LOG_LEVEL: debug
 
 defaults:
   run:
