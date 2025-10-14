@@ -62,6 +62,7 @@ jobs:
             '**/*.yml',
             '**/*.yaml',
             '!.github/**',
+            '!.mergify/**',
           ].join('\n'))
           let files = await globber.glob()
           files = files
@@ -80,8 +81,7 @@ jobs:
     - name: Validate and migrate config
       run: |
         for configFile in `cat "${{steps.configsFile.outputs.path}}"`; do
-          echo " "
-          echo "Validating $configFile"
+          echo "::group::Validating $configFile"
           logFile=$(mktemp -q)
           npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator --strict "$configFile" 2>&1 | tee "$logFile" \
             || ( \
@@ -89,6 +89,7 @@ jobs:
               && echo "Revalidating $configFile" \
               && npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator --strict "$configFile"
             )
+          echo "::endgroup::"
         done
 
     - name: Push back migrated configs
