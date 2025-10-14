@@ -13,6 +13,10 @@ permissions:
 env:
   # renovate: datasource=npm depName=renovate versioning=semver
   RENOVATE_VERSION: 41.131.9
+  RENOVATE_DETECT_HOST_RULES_FROM_ENV: true
+  API_GITHUB_COM_TOKEN: ${{secrets.RENOVATE_TOKEN}}
+  GITHUB_COM_TOKEN: ${{secrets.RENOVATE_TOKEN}}
+  GITHUB_TOKEN: ${{secrets.RENOVATE_TOKEN}}
   LOG_LEVEL: debug
 
 defaults:
@@ -74,28 +78,15 @@ jobs:
 
     - name: Validate and migrate config
       run: |
-        HOST_RULES_CONFIG=$(mktemp --suffix=.json)
-        cat > "$HOST_RULES_CONFIG" <<EOF
-        {
-          "hostRules": [
-            {
-              "hostType": "github",
-              "matchHost": "api.github.com",
-              "token": "${{secrets.RENOVATE_TOKEN}}"
-            }
-          ]
-        }
-        EOF
-
         for configFile in `cat "${{steps.configsFile.outputs.path}}"`; do
           echo " "
           echo "Validating $configFile"
           logFile=$(mktemp -q)
-          npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator --config "$HOST_RULES_CONFIG" --strict "$configFile" 2>&1 | tee "$logFile" \
+          npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator --strict "$configFile" 2>&1 | tee "$logFile" \
             || ( \
               node .github/workflows/build-process-log.js "$configFile" "$logFile" \
               && echo "Revalidating $configFile" \
-              && npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator --config "$HOST_RULES_CONFIG" --strict "$configFile"
+              && npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator --strict "$configFile"
             )
         done
 
