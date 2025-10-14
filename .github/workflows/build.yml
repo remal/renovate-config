@@ -10,6 +10,10 @@ on:
 env:
   # renovate: datasource=npm depName=renovate versioning=semver
   RENOVATE_VERSION: 41.131.9
+  RENOVATE_TOKEN: ${{secrets.RENOVATE_TOKEN}}
+  GITHUB_COM_TOKEN: ${{secrets.RENOVATE_TOKEN}}
+  GITHUB_TOKEN: ${{secrets.RENOVATE_TOKEN}}
+  LOG_LEVEL: debug
 
 defaults:
   run:
