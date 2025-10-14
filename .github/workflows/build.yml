@@ -17,7 +17,7 @@ env:
   API_GITHUB_COM_TOKEN: ${{secrets.RENOVATE_TOKEN}}
   GITHUB_COM_TOKEN: ${{secrets.RENOVATE_TOKEN}}
   GITHUB_TOKEN: ${{secrets.RENOVATE_TOKEN}}
-  LOG_LEVEL: debug
+  LOG_LEVEL: trace
 
 defaults:
   run:
