@@ -70,7 +70,7 @@ jobs:
             .sort()
           if (files.length) {
             core.info("Found config files:")
-            files.forEach(file => core.inf(`  ${file}`))
+            files.forEach(file => core.info(`  ${file}`))
           } else {
             core.warn("Not config files found")
           }
