@@ -15,7 +15,8 @@
     "github>remal/renovate-config:ci",
     "github>remal/renovate-config:java-deps",
     "github>remal/renovate-config:js-deps",
-    "github>remal/renovate-config:github-actions"
+    "github>remal/renovate-config:github-actions",
+    "github>remal/renovate-config:custom"
   ],
   "onboarding": false,
   "printConfig": false,
