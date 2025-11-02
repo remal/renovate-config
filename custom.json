@@ -8,7 +8,7 @@
         "/\\.properties$/"
       ],
       "matchStrings": [
-        "(^|[\\r\\n]+)#[ \\t]*renovate: datasource=(?<datasource>\\S+) (depName=(?<depName>\\S+)|packageName=(?<packageName>\\S+))( versioning=(?<versioning>\\S+))?( registryUrl=(?<registryUrl>\\S+))?[ \\t]*[\\r\\n]+[^=\\n]+=[ \\t]*(?<currentValue>\\S+)([\\r\\n]+|$)"
+        "(^|[\\r\\n]+)#[ \\t]*renovate: datasource=(?<datasource>\\S+)( depName=(?<depName>\\S+))?( packageName=(?<packageName>\\S+))?( versioning=(?<versioning>\\S+))?( registryUrl=(?<registryUrl>\\S+))?[ \\t]*[\\r\\n]+[^=\\n]+=[ \\t]*(?<currentValue>\\S+)([\\r\\n]+|$)"
       ]
     }
   ]
