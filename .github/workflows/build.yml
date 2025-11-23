@@ -91,7 +91,7 @@ jobs:
 
     - name: Push back migrated configs
       if: ${{github.ref == 'refs/heads/main'}}
-      uses: remal-github-actions/push-back@v1
+      uses: remal-github-actions/push-back@v2
       with:
         githubToken: ${{secrets.PUSH_BACK_TOKEN}}
         message: '[push-back] Push-back migrated configs'
