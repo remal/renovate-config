@@ -1,5 +1,7 @@
 # Configuration file for Mergify GitHub App: https://github.com/marketplace/mergify
 
+#$schema: 'https://docs.mergify.com/mergify-configuration-schema.json'
+
 # All Status Checks should be listed explicitly (see https://docs.mergify.io/conditions/#about-status-checks):
 #   `build` - .github/workflows/build.yml
 
@@ -42,6 +44,3 @@ pull_request_rules:
     review: { }
     merge:
       method: squash
-
-
-$schema: 'https://docs.mergify.com/mergify-configuration-schema.json'
