@@ -3,6 +3,16 @@
   "description": "Settings for Java libraries",
   "packageRules": [
     {
+      "matchCategories": ["js"],
+      "matchPackageNames": ["@types/node"],
+      "groupName": "@types/node"
+    },
+    {
+      "matchCategories": ["js"],
+      "matchPackageNames": ["@tsconfig/node**"],
+      "groupName": "@types/node"
+    },
+    {
       "description": "@octokit/plugin-request-log: group dependencies",
       "matchCategories": [
         "js"
