@@ -1,0 +1,9 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Disable replacements",
+
+  "replacement": {
+    "description": "Disable replacements",
+    "enabled": false
+  }
+}
