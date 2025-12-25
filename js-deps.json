@@ -4,12 +4,10 @@
   "packageRules": [
     {
       "matchCategories": ["js"],
-      "matchPackageNames": ["@types/node"],
-      "groupName": "@types/node"
-    },
-    {
-      "matchCategories": ["js"],
-      "matchPackageNames": ["@tsconfig/node**"],
+      "matchPackageNames": [
+        "@types/node",
+        "@tsconfig/node**"
+      ],
       "groupName": "@types/node"
     },
     {
