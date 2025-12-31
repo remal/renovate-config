@@ -3,7 +3,9 @@
   "description": "Settings for Java libraries",
   "packageRules": [
     {
-      "matchCategories": [],
+      "matchDatasources": [
+        "npm"
+      ],
       "matchPackageNames": [
         "@types/node",
         "@tsconfig/node**"
@@ -12,8 +14,8 @@
     },
     {
       "description": "@octokit/plugin-request-log: group dependencies",
-      "matchCategories": [
-        "js"
+      "matchDatasources": [
+        "npm"
       ],
       "matchPackageNames": [
         "@octokit/plugin-request-log"
@@ -22,8 +24,8 @@
     },
     {
       "description": "@octokit/plugin-retry: group dependencies",
-      "matchCategories": [
-        "js"
+      "matchDatasources": [
+        "npm"
       ],
       "matchPackageNames": [
         "@octokit/plugin-retry"
@@ -32,8 +34,8 @@
     },
     {
       "description": "@octokit/plugin-throttling: group dependencies",
-      "matchCategories": [
-        "js"
+      "matchDatasources": [
+        "npm"
       ],
       "matchPackageNames": [
         "@octokit/plugin-throttling"
