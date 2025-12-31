@@ -3,7 +3,7 @@
   "description": "Settings for Java libraries",
   "packageRules": [
     {
-      "matchCategories": ["js"],
+      "matchCategories": [],
       "matchPackageNames": [
         "@types/node",
         "@tsconfig/node**"
