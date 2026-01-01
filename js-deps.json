@@ -1,8 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Settings for Java libraries",
+  "description": "Settings for JavaScript libraries",
   "packageRules": [
     {
+      "description": "@types/node + @tsconfig/node**: group dependencies",
       "matchDatasources": [
         "npm"
       ],
@@ -12,6 +13,7 @@
       ],
       "groupName": "@types/node"
     },
+
     {
       "description": "@octokit/plugin-request-log: group dependencies",
       "matchDatasources": [

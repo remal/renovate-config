@@ -4,8 +4,8 @@
   "packageRules": [
     {
       "description": "asm: group dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "org.ow2.asm",
       "matchPackageNames": [
@@ -14,8 +14,8 @@
     },
     {
       "description": "dagger 2: group dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "com.google.dagger",
       "matchPackageNames": [
@@ -24,8 +24,8 @@
     },
     {
       "description": "io.avaje:avaje-inject: group dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "io.avaje:avaje-inject",
       "matchPackageNames": [
@@ -34,8 +34,8 @@
     },
     {
       "description": "io.avaje:avaje-inject: keep javax suffix",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "matchCurrentVersion": "/-javax$/",
       "allowedVersions": "/-javax$/",
@@ -45,8 +45,8 @@
     },
     {
       "description": "io.avaje:avaje-inject: don't udpate to javax suffix",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "matchCurrentVersion": "/\\d$/",
       "allowedVersions": "!/-javax$/",
@@ -56,8 +56,8 @@
     },
     {
       "description": "toothpick: group dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "com.github.stephanenicolas.toothpick",
       "matchPackageNames": [
@@ -66,8 +66,8 @@
     },
     {
       "description": "org.apache.commons: allow all versions if current version is a milestone version",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "matchCurrentVersion": "/-M\\d*$/",
       "allowedVersions": "/.*/",
@@ -77,8 +77,8 @@
     },
     {
       "description": "org.apache.commons: skip milestone versions",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "matchCurrentVersion": "!/-M\\d*$/",
       "allowedVersions": "!/-M\\d*$/",
@@ -88,8 +88,8 @@
     },
     {
       "description": "mapstruct: group dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "org.mapstruct",
       "matchPackageNames": [
@@ -98,8 +98,8 @@
     },
     {
       "description": "micronaut: group dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "io.micronaut",
       "matchPackageNames": [
@@ -108,8 +108,8 @@
     },
     {
       "description": "auto-service: group dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "com.google.auto.service",
       "matchPackageNames": [
@@ -118,8 +118,8 @@
     },
     {
       "description": "closure-compiler: allow only vYYYYMMDD versions",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "matchPackageNames": [
         "com.google.javascript:closure-compiler"
@@ -129,8 +129,8 @@
     },
     {
       "description": "Database Rider: group dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "com.github.database-rider",
       "matchPackageNames": [
@@ -139,8 +139,8 @@
     },
     {
       "description": "detekt: group dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "io.gitlab.arturbosch.detekt",
       "matchPackageNames": [
@@ -149,8 +149,8 @@
     },
     {
       "description": "errorprone: group dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "errorprone",
       "matchPackageNames": [
@@ -159,8 +159,8 @@
     },
     {
       "description": "graalvm: group dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "org.graalvm",
       "matchPackageNames": [
@@ -169,8 +169,8 @@
     },
     {
       "description": "gradle-api: disable automatic Gradle API upgrades",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "enabled": false,
       "matchPackageNames": [
@@ -179,8 +179,8 @@
     },
     {
       "description": "guava: jre suffix should not be updated to android",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "matchPackageNames": [
         "com.google.guava:guava"
@@ -190,8 +190,8 @@
     },
     {
       "description": "guava: keep suffix: android",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "matchPackageNames": [
         "com.google.guava:guava"
@@ -201,8 +201,8 @@
     },
     {
       "description": "guava: deny 0.* version",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "matchPackageNames": [
         "com.google.guava:guava"
@@ -212,8 +212,8 @@
     },
     {
       "description": "immutables: deny versions with 'ea' suffix",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "allowedVersions": "!/[-.]ea[-.\\d]/",
       "matchPackageNames": [
@@ -222,8 +222,8 @@
     },
     {
       "description": "immutables: group dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "org.immutables",
       "matchPackageNames": [
@@ -232,8 +232,8 @@
     },
     {
       "description": "jackson: group dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "com.fasterxml.jackson",
       "matchPackageNames": [
@@ -242,8 +242,8 @@
     },
     {
       "description": "jacoco: group dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "org.jacoco",
       "matchPackageNames": [
@@ -252,8 +252,8 @@
     },
     {
       "description": "javaparser: group dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "com.github.javaparser",
       "matchPackageNames": [
@@ -262,8 +262,8 @@
     },
     {
       "description": "jgit: group dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "org.eclipse.jgit",
       "matchPackageNames": [
@@ -272,8 +272,8 @@
     },
     {
       "description": "kotlin: group dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "org.jetbrains.kotlin",
       "matchPackageNames": [
@@ -282,8 +282,8 @@
     },
     {
       "description": "plantuml: allow only semver versions",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "matchPackageNames": [
         "net.sourceforge.plantuml:plantuml"
@@ -292,8 +292,8 @@
     },
     {
       "description": "postgresql: keep without suffix",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "matchPackageNames": [
         "org.postgresql:postgresql"
@@ -303,8 +303,8 @@
     },
     {
       "description": "postgresql: keep suffix: jre7",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "matchPackageNames": [
         "org.postgresql:postgresql"
@@ -314,8 +314,8 @@
     },
     {
       "description": "postgresql: keep suffix: jre6",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "matchPackageNames": [
         "org.postgresql:postgresql"
@@ -325,8 +325,8 @@
     },
     {
       "description": "postgresql: keep suffix: jdbc42",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "matchPackageNames": [
         "org.postgresql:postgresql"
@@ -336,8 +336,8 @@
     },
     {
       "description": "postgresql: keep suffix: jdbc41",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "matchPackageNames": [
         "org.postgresql:postgresql"
@@ -347,8 +347,8 @@
     },
     {
       "description": "postgresql: keep suffix: jdbc4",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "matchPackageNames": [
         "org.postgresql:postgresql"
@@ -358,8 +358,8 @@
     },
     {
       "description": "postgresql: keep suffix: jdbc3",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "matchPackageNames": [
         "org.postgresql:postgresql"
@@ -369,8 +369,8 @@
     },
     {
       "description": "postgresql: deny other suffixes",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "matchPackageNames": [
         "org.postgresql:postgresql"
@@ -380,8 +380,8 @@
     },
     {
       "description": "simpleflatmapper: group dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "org.simpleflatmapper",
       "matchPackageNames": [
@@ -390,8 +390,8 @@
     },
     {
       "description": "spotbugs: group dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "com.github.spotbugs",
       "matchPackageNames": [
@@ -400,8 +400,8 @@
     },
     {
       "description": "springframework: Spring release train BOMs: use CalVer only",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "matchPackageNames": [
         "org.springframework.data:spring-data-bom",
@@ -411,8 +411,8 @@
     },
     {
       "description": "springframework: Spring Data release train BOM: ignore 0-9.*",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "matchPackageNames": [
         "org.springframework.data:spring-data-releasetrain"
@@ -421,8 +421,8 @@
     },
     {
       "description": "springframework: group dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "org.springframework",
       "matchPackageNames": [
@@ -431,8 +431,8 @@
     },
     {
       "description": "squareup okhttp: keep OkHttp3 major version if current version is 3.*",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "matchCurrentVersion": "/^3\\./",
       "allowedVersions": "/^3\\./",
@@ -442,8 +442,8 @@
     },
     {
       "description": "squareup okhttp: group OkHttp dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "com.squareup.okhttp",
       "matchPackageNames": [
@@ -452,8 +452,8 @@
     },
     {
       "description": "squareup okio: group Okio dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "com.squareup.okio",
       "matchPackageNames": [
@@ -462,8 +462,8 @@
     },
     {
       "description": "squareup leakcanary: group LeakCanary dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "com.squareup.leakcanary",
       "matchPackageNames": [
@@ -472,8 +472,8 @@
     },
     {
       "description": "squareup moshi: group Moshi dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "com.squareup.moshi",
       "matchPackageNames": [
@@ -482,8 +482,8 @@
     },
     {
       "description": "squareup misk: group Misk dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "com.squareup.misk",
       "matchPackageNames": [
@@ -492,8 +492,8 @@
     },
     {
       "description": "squareup retrofit: group Retrofit dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "com.squareup.retrofit",
       "matchPackageNames": [
@@ -502,8 +502,8 @@
     },
     {
       "description": "squareup sqldelight: group SQLDelight dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "com.squareup.sqldelight",
       "matchPackageNames": [
@@ -512,8 +512,8 @@
     },
     {
       "description": "squareup wire: group Wire dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "com.squareup.wire",
       "matchPackageNames": [
@@ -522,8 +522,8 @@
     },
     {
       "description": "org.apache.maven.resolver: group dependencies",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "org.apache.maven.resolver",
       "matchPackageNames": [
@@ -532,8 +532,8 @@
     },
     {
       "description": "name.remal:gradle-plugins",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "name.remal:gradle-plugins",
       "matchPackageNames": [
@@ -542,8 +542,8 @@
     },
     {
       "description": "name.remal.gradle-plugins.toolkit",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "name.remal.gradle-plugins.toolkit",
       "matchPackageNames": [
@@ -552,8 +552,8 @@
     },
     {
       "description": "name.remal.gradle-plugins.generate-sources",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "name.remal.gradle-plugins.generate-sources",
       "matchPackageNames": [
@@ -563,8 +563,8 @@
 
     {
       "description": "org.sonarsource.sonarlint.core",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "groupName": "org.sonarsource.sonarlint.core",
       "matchPackageNames": [
@@ -574,8 +574,8 @@
 
     {
       "description": "jetbrains: intellij: calver",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "matchCurrentVersion": "/^\\d{4,}\\./",
       "allowedVersions": "/^\\d{4,}\\./",
@@ -585,8 +585,8 @@
     },
     {
       "description": "jetbrains: intellij: build number",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "matchCurrentVersion": "/^\\d{3}\\./",
       "allowedVersions": "/^\\d{3}\\./",
@@ -596,8 +596,8 @@
     },
     {
       "description": "https://github.com/KengoTODA/errorprone-slf4j/issues/147",
-      "matchCategories": [
-        "java"
+      "matchDatasources": [
+        "maven"
       ],
       "matchPackageNames": [
         "jp.skypencil.errorprone.slf4j:errorprone-slf4j"
