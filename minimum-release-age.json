@@ -5,6 +5,7 @@
   "packageRules": [
     {
       "description": "Default minimumReleaseAge",
+      "matchPackageNames": ["/.+/"],
       "minimumReleaseAge": "7 days"
     },
     {
