@@ -11,6 +11,7 @@
     "customManagers:gitlabPipelineVersions",
     "customManagers:mavenPropertyVersions",
     "mergeConfidence:all-badges",
+    "github>remal/renovate-config:minimum-release-age",
     "github>remal/renovate-config:labels",
     "github>remal/renovate-config:ci",
     "github>remal/renovate-config:java-deps",

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "minimumReleaseAge",
+  "packageRules": [
+    {
+      "description": "Default minimumReleaseAge",
+      "minimumReleaseAge": "7 days"
+    },
+    {
+      "description": "No minimumReleaseAge: Java",
+      "matchCategories": [
+        "java"
+      ],
+      "matchPackageNames": [
+        "/^name\\.remal[.:]/"
+      ],
+      "minimumReleaseAge": null
+    }
+  ]
+}
