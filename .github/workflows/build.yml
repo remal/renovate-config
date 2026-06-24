@@ -46,18 +46,19 @@ jobs:
         cache: npm
         cache-dependency-path: .github/workflows/build.yml
 
-    - name: Create configs file
-      id: configsFile
+    - name: Generate labels.json
       run: |
-        file=$(mktemp -q)
-        echo "path=$file" >> "$GITHUB_OUTPUT"
+        RENOVATE_PKG=$(mktemp -d)
+        npm install --prefix "$RENOVATE_PKG" "renovate@$RENOVATE_VERSION"
+        NODE_PATH="$RENOVATE_PKG/node_modules" node .github/workflows/generate-labels.js
+
     - name: Find Renovate config files
+      id: configFiles
       uses: actions/github-script@v9
       with:
         result-encoding: json
         script: |
           const path = require('path')
-          const fs = require('fs')
           const globber = await glob.create([
             '**/*.json',
             '**/*.json5',
@@ -78,18 +79,20 @@ jobs:
           } else {
             core.warn("Not config files found")
           }
-          fs.writeFileSync('${{steps.configsFile.outputs.path}}', files.join('\n'), 'utf8')
+          return files
 
     - name: Validate and migrate config
+      env:
+        CONFIG_FILES: ${{steps.configFiles.outputs.result}}
       run: |
-        for configFile in `cat "${{steps.configsFile.outputs.path}}"`; do
+        for configFile in $(echo "$CONFIG_FILES" | jq -r '.[]'); do
           echo "::group::Validating $configFile"
           logFile=$(mktemp -q)
-          npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator --strict "$configFile" 2>&1 | tee "$logFile" \
+          npx --yes --loglevel=error --package "renovate@$RENOVATE_VERSION" -- renovate-config-validator --strict "$configFile" 2>&1 | tee "$logFile" \
             || ( \
               node .github/workflows/build-process-log.js "$configFile" "$logFile" \
               && echo "Revalidating $configFile" \
-              && npx --yes --loglevel=error --package "renovate@${{env.RENOVATE_VERSION}}" -- renovate-config-validator --strict "$configFile"
+              && npx --yes --loglevel=error --package "renovate@$RENOVATE_VERSION" -- renovate-config-validator --strict "$configFile"
             )
           echo "::endgroup::"
         done
