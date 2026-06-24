@@ -4,5 +4,394 @@
   "addLabels": [
     "renovate",
     "dependencies"
+  ],
+  "group": {
+    "addLabels": [
+      "dependencies-group"
+    ]
+  },
+  "vulnerabilityAlerts": {
+    "addLabels": [
+      "security",
+      "dependencies-security"
+    ]
+  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "addLabels": [
+        "dependencies-major"
+      ]
+    },
+    {
+      "matchUpdateTypes": [
+        "minor"
+      ],
+      "addLabels": [
+        "dependencies-minor"
+      ]
+    },
+    {
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "addLabels": [
+        "dependencies-patch"
+      ]
+    },
+    {
+      "matchUpdateTypes": [
+        "pin"
+      ],
+      "addLabels": [
+        "dependencies-pin"
+      ]
+    },
+    {
+      "matchUpdateTypes": [
+        "pinDigest"
+      ],
+      "addLabels": [
+        "dependencies-pinDigest"
+      ]
+    },
+    {
+      "matchUpdateTypes": [
+        "digest"
+      ],
+      "addLabels": [
+        "dependencies-digest"
+      ]
+    },
+    {
+      "matchUpdateTypes": [
+        "lockFileMaintenance"
+      ],
+      "addLabels": [
+        "dependencies-lockFileMaintenance"
+      ]
+    },
+    {
+      "matchUpdateTypes": [
+        "rollback"
+      ],
+      "addLabels": [
+        "dependencies-rollback"
+      ]
+    },
+    {
+      "matchUpdateTypes": [
+        "bump"
+      ],
+      "addLabels": [
+        "dependencies-bump"
+      ]
+    },
+    {
+      "matchUpdateTypes": [
+        "replacement"
+      ],
+      "addLabels": [
+        "dependencies-replacement"
+      ]
+    },
+    {
+      "matchCategories": [
+        "ansible"
+      ],
+      "addLabels": [
+        "dependencies-ansible"
+      ]
+    },
+    {
+      "matchCategories": [
+        "batect"
+      ],
+      "addLabels": [
+        "dependencies-batect"
+      ]
+    },
+    {
+      "matchCategories": [
+        "bazel"
+      ],
+      "addLabels": [
+        "dependencies-bazel"
+      ]
+    },
+    {
+      "matchCategories": [
+        "c"
+      ],
+      "addLabels": [
+        "dependencies-c"
+      ]
+    },
+    {
+      "matchCategories": [
+        "cd"
+      ],
+      "addLabels": [
+        "dependencies-cd"
+      ]
+    },
+    {
+      "matchCategories": [
+        "ci"
+      ],
+      "addLabels": [
+        "dependencies-ci"
+      ]
+    },
+    {
+      "matchCategories": [
+        "dart"
+      ],
+      "addLabels": [
+        "dependencies-dart"
+      ]
+    },
+    {
+      "matchCategories": [
+        "docker"
+      ],
+      "addLabels": [
+        "dependencies-docker"
+      ]
+    },
+    {
+      "matchCategories": [
+        "dotnet"
+      ],
+      "addLabels": [
+        "dependencies-dotnet"
+      ]
+    },
+    {
+      "matchCategories": [
+        "elixir"
+      ],
+      "addLabels": [
+        "dependencies-elixir"
+      ]
+    },
+    {
+      "matchCategories": [
+        "golang"
+      ],
+      "addLabels": [
+        "dependencies-golang"
+      ]
+    },
+    {
+      "matchCategories": [
+        "haskell"
+      ],
+      "addLabels": [
+        "dependencies-haskell"
+      ]
+    },
+    {
+      "matchCategories": [
+        "helm"
+      ],
+      "addLabels": [
+        "dependencies-helm"
+      ]
+    },
+    {
+      "matchCategories": [
+        "iac"
+      ],
+      "addLabels": [
+        "dependencies-iac"
+      ]
+    },
+    {
+      "matchCategories": [
+        "java"
+      ],
+      "addLabels": [
+        "dependencies-java"
+      ]
+    },
+    {
+      "matchCategories": [
+        "js"
+      ],
+      "addLabels": [
+        "dependencies-js"
+      ]
+    },
+    {
+      "matchCategories": [
+        "kubernetes"
+      ],
+      "addLabels": [
+        "dependencies-kubernetes"
+      ]
+    },
+    {
+      "matchCategories": [
+        "node"
+      ],
+      "addLabels": [
+        "dependencies-node"
+      ]
+    },
+    {
+      "matchCategories": [
+        "perl"
+      ],
+      "addLabels": [
+        "dependencies-perl"
+      ]
+    },
+    {
+      "matchCategories": [
+        "php"
+      ],
+      "addLabels": [
+        "dependencies-php"
+      ]
+    },
+    {
+      "matchCategories": [
+        "python"
+      ],
+      "addLabels": [
+        "dependencies-python"
+      ]
+    },
+    {
+      "matchCategories": [
+        "ruby"
+      ],
+      "addLabels": [
+        "dependencies-ruby"
+      ]
+    },
+    {
+      "matchCategories": [
+        "rust"
+      ],
+      "addLabels": [
+        "dependencies-rust"
+      ]
+    },
+    {
+      "matchCategories": [
+        "swift"
+      ],
+      "addLabels": [
+        "dependencies-swift"
+      ]
+    },
+    {
+      "matchCategories": [
+        "terraform"
+      ],
+      "addLabels": [
+        "dependencies-terraform"
+      ]
+    },
+    {
+      "matchManagers": [
+        "asdf"
+      ],
+      "addLabels": [
+        "dependencies-asdf"
+      ]
+    },
+    {
+      "matchManagers": [
+        "devbox"
+      ],
+      "addLabels": [
+        "dependencies-devbox"
+      ]
+    },
+    {
+      "matchManagers": [
+        "git-submodules"
+      ],
+      "addLabels": [
+        "dependencies-git-submodules"
+      ]
+    },
+    {
+      "matchManagers": [
+        "hermit"
+      ],
+      "addLabels": [
+        "dependencies-hermit"
+      ]
+    },
+    {
+      "matchManagers": [
+        "homebrew"
+      ],
+      "addLabels": [
+        "dependencies-homebrew"
+      ]
+    },
+    {
+      "matchManagers": [
+        "jsonata"
+      ],
+      "addLabels": [
+        "dependencies-jsonata"
+      ]
+    },
+    {
+      "matchManagers": [
+        "mise"
+      ],
+      "addLabels": [
+        "dependencies-mise"
+      ]
+    },
+    {
+      "matchManagers": [
+        "nix"
+      ],
+      "addLabels": [
+        "dependencies-nix"
+      ]
+    },
+    {
+      "matchManagers": [
+        "proto"
+      ],
+      "addLabels": [
+        "dependencies-proto"
+      ]
+    },
+    {
+      "matchManagers": [
+        "custom.regex"
+      ],
+      "addLabels": [
+        "dependencies-regex"
+      ]
+    },
+    {
+      "matchManagers": [
+        "renovate-config"
+      ],
+      "addLabels": [
+        "dependencies-renovate-config"
+      ]
+    },
+    {
+      "matchManagers": [
+        "typst"
+      ],
+      "addLabels": [
+        "dependencies-typst"
+      ]
+    }
   ]
 }
