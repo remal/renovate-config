@@ -319,7 +319,7 @@
   },
   "renovate-config": {
     "extends": [
-      "github>remal/renovate-config:parameterized-labels(renovate-config-presets)"
+      "github>remal/renovate-config:parameterized-labels(renovate-config)"
     ]
   },
   "vendir": {
