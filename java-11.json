@@ -34,6 +34,17 @@
       ],
       "matchCurrentVersion": "(,0.9999)",
       "allowedVersions": "(,0.9999)"
+    },
+    {
+      "description": "Micronaut >=5 supports Java >=25",
+      "matchCategories": [
+        "java"
+      ],
+      "matchPackageNames": [
+        "/^io\\.micronaut[:.]/"
+      ],
+      "matchCurrentVersion": "(,4.9999)",
+      "allowedVersions": "(,4.9999)"
     }
   ]
 }
