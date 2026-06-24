@@ -307,22 +307,6 @@
     },
     {
       "matchManagers": [
-        "custom.jsonata"
-      ],
-      "addLabels": [
-        "dependencies-custom.jsonata"
-      ]
-    },
-    {
-      "matchManagers": [
-        "custom.regex"
-      ],
-      "addLabels": [
-        "dependencies-custom.regex"
-      ]
-    },
-    {
-      "matchManagers": [
         "devbox"
       ],
       "addLabels": [
@@ -355,6 +339,14 @@
     },
     {
       "matchManagers": [
+        "custom.jsonata"
+      ],
+      "addLabels": [
+        "dependencies-jsonata"
+      ]
+    },
+    {
+      "matchManagers": [
         "mise"
       ],
       "addLabels": [
@@ -375,6 +367,14 @@
       ],
       "addLabels": [
         "dependencies-proto"
+      ]
+    },
+    {
+      "matchManagers": [
+        "custom.regex"
+      ],
+      "addLabels": [
+        "dependencies-regex"
       ]
     },
     {

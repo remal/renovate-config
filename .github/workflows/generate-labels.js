@@ -14,22 +14,22 @@ const categories = new Set();
 const uncategorizedManagers = [];
 
 for (const manager of [...AllManagersListLiteral, ...CustomManagersListLiteral]) {
-    const matchName = customManagers.has(manager) ? `custom.${manager}` : manager;
+    const isCustom = customManagers.has(manager);
     try {
         const mod = require(`renovate/dist/modules/manager/${manager}/index`);
         const exportKey = Object.keys(mod).find(k => k.endsWith('_exports'));
         if (!exportKey) {
-            uncategorizedManagers.push(matchName);
+            uncategorizedManagers.push({match: isCustom ? `custom.${manager}` : manager, label: manager});
             continue;
         }
         const {categories: managerCategories} = mod[exportKey];
         if (managerCategories && managerCategories.length > 0) {
             managerCategories.forEach(c => categories.add(c));
         } else {
-            uncategorizedManagers.push(matchName);
+            uncategorizedManagers.push({match: isCustom ? `custom.${manager}` : manager, label: manager});
         }
     } catch {
-        uncategorizedManagers.push(matchName);
+        uncategorizedManagers.push({match: isCustom ? `custom.${manager}` : manager, label: manager});
     }
 }
 
@@ -61,10 +61,10 @@ for (const category of [...categories].sort()) {
     });
 }
 
-for (const manager of uncategorizedManagers.sort()) {
+for (const {match, label} of uncategorizedManagers.sort((a, b) => a.label.localeCompare(b.label))) {
     packageRules.push({
-        matchManagers: [manager],
-        addLabels: [`dependencies-${manager}`],
+        matchManagers: [match],
+        addLabels: [`dependencies-${label}`],
     });
 }
 
