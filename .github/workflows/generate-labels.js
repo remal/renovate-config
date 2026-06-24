@@ -8,25 +8,28 @@ const options = getOptions();
 
 const updateTypes = options.find(o => o.name === 'matchUpdateTypes').allowedValues;
 
+const customManagers = new Set(CustomManagersListLiteral);
+
 const categories = new Set();
 const uncategorizedManagers = [];
 
 for (const manager of [...AllManagersListLiteral, ...CustomManagersListLiteral]) {
+    const matchName = customManagers.has(manager) ? `custom.${manager}` : manager;
     try {
         const mod = require(`renovate/dist/modules/manager/${manager}/index`);
         const exportKey = Object.keys(mod).find(k => k.endsWith('_exports'));
         if (!exportKey) {
-            uncategorizedManagers.push(manager);
+            uncategorizedManagers.push(matchName);
             continue;
         }
         const {categories: managerCategories} = mod[exportKey];
         if (managerCategories && managerCategories.length > 0) {
             managerCategories.forEach(c => categories.add(c));
         } else {
-            uncategorizedManagers.push(manager);
+            uncategorizedManagers.push(matchName);
         }
     } catch {
-        uncategorizedManagers.push(manager);
+        uncategorizedManagers.push(matchName);
     }
 }
 
