@@ -317,7 +317,7 @@
       "github>remal/renovate-config:parameterized-labels(pre-commit)"
     ]
   },
-  "renovate-config-presets": {
+  "renovate-config": {
     "extends": [
       "github>remal/renovate-config:parameterized-labels(renovate-config-presets)"
     ]
