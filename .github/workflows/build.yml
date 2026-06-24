@@ -31,6 +31,8 @@ jobs:
     concurrency:
       group: build-${{github.ref}}
       cancel-in-progress: true
+    env:
+      GITHUB_COM_TOKEN: ${{secrets.PUSH_BACK_TOKEN}}
     steps:
     - name: Checkout repository
       uses: actions/checkout@v6
