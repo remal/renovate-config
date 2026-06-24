@@ -34,6 +34,9 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v6
+      with:
+        token: ${{secrets.PUSH_BACK_TOKEN}}
+
     - name: Setup Node.js
       uses: actions/setup-node@v6
       with:
@@ -93,5 +96,4 @@ jobs:
       if: ${{github.ref == 'refs/heads/main'}}
       uses: remal-github-actions/push-back@v2
       with:
-        githubToken: ${{secrets.PUSH_BACK_TOKEN}}
         message: '[push-back] Push-back migrated configs'
