@@ -1,0 +1,58 @@
+name: Bump repository activity
+
+on:
+  schedule:
+  - cron: '30 3 * * *' # sync-with-template: adjust
+  push:
+    branches:
+    - main
+    paths:
+    - '.github/workflows/bump-repository-activity.yml'
+  workflow_dispatch:
+    inputs:
+      dryRun:
+        required: true
+        default: 'false'
+        description: Set to 'true' to enable dry run
+        type: choice
+        options:
+        - 'true'
+        - 'false'
+      maxInactivityDays:
+        required: true
+        default: 14
+        description: Max inactivity days. If there are no commits during this duration, a new commit will be created.
+        type: number
+
+permissions:
+  id-token: write
+
+concurrency:
+  group: bump-repository-activity-${{github.ref}}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  bump-repository-activity:
+    name: Bump repository activity
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+    - name: Get GitHub Token
+      id: get-token
+      uses: remal/github-repository-token-issuer@v1
+      with:
+        scopes: |
+          contents: write
+
+    - name: Bump repository activity
+      uses: remal-github-actions/bump-repository-activity@v1
+      with:
+        dryRun: ${{inputs.dryRun || 'false'}}
+        githubToken: ${{steps.get-token.outputs.token}}
+        maxInactivityDays: ${{inputs.maxInactivityDays || 14}}
+        bumperFile: 'repository-activity.bumper'
+        commitMessage: '[push-back] Bump repository activity'
