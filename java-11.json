@@ -45,6 +45,19 @@
       ],
       "matchCurrentVersion": "(,4.9999)",
       "allowedVersions": "(,4.9999)"
+    },
+    {
+      "description": "Saxon >=13 supports Java >=17",
+      "matchCategories": [
+        "java"
+      ],
+      "matchPackageNames": [
+        "net.sf.saxon:Saxon-HE",
+        "com.saxonica:Saxon-EE",
+        "com.saxonica:Saxon-PE"
+      ],
+      "matchCurrentVersion": "(,12.9999)",
+      "allowedVersions": "(,12.9999)"
     }
   ]
 }
