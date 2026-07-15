@@ -22,6 +22,9 @@
   "onboarding": false,
   "printConfig": false,
   "configWarningReuseIssue": false,
+  "statusCheckWhen": {
+    "artifactError": "never"
+  },
   "rebaseWhen": "behind-base-branch",
   "rebaseLabel": "renovate-rebase",
   "stopUpdatingLabel": "renovate-stop-updating",
