@@ -363,6 +363,14 @@
     },
     {
       "matchManagers": [
+        "pre-commit"
+      ],
+      "addLabels": [
+        "dependencies-pre-commit"
+      ]
+    },
+    {
+      "matchManagers": [
         "proto"
       ],
       "addLabels": [
