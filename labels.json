@@ -75,6 +75,14 @@
     },
     {
       "matchUpdateTypes": [
+        "lockfileUpdate"
+      ],
+      "addLabels": [
+        "dependencies-lockfileUpdate"
+      ]
+    },
+    {
+      "matchUpdateTypes": [
         "rollback"
       ],
       "addLabels": [
