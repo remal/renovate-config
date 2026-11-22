@@ -235,6 +235,14 @@
     },
     {
       "matchCategories": [
+        "julia"
+      ],
+      "addLabels": [
+        "dependencies-julia"
+      ]
+    },
+    {
+      "matchCategories": [
         "kubernetes"
       ],
       "addLabels": [
